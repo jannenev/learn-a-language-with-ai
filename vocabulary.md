@@ -148,7 +148,7 @@ Prefix reminder: **mo-** = will / going to; **ni-** (also **mi-**) = did; **nag-
 
 ---
 
-## Tier 2 — Everyday (≈ 50 entries, total ≈ 115)
+## Tier 2 — Everyday (≈ 58 entries, total ≈ 123)
 
 Goal: market, money, family, feelings, time. Introduced 5–8 per text from text 006 onward.
 
@@ -256,6 +256,21 @@ Native Cebuano numbers are used for counting things and small quantities; **Span
 | 100 | usa ka gatos | syen / syento |
 
 *Pila ni?* — *Baynte pesos.* · *Tulo ka bata* — three children (note *ka* between number and noun) · *alas dos* — two o'clock.
+
+### 2.9 High-frequency spoken words (8)
+
+Not tied to any topic, but among the most frequent words in real Bisaya conversation. Added 2026-10-06 after estimating how much everyday speech the tiers cover.
+
+| Word | Also | Meaning | Example |
+|---|---|---|---|
+| mao | mao na, mao ba, mao gyud, mao ni | "that's it / that's the one / it is so"; also "so, that's why". Easily top 20 in speech. | *Mao na!* — That's it! · *Mao ba?* — Is that so? · *Mao gyud.* — Exactly. · *Mao nga wala ko niadto.* — That's why I didn't go. |
+| kuan | kuwan | filler: "whatsit / thingy / um"; stands in for any word the speaker can't find; even used as a verb (*gi-kuan*) | *Asa ang kuan… ang kwarta?* — Where's the, um… the money? |
+| kanang | kana nga | "that…" + a description; also a thinking filler, "um / you know" | *Kanang dako.* — The big one. · *Kanang… wala ko kabalo.* — Um… I don't know. |
+| murag | mura'g, mura og | like / seems like / kind of | *Murag sakit siya.* — Seems like she's sick. · *Murag dili.* — I don't think so. |
+| siguro | — | maybe / probably / I guess | *Siguro ugma.* — Maybe tomorrow. · *Siguro.* — Probably. |
+| basta | — | as long as / just / "the point is" | *Basta lami.* — As long as it's tasty. · *Basta!* — Just because! / Anyway! |
+| gani | — | even; indeed; "in fact" (adds emphasis) | *Wala gani ko nikaon.* — I haven't even eaten. · *Mao gani!* — Exactly! |
+| sus | Hesus, susmaryosep | oh my! / gosh (mild exclamation of surprise or exasperation) | *Sus, init kaayo!* — Gosh, it's so hot! |
 
 ---
 

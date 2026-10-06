@@ -17,7 +17,7 @@
 
 1. **Curated core vocabulary in tiers**, not a raw frequency ranking. A pure frequency list is dominated by particles and pronouns; a learner also needs *coverage* of the situations that actually occur (greetings, food, family, money, time). So: pick by category, keep the most frequent items of each category.
    - Tier 1 = 65 entries — survival core. Enough to follow a simple dialogue.
-   - Tier 2 ≈ 50 entries — everyday. Total ≈ 115.
+   - Tier 2 ≈ 58 entries — everyday. Total ≈ 123.
    - Tier 3 — a backlog of candidates, added in small batches when Tiers 1–2 feel solid.
    - See `vocabulary.md`.
 2. **Minimal "listening grammar"**: the handful of patterns needed to *parse* speech — verb prefixes (mo-/ni-/nag-/gi-), the little markers (ang, sa, og, si, nga), particles (na, pa, lang, gyud, ba), negation (dili vs wala), and spoken contractions (naa'y, wala'y, unsa'y, di, wa, jud). No production drills. See `grammar-notes.md`.
@@ -26,6 +26,22 @@
    - Texts are connected: same characters, same setting, so vocabulary recurs naturally instead of each text pulling random words.
    - Each text tells you which tier(s) it uses and lists any word outside those tiers.
 4. **Loop:** read → (listen, once an audio source exists) → self-check comprehension → add words → next text.
+
+### How much real speech do the tiers cover? (estimate, 2026-10-06)
+
+Rough estimates, not measurements: there is no public frequency list of *spoken* Cebuano. Reasoning is by analogy with spoken corpora in other languages (a few dozen function words carry about half of all speech) and from the fact that Cebuano conversation is even more dominated by particles, pronouns and markers. Counted by root: once *kaon* and the prefix table are known, *mokaon / nikaon / gikaon* all count as known.
+
+| Vocabulary known | Shop, jeepney, greetings, "have you eaten" | Casual chat among family or friends |
+|---|---|---|
+| Tier 1 (65) | 65–75% of words | 45–55% |
+| Tier 1+2 (≈ 123) | 80–85% | 60–70% |
+| Tier 1+2+3 (≈ 260) | 85–90% | 72–80% |
+
+What it means: listening research puts comfortable comprehension of unscripted speech at about 95% known words and rough gist at about 90%. So Tiers 1–2 give near-full understanding of transactional exchanges and the *topic* of family talk; Tier 3 makes family talk about food, plans, feelings and who-went-where followable with effort. Comfortable understanding of free conversation needs roughly 1,500–2,000 roots plus the affix system; gist with effort, about 800–1,000. The tiers are the start of that ramp.
+
+Two things push the real figure up for a European learner in Cebu City: heavy mixing of English into casual speech (*busy kaayo ko*, *i-check nako*), and Spanish-derived numbers, times, days and months. Worth perhaps 5–10 extra points on the casual column.
+
+The estimate also exposed a gap: eight very high-frequency conversational words (*mao, kuan, kanang, murag, siguro, basta, gani, sus*) were missing from all tiers. They are now Tier 2, section 2.9.
 
 ### Readiness rule
 
@@ -86,7 +102,7 @@ Planned sequence:
 ## 7. Open questions
 
 - **Audio.** Listening is the goal, so an audio source is needed: a Cebuano speaker recording the texts, YouTube/vlogs in Bisaya, or text-to-speech. Cebuano TTS quality varies a lot; test a couple (e.g. Meta MMS has a Cebuano voice) before relying on one.
-- **Frequency cross-check.** The lists are curated from knowledge of the language, not derived from a corpus. Worth checking Tier 1–2 against a real frequency list (e.g. from OPUS subtitles or a Cebuano Wikipedia dump), keeping in mind that written corpora under-represent spoken particles.
+- **Frequency cross-check.** The lists are curated from knowledge of the language, not derived from a corpus. Worth checking Tier 1–2 against a real frequency list (e.g. from OPUS subtitles or a Cebuano Wikipedia dump), keeping in mind that written corpora under-represent spoken particles. The coverage estimate in section 2 is a reasoned guess and would be the first thing such a check would correct.
 - **Tier sizes.** 65 / ~50 are starting guesses. Prune Tier 1 if the first texts feel crowded.
 - **Cebu vs Mindanao.** Decide whether to note Davao-style variants at all, or stick to Cebu only.
 
@@ -94,6 +110,7 @@ Planned sequence:
 
 - **2026-09-20** — Project started. Wrote PLAN.md, vocabulary.md (Tier 1 = 65, Tier 2 ≈ 50, Tier 3 backlog), grammar-notes.md, and the first sample text `texts/001-buntag-sa-balay.md` (Tier 1 only) to test the format.
 - **2026-10-06** — Text 002 `texts/002-hapon-sa-trabaho-ni-mama.md` (Tier 1 only, 27 lines, continues the same day; adds a Cebuano-only cold-read block as an experiment). Added `tools/wordcheck.py` and coverage counts to both texts: 001 uses 40/65 Tier 1 entries, 002 uses 51/65, together 55/65. Still unused after two texts: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
+- **2026-10-06** — Estimated how much everyday speech each tier covers (section 2). Added eight high-frequency spoken words to Tier 2 as section 2.9: mao, kuan, kanang, murag, siguro, basta, gani, sus. Tier 2 is now ≈ 58, total ≈ 123. Repository put under git.
 
 ## 9. Next steps
 
