@@ -43,6 +43,30 @@ Two things push the real figure up for a European learner in Cebu City: heavy mi
 
 The estimate also exposed a gap: eight very high-frequency conversational words (*mao, kuan, kanang, murag, siguro, basta, gani, sus*) were missing from all tiers. They are now Tier 2, section 2.9.
 
+### How many readings does it take? (estimate, 2026-10-07)
+
+**What the research says.** Studies of learning words incidentally from reading put the threshold at roughly 6 to 10 encounters for a first grip on the meaning and 20 or more for solid, lasting knowledge (Horst, Cobb and Meara 1998: 8; Saragi, Nation and Meister 1978: 10; Webb 2007: 10 or more; Waring and Takaki 2003: 20 or more, and most of the gain was lost after three months when the words were not met again). A 2019 meta-analysis of 26 studies (Uchihara, Webb and Yanagisawa) found a medium overall effect of repetition (r = .34) and a stronger one when learners re-read the same text within a day (r = .46). Reading while listening retained more than reading alone. Deliberate study of a word list with spaced retrieval is faster per word than meeting words in texts, but gives weaker knowledge of how the word behaves in sentences; the two complement each other.
+
+**What the texts give.** `python3 tools/wordcheck.py --counts` shows occurrences per Tier 1 entry. After texts 001 and 002 (217 Tier 1 tokens in total):
+
+| Occurrences in 001+002 | Entries | Examples |
+|---|---|---|
+| 10 or more | 3 | ako/ko, na, Mama |
+| 5 to 9 | 15 | ikaw/ka, sa, ang, naa, kaayo, maayo, salamat, sige, adto, kaon, balay, unya |
+| 2 to 4 | 27 | og, nga (as -ng), ba, pa, lang, gyud, pud, wala, unsa, asa, gusto, dali, pagkaon, daghan, lami, didto |
+| 1 | 10 | dili, pila, ayaw, inom, kahibalo, tawo, diri, ni (of), kana (counted by eye; the script cannot separate it from *na*) |
+| 0 | 10 | siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay |
+
+So a single read of both texts gets only three words past the threshold. Repetition has to come from re-reading and from later texts re-using the same words, which is the design.
+
+**Reading schedule (decision).** Read each text about six times on an expanding schedule: day 0 (twice, the second time an hour or more later), day 1, day 3, day 7, day 14, and once more around day 30. Every pass starts with block 1 cold, which is retrieval practice, and only then block 2. Block 3 is for the first two passes. Once audio exists, the day 3 pass onward should be listening with the text in view, then listening alone. Six passes turn the table above into: words with 2 to 4 occurrences reach 12 to 24 encounters within a month, words with one occurrence reach 6 and depend on the next text to re-use them, and the zeros depend on text 003.
+
+**Time.** A 27-line text takes about 2 minutes to read cold, 5 minutes with the English check, and 10 to 15 minutes the first time with block 3. Six passes are roughly 40 minutes per text spread over a month. Starting one new text every 3 to 4 days gives 10 to 15 minutes a day and brings Tier 1 (texts 001 to 005) to the threshold in 6 to 8 weeks, Tier 2 in a further 2 to 3 months.
+
+**Where the variation is.** Between learners the spread is easily two- to threefold. Between words it is larger and predictable: Spanish and English loans (*kwarta, trabaho, pamilya, kape, pero, siguro*) stick in one to three encounters; the small particles (*na, pa, lang, man, gyud*) are recognised fast because they are everywhere, but their feel takes weeks of exposure; sets that look or sound alike (*dili / diri / didto / diha*, *kini / kana / kadto*, *nako / nimo / nato / namo / nila*, and the double-duty *ni* and *na*) take two to three times longer and need side-by-side contrast; hearing a word lags reading it, so expect to need the same number of encounters again in the audio versions before it is recognised in speech. Knowledge also decays: a word not met again within about two weeks slides back, which is why later texts keep re-using earlier words rather than introducing new ones.
+
+**When a word counts as learned.** It is read cold without hesitation on two spaced passes, and then recognised in audio without the text. Until the audio side exists, use the first criterion only.
+
 ### Readiness rule
 
 Move to the next tier when a *new* text at the current tier is understood on first read (later: first listen) at roughly 90%. If not, write more texts at the same tier rather than adding words.
@@ -120,10 +144,12 @@ Pronunciation data lives in `pronunciation/`, separate from the texts, so the re
 - **2026-10-06** — Estimated how much everyday speech each tier covers (section 2). Added eight high-frequency spoken words to Tier 2 as section 2.9: mao, kuan, kanang, murag, siguro, basta, gani, sus. Tier 2 is now ≈ 58, total ≈ 123. Repository put under git.
 - **2026-10-07** — Layout v2 adopted (section 3): texts 001 and 002 rewritten as plain-text sources in `texts/src/` and rendered with the new `tools/render.py`: three blocks, speaker by indentation, close English, literal glosses. *dali* corrected to "quick" (the phrase *Dali diri!* is "come here"); *ang* glossed as the(subj) and the *ang* vs *naa'y* point added to grammar-notes. `wordcheck.py` reads the sources.
 - **2026-10-07** — Pronunciation files (section 6a): `pronunciation/` with a lexicon of 226 words marked for stress and final glottal stop, the rule block for AI voices, and `tools/pron.py` generating paste / IPA / SSML files for texts 001 and 002.
+- **2026-10-07** — Repetition estimate and reading schedule (section 2), with `wordcheck.py --counts` showing occurrences per entry.
 
 ## 9. Next steps
 
 1. Verify the entries marked `check` in `pronunciation/lexicon.tsv` with a native speaker or Wolff's dictionary (dali, sige, palihug, kuan, the suffixed verb forms).
 2. Write text 003 (Tier 1 only): evening at home, Mama comes back. It should bring in the ten entries still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
 3. Decide the audio source; the Meta MMS Cebuano voice is the candidate for consistent audio of every text.
-4. When Tier 2 texts start, extend `tools/wordcheck.py` and the lexicon with Tier 2.
+4. Follow the reading schedule in section 2 for 001 and 002 while 003 to 005 are written.
+5. When Tier 2 texts start, extend `tools/wordcheck.py` and the lexicon with Tier 2.

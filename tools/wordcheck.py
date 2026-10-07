@@ -4,6 +4,7 @@
 Usage:
     python3 tools/wordcheck.py texts/src/001.txt                 # one text
     python3 tools/wordcheck.py texts/src/001.txt texts/src/002.txt   # cumulative over several texts
+    python3 tools/wordcheck.py --counts texts/src/*.txt          # occurrences per entry, in exposure bands
 
 It reads the Cebuano column of texts/src/NNN.txt ("Speaker | Cebuano | English"); the old v1 markdown
 layout (numbered lines with the Cebuano in bold) is still accepted.
@@ -149,6 +150,7 @@ def cebuano_lines(path):
 def analyse(paths):
     covered = {}       # entry -> set of surface forms seen
     unmatched = {}     # token -> count
+    counts = {}        # entry -> number of occurrences
     for path in paths:
         for text in cebuano_lines(path):
             raw = re.findall(r"[A-Za-z'\-]+", text)
@@ -165,11 +167,14 @@ def analyse(paths):
                     covered.setdefault("maayong buntag/hapon/gabii", set()).add(w + " " + nxt)
                     covered.setdefault("maayo", set()).add("maayong")
                     covered.setdefault("nga", set()).add("-ng")
+                    for e in ("maayong buntag/hapon/gabii", "maayo", "nga"):
+                        counts[e] = counts.get(e, 0) + 1
                     i += 2
                     continue
                 if w == "ni":
                     entry = "ni (of)" if nxt_raw[:1].isupper() else "kini/ni (this)"
                     covered.setdefault(entry, set()).add("ni")
+                    counts[entry] = counts.get(entry, 0) + 1
                     i += 1
                     continue
                 if w in NAMES:
@@ -178,22 +183,35 @@ def analyse(paths):
                 entry = lookup(w)
                 if entry:
                     covered.setdefault(entry, set()).add(w)
+                    counts[entry] = counts.get(entry, 0) + 1
                     if w.endswith("ng") and w[:-2] in form_to_entry:
                         covered.setdefault("nga", set()).add("-ng")
+                        counts["nga"] = counts.get("nga", 0) + 1
                 else:
                     unmatched[w] = unmatched.get(w, 0) + 1
                 i += 1
-    return covered, unmatched
+    return covered, unmatched, counts
 
 
 def main(argv):
     if not argv:
         print(__doc__)
         return 1
-    covered, unmatched = analyse(argv)
+    show_counts = "--counts" in argv
+    argv = [a for a in argv if not a.startswith("--")]
+    covered, unmatched, counts = analyse(argv)
     total = len(TIER1)
     print(f"Files: {', '.join(Path(p).name for p in argv)}")
     print(f"Tier 1 coverage: {len(covered)} / {total} entries\n")
+    if show_counts:
+        print(f"Occurrences per entry ({sum(counts.values())} Tier 1 tokens). Research puts the learning threshold "
+              "at roughly 10 spaced encounters; multiply by the number of times you read the texts.")
+        bands = [("10+", 10, 10**9), ("5-9", 5, 9), ("2-4", 2, 4), ("1", 1, 1), ("0", 0, 0)]
+        for label, lo, hi in bands:
+            items = [f"{e} ({counts.get(e, 0)})" for e in TIER1 if lo <= counts.get(e, 0) <= hi]
+            print(f"  [{label}] {len(items):2d}: " + ", ".join(items))
+        print()
+        return 0
     print("Covered:")
     for e in TIER1:
         if e in covered:
