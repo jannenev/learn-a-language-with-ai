@@ -1,0 +1,243 @@
+word	marked	status	note	ipa_override
+# Pronunciation lexicon. Columns: word, marked, status, note, ipa_override
+# marked: acute = stressed syllable; grave on the final vowel = word ends in a glottal stop (stress elsewhere);
+#         circumflex = stressed final vowel AND final glottal stop. One-syllable clitics carry no mark.
+# status: ok = confident; check = verify with a native speaker or Wolff's dictionary.
+# --- pronouns
+ako	akó	ok	I, me	
+ko	ko	ok	clitic	
+nako	nákò	ok	my / me	
+akong	ákong	ok	my (before a noun)	
+akoa	akúa	ok	mine	
+ikaw	ikáw	ok	you	
+ka	ka	ok	clitic	
+nimo	nímo	ok		
+imong	ímong	ok		
+imoha	imúha	ok	yours	
+siya	siyá	ok		
+niya	níya	ok		
+iyang	íyang	ok		
+iyaha	iyáha	ok		
+kita	kitá	ok	we (incl.)	 "see" is kítà
+ta	ta	ok	clitic	
+nato	nátò	ok		
+atong	átong	ok		
+atoa	atúa	ok		
+kami	kamí	ok		
+mi	mi	ok	clitic	
+namo	námò	ok		
+among	ámong	ok		
+amoa	amúa	ok		
+kamo	kamó	ok		
+mo	mo	ok	clitic	
+ninyo	nínyo	ok		
+inyong	ínyong	ok		
+inyoha	inyúha	ok		
+sila	silá	ok		
+nila	níla	ok		
+ilang	ílang	ok		
+ilaha	iláha	ok		
+# --- markers, particles (unstressed one-syllable words)
+ang	ang	ok		
+si	si	ok		
+sa	sa	ok		
+og	og	ok		
+ug	ug	ok		
+nga	nga	ok		
+ni	ni	ok		
+mga	mgá	ok	said ma-NGA	maˈŋa
+ba	ba	ok		
+na	na	ok		
+pa	pa	ok		
+lang	lang	ok		
+ra	ra	ok		
+lamang	lámang	ok		
+man	man	ok		
+pud	pud	ok		
+sad	sad	ok		
+usab	usáb	ok		
+gyud	gyud	ok	one syllable	ɡjud
+jud	jud	ok	one syllable	dʒud
+kaayo	kaáyo	ok		
+kay	kay	ok		
+oo	óo	ok	two syllables	
+o	o	ok		
+dili	dílì	ok		
+di	di	ok		
+wala	walâ	ok	none / not	 "left side" is walá
+wa	wa	ok		
+walay	walá'y	ok	wala + 'y	
+naa	náa	ok		
+naay	náa'y	ok	naa + 'y	
+koy	ko'y	ok	ko + 'y	
+aduna	adúna	ok		
+duna	dúna	ok		
+# --- question words
+unsa	únsa	ok		
+unsay	únsa'y	ok		
+kinsa	kínsa	ok		
+kinsay	kínsa'y	ok		
+asa	ása	ok		
+hain	háin	ok		
+diin	díin	ok		
+pila	pilá	ok	how much	 "queue" is píla
+tagpila	tagpilá	ok		
+kanus-a	kanús-a	ok		
+ngano	ngáno	ok		
+nganong	ngánong	ok		
+unsaon	unsáon	ok		
+giunsa	giúnsa	ok		
+# --- greetings, social
+maayo	maáyo	ok		
+maayong	maáyong	ok		
+buntag	búntag	ok		
+hapon	hápon	ok		
+gabii	gabíi	ok		
+kumusta	kumustá	ok		
+musta	mustá	ok		
+salamat	salámat	ok		
+palihug	palíhug	check		
+sige	síge	check	often heard as sígi	
+dong	dong	ok		
+day	day	ok		
+dodong	dodóng	ok		
+inday	indáy	ok		
+ayaw	ayáw	ok		
+# --- verbs (roots; prefixed forms are derived by the script)
+adto	ádto	ok		
+anhi	anhí	check		
+ari	arí	check		
+kaon	káon	ok		
+kan-on	kán-on	ok	cooked rice	
+inom	ínom	ok		
+tulog	túlog	ok		
+trabaho	trabáho	ok		
+gusto	gústo	ok		
+kahibalo	kahibálo	ok		
+kabalo	kabálo	ok		
+kabaw	kabáw	check		
+kasabot	kasábot	ok		
+sabot	sábot	ok		
+dali	dalî	check		
+hulat	hulát	ok		
+hulata	hulatá	check	suffix moves the stress	
+palit	palít	ok		
+palita	palitá	check		
+bayad	báyad	ok		
+hatag	hátag	ok		
+ihatag	ihátag	ok		
+kuha	kúhà	ok		
+kuhaa	kuháa	check		
+buhat	búhat	ok		
+buhaton	buhatón	check		
+ingon	íngon	ok		
+tan-aw	tan-áw	ok		
+tan-awa	tan-awá	check		
+paminaw	pamínaw	ok		
+lakaw	lakáw	ok		
+balik	balík	ok		
+pwede	pwéde	ok		
+mahimo	mahímo	ok		
+# --- nouns
+balay	baláy	ok		
+tubig	túbig	ok		
+pagkaon	pagkáon	ok		
+kwarta	kwárta	ok		
+tawo	táwo	ok		
+mama	máma	ok		
+papa	pápa	ok		
+ma	ma	ok		
+bata	bátà	ok		
+amigo	amígo	ok		
+amiga	amíga	ok		
+pamilya	pamílya	ok		
+anak	anák	ok		
+igsoon	igsúon	ok		
+isda	isdâ	ok		
+kape	kapé	ok		
+adlaw	ádlaw	ok		
+oras	óras	ok		
+ngalan	ngálan	ok		
+# --- time
+karon	karón	ok		
+ron	ron	ok		
+ugma	ugmà	ok		
+unya	únya	ok		
+gahapon	gahápon	ok		
+ganina	ganína	ok		
+kanunay	kanúnay	ok		
+pirmi	pírmi	ok		
+# --- describing
+dako	dakô	ok		
+gamay	gamáy	ok		
+daghan	dághan	ok		
+daghang	dághang	ok		
+lami	lamì	ok		
+nindot	níndot	ok		
+mahal	mahál	ok		
+barato	baráto	ok		
+init	ínit	ok		
+tugnaw	túgnaw	ok		
+bugnaw	búgnaw	ok		
+kapoy	kápoy	ok		
+gutom	gútom	ok		
+sakit	sakít	ok		
+# --- pointing
+kini	kiní	ok		
+kana	kanâ	ok		
+kadto	kadtó	ok		
+diri	dirí	ok		
+dinhi	dinhí	ok		
+didto	didtó	ok		
+diha	dihâ	ok		
+# --- tier 2 connectors and interjections
+pero	péro	ok		
+apan	ápan	ok		
+kung	kung	ok		
+kon	kon	ok		
+gikan	gíkan	ok		
+para	pára	ok		
+tanan	tanán	ok		
+una	úna	ok		
+ambot	ambót	ok		
+lagi	lagí	check		
+hala	hála	check		
+ay	ay	ok		
+uy	uy	ok		
+mao	máo	ok		
+kuan	kuán	check		
+kanang	kanáng	ok		
+murag	múrag	ok		
+siguro	sigúro	ok		
+basta	básta	ok		
+gani	ganí	ok		
+sus	sus	ok		
+# --- numbers
+usa	usá	ok		
+duha	duhá	ok		
+tulo	tuló	ok		
+upat	upát	ok		
+lima	limá	ok		
+unom	unóm	ok		
+pito	pitó	ok		
+walo	waló	ok		
+siyam	siyám	ok		
+napulo	napúlò	ok		
+gatos	gatós	ok		
+uno	úno	ok		
+dos	dos	ok		
+tres	tres	ok		
+kwatro	kwátro	ok		
+singko	síngko	ok		
+says	says	ok		
+syete	syéte	ok		
+otso	ótso	ok		
+nwebe	nwébe	ok		
+dyes	dyes	ok		
+baynte	báynte	ok		
+singkwenta	singkwénta	ok		
+syen	syen	ok		
+syento	syénto	ok		
+# --- names used in the texts
+ana	Ána	ok	name	
+jun	Jun	ok	name	

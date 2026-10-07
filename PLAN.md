@@ -69,6 +69,9 @@ texts/src/         the texts as written: NNN.txt, one line per sentence with Eng
 texts/             the rendered texts, NNN-title.md (generated, do not edit by hand)
 tools/render.py    renders texts/src/NNN.txt into the three-block layout
 tools/wordcheck.py counts which Tier 1 entries a text uses; flags words outside the list
+tools/pron.py      generates the pronunciation files for a text
+pronunciation/     for software, not for reading: lexicon.tsv (stress and glottal marks per word),
+                   rules-for-ai.txt, and per text NNN.paste.txt / NNN.ipa.txt / NNN.ssml.xml
 ```
 
 ## 5. Storyline for the texts
@@ -96,9 +99,16 @@ Planned sequence:
 - **Vowels** are pure: a, e, i, o, u as in Spanish or Finnish. In speech *o/u* and *e/i* swap freely (*babaye* ~ *babayi*, *tulo* ~ *tulu*).
 - **Pronouns**: the short forms (*ko, ka, ta, mi, mo*) are what you hear; full forms (*ako, ikaw, kita, kami, kamo*) appear at the start of a sentence or for emphasis.
 
+## 6a. Pronunciation files (2026-10-07)
+
+Pronunciation data lives in `pronunciation/`, separate from the texts, so the reading files stay clean and the audio side can be handed to software. Cebuano spelling is almost one letter, one sound; the two things it does not show are **stress** (pilá "how much" vs píla "a queue") and the **word-final glottal stop** (walâ "none" vs walá "left"). Those come from `pronunciation/lexicon.tsv`, one row per word, using the Philippine dictionary convention: acute = stressed syllable, grave on the final vowel = final glottal stop, circumflex = both. A `status` column marks entries to verify with a native speaker or Wolff's dictionary.
+
+`tools/pron.py` turns a text into three machine files: `NNN.paste.txt` (the rule block plus the marked lines, to paste into a chat voice such as ChatGPT voice mode), `NNN.ipa.txt` (IPA per line, for reference), and `NNN.ssml.xml` (IPA inside SSML phoneme tags for an Azure Filipino voice, which has every sound Cebuano uses). Prefixed verb forms inherit the root's stress automatically; suffixed forms (-on, -a) move the stress and are listed explicitly. The Meta MMS Cebuano voice needs none of this, since it learned spelling-to-sound itself; it remains the candidate for consistent audio of every text.
+
 ## 7. Open questions
 
-- **Audio.** Listening is the goal, so an audio source is needed: a Cebuano speaker recording the texts, YouTube/vlogs in Bisaya, or text-to-speech. Cebuano TTS quality varies a lot; test a couple (e.g. Meta MMS has a Cebuano voice) before relying on one.
+- **Audio.** Listening is the goal, so an audio source is needed. Candidates, best first: a Cebuano speaker recording the texts (italki/Preply tutor); Meta MMS Cebuano TTS run locally (robotic but trained on real Cebuano); an Azure Filipino voice driven by the SSML files; ChatGPT voice mode with the paste files (approximate; weak on stress and glottal stops). macOS has no Filipino or Cebuano voice. See section 6a.
+- **Verify the lexicon.** Entries marked `check` in `pronunciation/lexicon.tsv` (e.g. dali, sige, palihug, kuan, the suffixed verb forms) need a native-speaker or dictionary check before the audio is trusted for stress.
 - **Frequency cross-check.** The lists are curated from knowledge of the language, not derived from a corpus. Worth checking Tier 1–2 against a real frequency list (e.g. from OPUS subtitles or a Cebuano Wikipedia dump), keeping in mind that written corpora under-represent spoken particles. The coverage estimate in section 2 is a reasoned guess and would be the first thing such a check would correct.
 - **Tier sizes.** 65 / ~50 are starting guesses. Prune Tier 1 if the first texts feel crowded.
 - **Cebu vs Mindanao.** Decide whether to note Davao-style variants at all, or stick to Cebu only.
@@ -109,9 +119,11 @@ Planned sequence:
 - **2026-10-06** — Text 002 `texts/002-hapon-sa-trabaho-ni-mama.md` (Tier 1 only, 27 lines, continues the same day; adds a Cebuano-only cold-read block as an experiment). Added `tools/wordcheck.py` and coverage counts to both texts: 001 uses 40/65 Tier 1 entries, 002 uses 51/65, together 55/65. Still unused after two texts: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
 - **2026-10-06** — Estimated how much everyday speech each tier covers (section 2). Added eight high-frequency spoken words to Tier 2 as section 2.9: mao, kuan, kanang, murag, siguro, basta, gani, sus. Tier 2 is now ≈ 58, total ≈ 123. Repository put under git.
 - **2026-10-07** — Layout v2 adopted (section 3): texts 001 and 002 rewritten as plain-text sources in `texts/src/` and rendered with the new `tools/render.py`: three blocks, speaker by indentation, close English, literal glosses. *dali* corrected to "quick" (the phrase *Dali diri!* is "come here"); *ang* glossed as the(subj) and the *ang* vs *naa'y* point added to grammar-notes. `wordcheck.py` reads the sources.
+- **2026-10-07** — Pronunciation files (section 6a): `pronunciation/` with a lexicon of 226 words marked for stress and final glottal stop, the rule block for AI voices, and `tools/pron.py` generating paste / IPA / SSML files for texts 001 and 002.
 
 ## 9. Next steps
 
-1. Write text 003 (Tier 1 only): evening at home, Mama comes back. It should bring in the ten entries still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
-2. Decide the audio source; the Meta MMS Cebuano voice is the candidate for consistent audio of every text.
-3. When Tier 2 texts start, extend `tools/wordcheck.py` and the lexicon with Tier 2.
+1. Verify the entries marked `check` in `pronunciation/lexicon.tsv` with a native speaker or Wolff's dictionary (dali, sige, palihug, kuan, the suffixed verb forms).
+2. Write text 003 (Tier 1 only): evening at home, Mama comes back. It should bring in the ten entries still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
+3. Decide the audio source; the Meta MMS Cebuano voice is the candidate for consistent audio of every text.
+4. When Tier 2 texts start, extend `tools/wordcheck.py` and the lexicon with Tier 2.
