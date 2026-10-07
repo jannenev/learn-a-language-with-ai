@@ -1,121 +1,197 @@
 # 002 — Hapon: sa trabaho ni Mama (Afternoon: at Mama's work)
 
-**Setting:** Same day as text 001, afternoon. Ana and Jun walk to the place where Mama works. It turns out to be a small stall with many people around.
-**Words allowed:** Tier 1 only.
-**New words:** none. New *uses* of Tier 1 words: plural "you / we" (*mo*, *mi*), *ni* meaning "of", *na* meaning "that", the *gi-* form *gikaon*, and *mag-* on *hulat*.
-**Format:** Cebuano in bold, natural English below, then a gloss. A Cebuano-only block for a cold read is at the end.
+Same day as text 001, afternoon. Ana and Jun walk to the stall where Mama works. It turns out to be a small place with many people around.
 
----
+Words: Tier 1 only, no new words. New uses of Tier 1 words: plural "you / we" (mo, mi), ni meaning "of", na meaning "that", the gi- form gikaon, and mag- on hulat.
 
-*At home, after eating.*
+How to use: read block 1 on its own first. Then block 2 to check what you understood. Block 3 only for the words you could not place. The English in block 2 stays close to the Cebuano words, so it is not always natural English; where the real meaning differs, block 3 says so.
 
-**1. Ana:** **Jun! Dali diri! Adto na ta.**
-Jun! Come here! Let's go now.
-> dali = come here / hurry · diri = here · adto = go · na = now · ta = we (you and I) → "let's"
+## 1 · Read (Cebuano only)
 
-**2. Jun:** **Hulat lang, Ana. Moinom pa ko og tubig.**
-Hang on, Ana. I'll just drink some water first.
-> hulat = wait · lang = just · mo-inom = will drink · pa = still / yet → here "first, before that" · ko = I · og = some · tubig = water
+Who speaks: Ana speaks from the left margin, Jun indented, Mama indented further. Names are not repeated.
 
-**3. Ana:** **Sige. Dali lang.**
-OK. Be quick.
-> sige = okay · dali = quick · lang = just
+```
+(At home, after eating.)
 
-**4. Jun:** **Oo. … Sige, adto na ta!**
-Yes. … Right, let's go!
+Jun! Dali diri! Adto na ta.
+        Hulat lang, Ana. Moinom pa ko og tubig.
+Sige. Dali lang.
+        Oo. … Sige, adto na ta!
 
-*They walk. Later, at Mama's work.*
+(They walk. Later, at Mama's work.)
 
-**5. Jun:** **Asa ang trabaho ni Mama?**
-Where is Mama's work?
-> asa = where · ang = the · trabaho = work (noun here) · ni = of (before a name) → "Mama's"
+        Asa ang trabaho ni Mama?
+Didto. Naa didto si Mama.
+        Daghan kaayo ang tawo didto!
+Oo. Daghan gyud. Dali, Dong.
+                Ana! Jun! Kumusta mo?
+Maayo ra mi, Ma. Ikaw?
+                Maayo pud. Nikaon na mo?
+        Oo, nikaon na mi sa balay. Lami kaayo ang pagkaon!
+                Maayo. Gusto ba mo og tubig?
+        Oo, gusto ko. Salamat, Ma.
+Ako pud.
+        Ma, unsa ni?
+                Pagkaon na. Gusto ka?
+        Dili na, Ma. Daghan na kaayo ang akong gikaon.
+Ma, naa ko'y kwarta. Pila ni?
+                Ayaw na, Day. Imoha na.
+Salamat kaayo, Ma!
+                Sige. Adto na mo sa balay. Gabii na unya.
+        Ikaw, Ma? Moadto ba ka sa balay unya?
+                Oo, unya. Naa pa ko'y trabaho.
+Sige, Ma. Maghulat mi nimo sa balay.
+                Sige. Salamat, Day. Salamat, Dong.
+Both: Sige, Ma!
+```
 
-**6. Ana:** **Didto. Naa didto si Mama.**
-Over there. Mama is over there.
-> didto = there (over there) · naa = is (there) · si = name marker
+## 2 · Side by side (close English)
 
-**7. Jun:** **Daghan kaayo ang tawo didto!**
-There are so many people over there!
-> daghan = many · kaayo = very · ang tawo = the people (singular form, plural meaning)
+Who speaks: Ana speaks from the left margin, Jun indented, Mama indented further. Names are not repeated.
 
-**8. Ana:** **Oo. Daghan gyud. Dali, Dong.**
-Yes. Lots, really. Come on, Dong.
-> gyud = really · Dong = address for a boy / younger brother
+```
+(At home, after eating.)
 
-**9. Mama:** **Ana! Jun! Kumusta mo?**
-Ana! Jun! How are you two?
-> kumusta = how are · mo = you (several people; short for *kamo*)
+Jun! Dali diri! Adto na ta.                              Jun! Quick, here! Let's go now.
+    Hulat lang, Ana. Moinom pa ko og tubig.              Just wait, Ana. I'll drink some water
+                                                         first.
+Sige. Dali lang.                                         OK. Just quick.
+    Oo. … Sige, adto na ta!                              Yes. … OK, let's go now!
 
-**10. Ana:** **Maayo ra mi, Ma. Ikaw?**
-We're fine, Ma. And you?
-> maayo = fine · ra = just (Cebu form of *lang*) · mi = we, not including you (short for *kami*) · Ma = Mama · ikaw = you
+(They walk. Later, at Mama's work.)
 
-**11. Mama:** **Maayo pud. Nikaon na mo?**
-Fine too. Have you eaten?
-> pud = also · ni-kaon = ate · na = already · mo = you (plural)
+    Asa ang trabaho ni Mama?                             Where is the work of Mama?
+Didto. Naa didto si Mama.                                There. Mama is there.
+    Daghan kaayo ang tawo didto!                         Very many, the people there!
+Oo. Daghan gyud. Dali, Dong.                             Yes. Really many. Quick, Dong.
+        Ana! Jun! Kumusta mo?                            Ana! Jun! How are you two?
+Maayo ra mi, Ma. Ikaw?                                   We're just fine, Ma. You?
+        Maayo pud. Nikaon na mo?                         Fine too. Have you eaten already?
+    Oo, nikaon na mi sa balay. Lami kaayo ang pagkaon!   Yes, we ate already at the house. Very
+                                                         tasty, the food!
+        Maayo. Gusto ba mo og tubig?                     Good. Do you want some water?
+    Oo, gusto ko. Salamat, Ma.                           Yes, I want. Thanks, Ma.
+Ako pud.                                                 I too.
+    Ma, unsa ni?                                         Ma, what's this?
+        Pagkaon na. Gusto ka?                            That's food. You want?
+    Dili na, Ma. Daghan na kaayo ang akong gikaon.       Not anymore, Ma. What I ate is already
+                                                         very much.
+Ma, naa ko'y kwarta. Pila ni?                            Ma, I have money. How much, this?
+        Ayaw na, Day. Imoha na.                          Don't anymore, Day. It's yours now.
+Salamat kaayo, Ma!                                       Thanks very much, Ma!
+        Sige. Adto na mo sa balay. Gabii na unya.        OK. You two go to the house now. Later
+                                                         it will already be night.
+    Ikaw, Ma? Moadto ba ka sa balay unya?                You, Ma? Will you go to the house
+                                                         later?
+        Oo, unya. Naa pa ko'y trabaho.                   Yes, later. I still have work.
+Sige, Ma. Maghulat mi nimo sa balay.                     OK, Ma. We'll wait for you at the
+                                                         house.
+        Sige. Salamat, Day. Salamat, Dong.               OK. Thanks, Day. Thanks, Dong.
+Both: Sige, Ma!                                          OK, Ma!
+```
 
-**12. Jun:** **Oo, nikaon na mi sa balay. Lami kaayo ang pagkaon!**
-Yes, we ate at home. The food was really good!
-> mi = we · sa = at · balay = house · lami = delicious · ang pagkaon = the food
+## 3 · Word by word
 
-**13. Mama:** **Maayo. Gusto ba mo og tubig?**
-Good. Do you want water?
-> gusto = want · ba = question marker · mo = you (plural) · og tubig = (some) water
+```
+ 1  Jun!  Dali   diri!  Adto  na   ta.
+          quick  here   go    now  we(let's)
+    · Dali diri! is literally "quick, here!" and is how you say "come here!"
+    · root verb + ta = "let's": Adto ta! Kaon ta!
 
-**14. Jun:** **Oo, gusto ko. Salamat, Ma.**
-Yes, I do. Thanks, Ma.
+ 2  Hulat  lang,  Ana.  Moinom      pa     ko  og    tubig.
+    wait   just         will-drink  still  I   some  water
+    · pa = still / yet; here it means "first, before we go"
 
-**15. Ana:** **Ako pud.**
-Me too.
-> ako = I (full form, stands alone) · pud = also
+ 3  Sige.  Dali   lang.
+    okay   quick  just
 
-**16. Jun:** **Ma, unsa ni?**
-Ma, what's this?
-> unsa = what · ni = this (short for *kini*; compare line 5 where *ni* = "of")
+ 4  Oo.  …  Sige,  adto  na   ta!
+    yes     okay   go    now  we(let's)
 
-**17. Mama:** **Pagkaon na. Gusto ka?**
-That's food. Want some?
-> pagkaon = food · na = that (short for *kana*, not "already" here) · gusto ka = you want?
+ 5  Asa    ang        trabaho  ni  Mama?
+    where  the(subj)  work     of
+    · ni before a name = "of": trabaho ni Mama = Mama's work
 
-**18. Jun:** **Dili na, Ma. Daghan na kaayo ang akong gikaon.**
-No more, Ma. I've already eaten a lot.
-> dili = no · na = already → "no more" · daghan na kaayo = already a lot · akong = my · gi-kaon = (what was) eaten → "what I've eaten is already a lot"
+ 6  Didto.  Naa       didto  si      Mama.
+    there   there-is  there  [name]
+    · si marks a person's name as the subject; it has no English equivalent
 
-**19. Ana:** **Ma, naa ko'y kwarta. Pila ni?**
-Ma, I have money. How much is this?
-> naa ko'y = I have · kwarta = money · pila = how much · ni = this
+ 7  Daghan  kaayo  ang        tawo    didto!
+    many    very   the(subj)  people  there
 
-**20. Mama:** **Ayaw na, Day. Imoha na.**
-Don't, Day. It's yours.
-> ayaw = don't · na = (any)more → "don't bother" · Day = address for a girl / daughter · imoha = yours · na = now → "it's yours"
+ 8  Oo.  Daghan  gyud.   Dali,  Dong.
+    yes  many    really  quick  Dong
+    · Dali, Dong = "quick, Dong" = come on / hurry up
+    · Dong = how you address a boy or a younger brother (short for Dodong)
 
-**21. Ana:** **Salamat kaayo, Ma!**
-Thanks a lot, Ma!
+ 9  Ana!  Jun!  Kumusta  mo?
+                how-are  you(pl)
+    · mo = you, several people (short for kamo). One person would be ka.
 
-**22. Mama:** **Sige. Adto na mo sa balay. Gabii na unya.**
-Alright. You two go home now. It'll be dark soon.
-> adto na mo = you (pl.) go now · sa balay = home · gabii = night · na = already · unya = later → "later it'll already be night"
+10  Maayo  ra    mi,  Ma.  Ikaw?
+    fine   just  we   Mom  you
+    · ra = Cebu form of lang. mi = we, not including you (short for kami).
 
-**23. Jun:** **Ikaw, Ma? Moadto ba ka sa balay unya?**
-And you, Ma? Will you come home later?
-> mo-adto = will go · ba = question marker · ka = you · unya = later
+11  Maayo  pud.  Nikaon  na       mo?
+    fine   also  ate     already  you(pl)
 
-**24. Mama:** **Oo, unya. Naa pa ko'y trabaho.**
-Yes, later. I still have work.
-> naa ko'y = I have · pa = still
+12  Oo,  nikaon  na       mi  sa  balay.  Lami   kaayo  ang        pagkaon!
+    yes  ate     already  we  at  house   tasty  very   the(subj)  food
 
-**25. Ana:** **Sige, Ma. Maghulat mi nimo sa balay.**
-OK, Ma. We'll wait for you at home.
-> mag-hulat = will wait (mag- = future, like mo-) · mi = we · nimo = (for) you
+13  Maayo.  Gusto  ba   mo       og    tubig?
+    good    want   [?]  you(pl)  some  water
+    · ba turns the sentence into a yes/no question
 
-**26. Mama:** **Sige. Salamat, Day. Salamat, Dong.**
-OK. Thanks, Day. Thanks, Dong.
+14  Oo,  gusto  ko.  Salamat,  Ma.
+    yes  want   I    thanks    Mom
 
-**27. Jun & Ana:** **Sige, Ma!**
-Bye, Ma!
-> sige = here "bye" — the usual way to close a conversation
+15  Ako  pud.
+    I    also
 
----
+16  Ma,  unsa  ni?
+    Mom  what  this
+    · ni = this (short for kini). Compare line 5, where ni = "of".
+
+17  Pagkaon  na.   Gusto  ka?
+    food     that  want   you
+    · na here = that (short for kana), not "already"
+
+18  Dili  na,      Ma.  Daghan  na       kaayo  ang        akong  gikaon.
+    no    anymore  Mom  much    already  very   the(subj)  my     eaten
+    · ang akong gikaon = "what I ate" (literally: the my eaten). gi- = done to it.
+
+19  Ma,  naa       ko'y  kwarta.  Pila      ni?
+    Mom  there-is  I     money    how-much  this
+    · naa ko'y kwarta = literally "there is, I, money" = I have money (naa + ko + 'y)
+
+20  Ayaw   na,      Day.  Imoha  na.
+    don't  anymore  Day   yours  now
+    · Day = how you address a girl or a daughter (short for Inday)
+
+21  Salamat  kaayo,  Ma!
+    thanks   very    Mom
+
+22  Sige.  Adto  na   mo       sa  balay.  Gabii  na       unya.
+    okay   go    now  you(pl)  to  house   night  already  later
+    · Gabii na unya, literally "later (it is) already night"
+
+23  Ikaw,  Ma?  Moadto   ba   ka   sa  balay  unya?
+    you    Mom  will-go  [?]  you  to  house  later
+
+24  Oo,  unya.  Naa       pa     ko'y  trabaho.
+    yes  later  there-is  still  I     work
+
+25  Sige,  Ma.  Maghulat   mi  nimo  sa  balay.
+    okay   Mom  will-wait  we  you   at  house
+    · mag- = future, same job as mo-; some verbs prefer it
+
+26  Sige.  Salamat,  Day.  Salamat,  Dong.
+    okay   thanks    Day   thanks    Dong
+
+27  Sige,  Ma!
+    bye    Mom
+    · sige closes a conversation: the normal Bisaya goodbye
+```
 
 ## Listen for
 
@@ -128,42 +204,11 @@ Bye, Ma!
 
 ## Self-check
 
-Cover the English and gloss lines (or use the cold-read block below). Read the Cebuano. 24 of 27 lines understood → ready for text 003. Fewer → re-read 001 and 002 tomorrow; the same words repeat.
-
-## Cold read (Cebuano only)
-
-Ana: Jun! Dali diri! Adto na ta.
-Jun: Hulat lang, Ana. Moinom pa ko og tubig.
-Ana: Sige. Dali lang.
-Jun: Oo. … Sige, adto na ta!
-Jun: Asa ang trabaho ni Mama?
-Ana: Didto. Naa didto si Mama.
-Jun: Daghan kaayo ang tawo didto!
-Ana: Oo. Daghan gyud. Dali, Dong.
-Mama: Ana! Jun! Kumusta mo?
-Ana: Maayo ra mi, Ma. Ikaw?
-Mama: Maayo pud. Nikaon na mo?
-Jun: Oo, nikaon na mi sa balay. Lami kaayo ang pagkaon!
-Mama: Maayo. Gusto ba mo og tubig?
-Jun: Oo, gusto ko. Salamat, Ma.
-Ana: Ako pud.
-Jun: Ma, unsa ni?
-Mama: Pagkaon na. Gusto ka?
-Jun: Dili na, Ma. Daghan na kaayo ang akong gikaon.
-Ana: Ma, naa ko'y kwarta. Pila ni?
-Mama: Ayaw na, Day. Imoha na.
-Ana: Salamat kaayo, Ma!
-Mama: Sige. Adto na mo sa balay. Gabii na unya.
-Jun: Ikaw, Ma? Moadto ba ka sa balay unya?
-Mama: Oo, unya. Naa pa ko'y trabaho.
-Ana: Sige, Ma. Maghulat mi nimo sa balay.
-Mama: Sige. Salamat, Day. Salamat, Dong.
-Jun & Ana: Sige, Ma!
+Read block 1 only. Count the lines you understood fully. 24 of 27 → ready for text 003. Fewer → re-read 001 and 002 tomorrow; the same words repeat.
 
 ## Word check
 
 All words are Tier 1. Proper names: Ana, Jun, Mama / Ma. Prefix *mag-* (line 25) is explained in `grammar-notes.md` section 4.
 
-**Coverage:** 51 of the 65 Tier 1 entries are used in this text (50 found by `tools/wordcheck.py`, plus *na* = "that" in line 17, which the script cannot tell apart from *na* = "already").
-New in this text compared with 001: kami (mi), kamo (mo), og, ni (of), dili, pila, ayaw, inom, dali, hulat, tubig, tawo, gabii, kana (na), diri.
-**Cumulative after texts 001 + 002:** 55 of 65. Still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay. Text 003 should lean on these.
+**Coverage:** 51 of the 65 Tier 1 entries are used in this text (50 found by `python3 tools/wordcheck.py texts/src/002.txt`, plus *na* = "that" in line 17, which the script cannot tell apart from *na* = "already").
+**Cumulative after texts 001 + 002:** 55 of 65. Still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.

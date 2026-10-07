@@ -38,6 +38,8 @@ Informal speech also uses **X kay Y** ("as for X, Y"), especially in Cebu City: 
 | **kang** | a name | to / for a person | *para kang Ana* — for Ana |
 | **mga** | any noun | plural | *mga bata* — children |
 
+**ang is not "the".** It marks the subject, the thing the sentence is about, and that thing is usually something identifiable, which is why "the" works as a rough gloss. To say that something merely exists, with no particular one in mind, Cebuano drops *ang* and uses *naa'y* / *wala'y*: *Daghan kaayo ang tawo didto* = the people over there are very many (a specific crowd); *Naa'y daghang tawo didto* = there are lots of people there. Finnish speakers: *ang* feels like the nominative, *og* like the partitive (*og tubig* = vettä), *sa* like the locative and genitive cases rolled together.
+
 Possession, three ways you will hear: *akong balay* / *balay nako* / *ang balay nako* — all "my house". *Balay ni Ana* — Ana's house. *Balay sa akong amiga* — my friend's house.
 
 ## 4. Verbs: read the prefix

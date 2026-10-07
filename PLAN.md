@@ -47,22 +47,17 @@ The estimate also exposed a gap: eight very high-frequency conversational words 
 
 Move to the next tier when a *new* text at the current tier is understood on first read (later: first listen) at roughly 90%. If not, write more texts at the same tier rather than adding words.
 
-## 3. Text format (decision v1 — revisit after texts 001–003)
+## 3. Text format (decision v2, 2026-10-07)
 
-Each file `texts/NNN-title.md` has:
+Each text is written as a plain-text source, `texts/src/NNN.txt` (`Speaker | Cebuano | English`, one gloss line per sentence, notes, scene markers), and rendered by `tools/render.py` into `texts/NNN-title.md` with three blocks:
 
-1. **Header** — title, setting, which tiers are allowed, new words introduced (if any).
-2. **Body** — numbered lines. Each line:
-   - Cebuano first, in bold.
-   - English translation below it, natural rather than literal.
-   - A gloss line (`word = meaning · word = meaning`) that pins each Cebuano word to its meaning. First texts: full gloss on every line. Later texts: gloss only new or tricky words.
-3. **Listen for** — the 2–4 grammar patterns the text exercises.
-4. **Word check** — list of any words outside the allowed tiers (target: zero, except proper names and obvious loanwords), plus a **coverage count**: how many of the tier's entries this text uses, and the cumulative count over all texts so far. Run `python3 tools/wordcheck.py texts/001-*.md texts/002-*.md` to get it.
-5. **Cold read** (from text 002 on, experimental) — the same dialogue as plain Cebuano lines at the end, so you can test yourself without the English in view.
+1. **Read** — Cebuano only, continuous. The speaker is shown by indentation (first speaker at the left margin, second indented, third indented further); names and line numbers do not appear. This is the block to read cold and, later, to listen with.
+2. **Side by side** — Cebuano on the left, English in its own column on the right. The English is *close English*: it follows the Cebuano words and, where English allows, their order (*Dali diri!* → "Quick, here!", *trabaho ni Mama* → "the work of Mama"), so every Cebuano word has a visible counterpart. It is deliberately not natural English.
+3. **Word by word** — each Cebuano word with its literal core meaning aligned under it (*dali* = quick, *naa* = there-is, *ang* = the(subj)), never the idiom; short notes give the idiomatic sense where it differs; line numbers here only, for reference.
 
-Why this format: the eye lands on Cebuano first; the gloss answers "which word is which"; the natural English keeps the meaning honest even where word order differs.
+After the blocks: *Listen for* (the patterns the text exercises), *Self-check*, and *Word check* with the coverage counts from `python3 tools/wordcheck.py texts/src/NNN.txt`.
 
-Alternatives to consider later: (a) Cebuano-only version of each text for a "cold read" before looking at the English; (b) a story in prose rather than dialogue; (c) audio per line.
+Why this and not v1: read as plain text, the v1 layout put bold line numbers and speaker names in front of every Cebuano line and the English directly under it, so the Cebuano never read as a conversation and the eye kept sliding to the English. The three blocks separate reading, checking and looking up. Conventions borrowed: interlinear glossing (meaning under each word), parallel text (Assimil-style columns), uninterrupted target text first (graded readers), the Birkenbihl "decoding" idea of word-for-word translation, and chat-style indentation to mark the speaker. The renderer's `--names` option prints a name column instead of indentation, for texts with four or more speakers.
 
 ## 4. Repository layout
 
@@ -70,7 +65,9 @@ Alternatives to consider later: (a) Cebuano-only version of each text for a "col
 PLAN.md            this file: goals, method, decisions, progress log
 vocabulary.md      Tier 1, Tier 2 (full entries) and Tier 3 backlog
 grammar-notes.md   listening grammar: what to recognise, not what to produce
-texts/             graded texts, numbered 001, 002, ...
+texts/src/         the texts as written: NNN.txt, one line per sentence with English and gloss
+texts/             the rendered texts, NNN-title.md (generated, do not edit by hand)
+tools/render.py    renders texts/src/NNN.txt into the three-block layout
 tools/wordcheck.py counts which Tier 1 entries a text uses; flags words outside the list
 ```
 
@@ -111,11 +108,10 @@ Planned sequence:
 - **2026-09-20** — Project started. Wrote PLAN.md, vocabulary.md (Tier 1 = 65, Tier 2 ≈ 50, Tier 3 backlog), grammar-notes.md, and the first sample text `texts/001-buntag-sa-balay.md` (Tier 1 only) to test the format.
 - **2026-10-06** — Text 002 `texts/002-hapon-sa-trabaho-ni-mama.md` (Tier 1 only, 27 lines, continues the same day; adds a Cebuano-only cold-read block as an experiment). Added `tools/wordcheck.py` and coverage counts to both texts: 001 uses 40/65 Tier 1 entries, 002 uses 51/65, together 55/65. Still unused after two texts: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
 - **2026-10-06** — Estimated how much everyday speech each tier covers (section 2). Added eight high-frequency spoken words to Tier 2 as section 2.9: mao, kuan, kanang, murag, siguro, basta, gani, sus. Tier 2 is now ≈ 58, total ≈ 123. Repository put under git.
+- **2026-10-07** — Layout v2 adopted (section 3): texts 001 and 002 rewritten as plain-text sources in `texts/src/` and rendered with the new `tools/render.py`: three blocks, speaker by indentation, close English, literal glosses. *dali* corrected to "quick" (the phrase *Dali diri!* is "come here"); *ang* glossed as the(subj) and the *ang* vs *naa'y* point added to grammar-notes. `wordcheck.py` reads the sources.
 
 ## 9. Next steps
 
-1. Review Tier 1: cut anything that feels unnecessary, add anything missing. Decide whether the cold-read block in 002 is worth keeping (and adding to 001).
-2. Write texts 003–005 (Tier 1 only), same characters. Text 003 should bring in the ten entries still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay — a natural fit is the evening at home: Mama comes back, who was there, going to sleep, plans for tomorrow.
-3. Decide on an audio source and try it on text 001.
-4. When Tier 2 texts start, extend `tools/wordcheck.py` with a Tier 2 table.
-5. Start Stage B when texts 001–005 are understood on first read.
+1. Write text 003 (Tier 1 only): evening at home, Mama comes back. It should bring in the ten entries still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
+2. Decide the audio source; the Meta MMS Cebuano voice is the candidate for consistent audio of every text.
+3. When Tier 2 texts start, extend `tools/wordcheck.py` and the lexicon with Tier 2.

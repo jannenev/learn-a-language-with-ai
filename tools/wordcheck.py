@@ -2,10 +2,11 @@
 """Count which Tier 1 vocabulary entries a text file uses, and flag words outside the list.
 
 Usage:
-    python3 tools/wordcheck.py texts/001-*.md            # one text
-    python3 tools/wordcheck.py texts/001-*.md texts/002-*.md   # cumulative over several texts
+    python3 tools/wordcheck.py texts/src/001.txt                 # one text
+    python3 tools/wordcheck.py texts/src/001.txt texts/src/002.txt   # cumulative over several texts
 
-It reads the bold Cebuano segment of every numbered dialogue line ("**1. Ana:** **Cebuano here**").
+It reads the Cebuano column of texts/src/NNN.txt ("Speaker | Cebuano | English"); the old v1 markdown
+layout (numbered lines with the Cebuano in bold) is still accepted.
 Matching is by surface form plus a light prefix/suffix strip (mo-, ni-, nag-, gi-, ... ; -on, -a).
 Two words are ambiguous in Cebuano and are resolved by a heuristic:
     ni  -> "of" when the next word is a capitalised name, otherwise "this" (kini)
@@ -129,8 +130,16 @@ def lookup(tok):
 
 
 def cebuano_lines(path):
-    """Yield the Cebuano text of each numbered dialogue line."""
+    """Yield the Cebuano text of each dialogue line.
+
+    Accepts the markdown layout (numbered lines with the Cebuano in bold) and the
+    plain-text source layout used by tools/render.py ("Speaker | Cebuano | English").
+    """
     for line in Path(path).read_text(encoding="utf-8").splitlines():
+        if str(path).endswith(".txt"):
+            if " | " in line and not line[0].isspace() and not re.match(r"^[a-z]+:\s", line):
+                yield line.split("|")[1].strip()
+            continue
         if re.match(r"^\*\*\d+\.", line):
             bolds = re.findall(r"\*\*(.+?)\*\*", line)
             if len(bolds) >= 2:

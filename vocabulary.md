@@ -105,7 +105,7 @@ Prefix reminder: **mo-** = will / going to; **ni-** (also **mi-**) = did; **nag-
 | gusto | — | want / like | *Gusto ko og kape.* — I want coffee. · *Gusto ko mokaon.* — I want to eat. |
 | kahibalo | kabalo, kabaw, nakahibalo | know | *Wala ko kabalo.* — I don't know. · *Kabalo ka?* — Do you know? |
 | kasabot | sabot, nakasabot | understand | *Dili ko kasabot.* — I don't understand. · *Nakasabot ka?* — Did you get it? |
-| dali | — | come here! / hurry!; also "quick, easy" | *Dali diri!* — Come here! |
+| dali | — | quick, fast; easy. Called out, *Dali!* = hurry! / come (quick)! | *Dali diri!* — Come here! (literally: quick, here!) · *Dali ra.* — It's easy. |
 | hulat | mohulat, naghulat, hulata | wait | *Hulat lang.* — Just wait. · *Hulata ko!* — Wait for me! |
 
 ### 1.8 Nouns (6)
