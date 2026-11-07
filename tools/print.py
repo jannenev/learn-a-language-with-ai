@@ -13,6 +13,11 @@ Usage:
   python3 tools/print.py --full cebuano/texts/src/001.txt     the full version instead: all three blocks, the
                                                               notes, and the sections after the text (needs pandoc)
 
+Every page carries a footer with the repository address (from the git remote, as a clickable link)
+and the content date: the date of the last commit that touched the text's source, or the file's own
+date if it has uncommitted changes or git is absent. For a file with several texts it is the newest
+of their dates. The footer is left out when there is no git remote.
+
 Needs Google Chrome, which is run headless to print the HTML to PDF.
 """
 import html
@@ -29,7 +34,9 @@ from render import parse, validate, legend  # noqa: E402
 CHROME = ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "google-chrome", "chromium", "chromium-browser"]
 
 CSS = """
-@page { size: A4 portrait; margin: 10mm 11mm 10mm 11mm; }
+@page { size: A4 portrait; margin: 10mm 11mm 8mm 11mm; }
+div.foot { position: fixed; bottom: 0; left: 0; right: 0; font-size: 7.5pt; text-align: center; }
+div.foot a { color: #000; text-decoration: none; }
 body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 10.5pt; line-height: 1.3; color: #000; margin: 0; }
 section { page-break-after: always; }
 section:last-child { page-break-after: auto; }
@@ -68,6 +75,43 @@ p.g b { font-weight: 600; }
 """
 
 HOWTO = "Cover the right column and read the left; uncover to check. The English follows the Cebuano words on purpose."
+
+
+def git(*args):
+    try:
+        r = subprocess.run(["git", *args], capture_output=True, text=True, timeout=20)
+        return r.stdout.strip() if r.returncode == 0 else ""
+    except (OSError, subprocess.SubprocessError):
+        return ""
+
+
+def repo_url():
+    """The repository's web address from its git remote, or empty."""
+    url = git("remote", "get-url", "origin")
+    if url.startswith("git@"):
+        url = "https://" + url[4:].replace(":", "/", 1)
+    if url.endswith(".git"):
+        url = url[:-4]
+    return url if url.startswith("http") else ""
+
+
+def content_date(path):
+    """Date of the last commit touching the file, or the file's date if changed since or not in git."""
+    path = Path(path)
+    if git("status", "--porcelain", "--", str(path)) == "":
+        d = git("log", "-1", "--format=%cs", "--", str(path))
+        if d:
+            return d
+    import datetime
+    return datetime.date.fromtimestamp(path.stat().st_mtime).isoformat()
+
+
+def footer(date):
+    url = repo_url()
+    if not url:
+        return ""
+    shown = url.replace("https://", "").replace("http://", "")
+    return f"<div class='foot'><a href='{html.escape(url)}'>{html.escape(shown)}</a> · {html.escape(date)}</div>"
 
 
 def find_chrome():
@@ -231,9 +275,10 @@ def full_section(header, entries, tail):
     return "\n".join(out)
 
 
-def document(sections):
+def document(sections, date=""):
     return ("<!doctype html><html><head><meta charset='utf-8'><title>pocket</title>"
-            f"<style>{CSS}</style></head><body>\n" + "\n".join(sections) + "\n</body></html>\n")
+            f"<style>{CSS}</style></head><body>\n" + (footer(date) if date else "") + "\n"
+            + "\n".join(sections) + "\n</body></html>\n")
 
 
 def to_pdf(html_text, pdf_path, keep_html=False):
@@ -266,7 +311,7 @@ def main(argv):
     if not paths:
         print(__doc__)
         return 1
-    sections = []
+    sections, dates = [], []
     out_dir = None
     for p in paths:
         header, entries, tail = parse(p)
@@ -276,13 +321,15 @@ def main(argv):
         stem = p.stem[:3] + tag
         sec = full_section(header, entries, tail) if full else text_section(header, entries, glosses)
         pdf = out_dir / (f"{stem}-full.pdf" if full else f"{stem}-pocket.pdf")
-        to_pdf(document([sec]), pdf, keep_html)
-        print(f"{p.name} -> {pdf.relative_to(lang.parent)}")
+        date = content_date(p)
+        to_pdf(document([sec], date), pdf, keep_html)
+        print(f"{p.name} -> {pdf.relative_to(lang.parent)}  ({date})")
         sections.append(sec)
+        dates.append(date)
     if want_all and len(sections) > 1:
         pdf = out_dir / (f"full{tag}-all.pdf" if full else f"pocket{tag}-all.pdf")
-        to_pdf(document(sections), pdf, keep_html)
-        print(f"all -> {pdf.relative_to(out_dir.parent.parent)}")
+        to_pdf(document(sections, max(dates)), pdf, keep_html)
+        print(f"all -> {pdf.relative_to(out_dir.parent.parent)}  ({max(dates)})")
     return 0
 
 
