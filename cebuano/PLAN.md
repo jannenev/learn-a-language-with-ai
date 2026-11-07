@@ -76,7 +76,7 @@ Move to the next tier when a *new* text at the current tier is understood on fir
 Each text is written as a plain-text source, `cebuano/texts/src/NNN.txt` (`Speaker | Cebuano | English`, one gloss line per sentence, notes, scene markers), and rendered by `tools/render.py` into `cebuano/texts/NNN-title.md` with three blocks:
 
 1. **Read** — Cebuano only, continuous. The speaker is shown by indentation (first speaker at the left margin, second indented, third indented further); names and line numbers do not appear. This is the block to read cold and, later, to listen with.
-2. **Side by side** — Cebuano on the left, English in its own column on the right. The English is *close English*: it follows the Cebuano words and, where English allows, their order (*Dali diri!* → "Quick, here!", *trabaho ni Mama* → "the work of Mama"), so every Cebuano word has a visible counterpart. It is deliberately not natural English.
+2. **Side by side** — Cebuano on the left, English in its own column on the right. The English is *close English*: it follows the Cebuano words and, where English allows, their order (*Dali diri!* → "Quick, here!", *trabaho ni Mama* → "the work of Mama"), so every Cebuano word has a visible counterpart. When a Cebuano word's counterpart is two English words and another word would come between them, they are written with a hyphen, as in the gloss line: *naa pa* → "there-is still", not "there still is" (decided 2026-11-07). It is deliberately not natural English.
 3. **Word by word** — each Cebuano word with its literal core meaning aligned under it (*dali* = quick, *naa* = there-is, *ang* = the(subj)), never the idiom; short notes give the idiomatic sense where it differs; line numbers here only, for reference.
 
 After the blocks: *Listen for* (the patterns the text exercises), *Self-check*, and *Word check* with the coverage counts from `python3 tools/wordcheck.py cebuano/texts/src/NNN.txt`.
@@ -113,11 +113,17 @@ Recurring characters so words recur naturally:
 
 Planned sequence:
 
-| Stage | Texts | Words allowed | Themes |
-|---|---|---|---|
-| A | 001–005 | Tier 1 only | morning at home, eating, where is who, going somewhere, simple wants |
-| B | 006–012 | Tier 1 + Tier 2 (added 5–8 per text) | market and money, family, feelings (tired/hungry/sick), time of day, weather |
-| C | 013+ | + Tier 3 batches | friends, school/work, transport, longer stories |
+| Stage | Texts | Words allowed | Length | Themes |
+|---|---|---|---|---|
+| A | 001–005 | Tier 1 only (65) | 25–30 lines, dialogue | morning at home, eating, where is who, going somewhere, simple wants |
+| B | 006–013 | Tier 1 + Tier 2 (57 entries, 6–8 new per text) | 30–40 lines, dialogue | market and money, family, feelings (tired/hungry/sick), time of day, weather |
+| C | 014– about 030 | + Tier 3 in batches of 8–10 per text (about 145 candidates) | 40–60 lines, dialogue and short narrative | friends, school/work, transport, the beach, longer stories |
+
+So the whole course is roughly thirty texts for about 260 roots: five at Tier 1, eight for Tier 2, fifteen or so for Tier 3. The texts get longer as the known base grows: with more known words a longer text still keeps unknown words rare, and each reading then gives more encounters per word. Stage C is where narrative (a paragraph of story between the lines of dialogue) can come in, because by then the *ni- / nag- / gi-* forms are familiar. The printed pocket page is part of the question: 001 and 002 fit one A4 page with the word-for-word footnote, which proved convenient, and a text that spills by a few lines wastes a sheet, while trimming a text to fit costs content. Text 003 as drafted (28 lines) fills page 1 with the dialogue and spills about five footnote rows, a few percent of a page; it is the trial case for whether a two-page pocket version works or the footnote layout should absorb it (noted 2026-11-07, not decided).
+
+### Text plan
+
+The text-by-text plan and record is `texts.md`: one row per text, written or planned, with the scene, the words it brings in or introduces, and the patterns it exercises. A row is filled before the text is written and dated when it is done, so the plan and the record are one table. The word columns are checked against the texts with `python3 tools/wordcheck.py --new` (first appearances) and `--counts` (occurrences). Measurable goal for Stage A: after 005, no Tier 1 entry below five occurrences (after 002 there were 20 entries at zero or one; after the 003 draft, none below two).
 
 ## 6. Conventions
 
@@ -152,15 +158,17 @@ Pronunciation data lives in `cebuano/pronunciation/`, separate from the texts, s
 - **2026-10-07** — Repetition estimate and reading schedule (section 2), with `wordcheck.py --counts` showing occurrences per entry. Surveyed outside readers and resources (section 10).
 - **2026-11-07** — Preparing to publish: all Cebuano material moved into `cebuano/` so the repository can hold the method and tools at the top level and other languages beside it; `tools/pron.py` finds the language folder from the text's path.
 - **2026-11-07** — Pocket print version, first tries. `tools/print.py` turns a text source into an A4 PDF, Cebuano left and close English right, to cover for a cold read. Lessons so far: grey text printed weak, so everything is solid black; Chrome stamps the time into the PDF, so the script pins it and an unchanged text regenerates byte-identical; a "Word for word" footnote lists only the sentences whose English does not use the gloss words (order ignored, English glue such as *is* and *the* ignored), as the words in order without repeating the Cebuano, in two columns; margins down to 10 mm and the dialogue at 10.5 pt so a 27-line text fits one page. Open: whether the footnote version replaces the plain one; how to show *Day* and *Dong* (gloss as to-a-girl / to-a-boy, translate, or a note); whether to cap text length for one page or let longer texts take a sheet. PDFs not committed until the version settles. A full variant (`--full`: all three blocks, notes, and the sections after the text) exists for the first reading; the pocket page for the later passes. Decision: the printable page is defined as HTML and CSS; Chrome is only the current printer (one small function), so another engine, Edge, Chromium, WeasyPrint, or printing the HTML from any browser, can replace it later without touching the layout.
+- **2026-11-07** — Text plan: the texts are now planned a few ahead in `texts.md`, one row per text with its scene, the words it must bring in or introduce, and the patterns it exercises; the row becomes the record once the text is written, which is why it is its own file and not part of this plan. Stage B laid out as eight texts (006–013) covering the 57 Tier 2 entries, Stage C estimated at about fifteen more; text length to grow by stage (section 5). `tools/wordcheck.py --new` added: it lists the entries that first appear in each text (001: 40, 002: 15, 003: the last 10), and the checker now reads the gloss lines, so *ni* = of / this and *na* = that are counted from the gloss instead of guessed. The booklet intro page (`tools/print.py --all`) now carries a table of the texts with words used, new and known after each. Text 003 drafted as `cebuano/texts/src/003.txt`, to be reviewed before rendering.
+- **2026-11-07** — Print footer overlap fixed. The footer is a fixed-position element, which Chrome repeats on every page but which reserves no room, so on the first full page (003 with the footnote) the last line printed under it. Chrome clips fixed elements to the page area, so the footer cannot be moved into the margin; instead the page content is wrapped in a table whose empty footer row Chrome repeats at every page break, keeping 14 pt clear at the foot of each page. The alternative, a CSS `@page` margin box, would fit two more footnote rows but cannot hold the clickable link.
 - **2026-11-07** — Publishing files added at the top level: README.md (the idea, how it works, the Cebuano material, status), METHOD.md (the method in six steps, the reasons, files and tools), and AGENTS.md with CLAUDE.md importing it, telling an assistant how to help a learner with the existing material, extend it, or do the same for another language.
 
 ## 9. Next steps
 
 1. Verify the entries marked `check` in `cebuano/pronunciation/lexicon.tsv` with a native speaker or Wolff's dictionary (dali, sige, palihug, kuan, the suffixed verb forms).
-2. Write text 003 (Tier 1 only): evening at home, Mama comes back. It should bring in the ten entries still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
+2. Review the draft of text 003 (`cebuano/texts/src/003.txt`), then render it, generate its pronunciation files and PDF, and write 004 and 005 from their rows in `texts.md`. After 005, check with `wordcheck.py --counts` that no Tier 1 entry is below five occurrences.
 3. Decide the audio source; the Meta MMS Cebuano voice is the candidate for consistent audio of every text.
 4. Follow the reading schedule in section 2 for 001 and 002 while 003 to 005 are written.
-5. When Tier 2 texts start, extend `tools/wordcheck.py` and the lexicon with Tier 2.
+5. Before Stage B: decide whether *merkado* moves from Tier 3 to Tier 2 (section 5 assumes it does), and extend `tools/wordcheck.py` and the lexicon with Tier 2.
 
 ## 10. Outside resources (checked 2026-10-07)
 
