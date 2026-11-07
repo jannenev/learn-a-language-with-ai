@@ -134,6 +134,7 @@ Pronunciation data lives in `cebuano/pronunciation/`, separate from the texts, s
 ## 7. Open questions
 
 - **Audio.** Listening is the goal, so an audio source is needed. Candidates, best first: a Cebuano speaker recording the texts (italki/Preply tutor); Meta MMS Cebuano TTS run locally (robotic but trained on real Cebuano); an Azure Filipino voice driven by the SSML files; ChatGPT voice mode with the paste files (approximate; weak on stress and glottal stops). macOS has no Filipino or Cebuano voice. See section 6a.
+- **Conversation mode.** The texts are also scripts for spoken practice: a voice assistant on a phone that says a line in Cebuano and then in English, or translates on request, and lets the learner answer. Not possible with reliable Cebuano pronunciation yet; keep in mind as voice assistants improve. Noted 2026-11-07.
 - **Verify the lexicon.** Entries marked `check` in `cebuano/pronunciation/lexicon.tsv` (e.g. dali, sige, palihug, kuan, the suffixed verb forms) need a native-speaker or dictionary check before the audio is trusted for stress.
 - **Frequency cross-check.** The lists are curated from knowledge of the language, not derived from a corpus. Worth checking Tier 1–2 against a real frequency list (e.g. from OPUS subtitles or a Cebuano Wikipedia dump), keeping in mind that written corpora under-represent spoken particles. The coverage estimate in section 2 is a reasoned guess and would be the first thing such a check would correct.
 - **Tier sizes.** 65 / ~50 are starting guesses. Prune Tier 1 if the first texts feel crowded.
