@@ -148,6 +148,7 @@ Pronunciation data lives in `cebuano/pronunciation/`, separate from the texts, s
 - **2026-10-07** — Pronunciation files (section 6a): `cebuano/pronunciation/` with a lexicon of 226 words marked for stress and final glottal stop, the rule block for AI voices, and `tools/pron.py` generating paste / IPA / SSML files for texts 001 and 002.
 - **2026-10-07** — Repetition estimate and reading schedule (section 2), with `wordcheck.py --counts` showing occurrences per entry. Surveyed outside readers and resources (section 10).
 - **2026-11-07** — Preparing to publish: all Cebuano material moved into `cebuano/` so the repository can hold the method and tools at the top level and other languages beside it; `tools/pron.py` finds the language folder from the text's path.
+- **2026-11-07** — Publishing files added at the top level: README.md (the idea, how it works, the Cebuano material, status), METHOD.md (the method in six steps, the reasons, files and tools), and AGENTS.md with CLAUDE.md importing it, telling an assistant how to help a learner with the existing material, extend it, or do the same for another language.
 
 ## 9. Next steps
 
