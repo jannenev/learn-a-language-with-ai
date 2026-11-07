@@ -210,5 +210,5 @@ Read block 1 only. Count the lines you understood fully. 24 of 27 → ready for 
 
 All words are Tier 1. Proper names: Ana, Jun, Mama / Ma. Prefix *mag-* (line 25) is explained in `grammar-notes.md` section 4.
 
-**Coverage:** 51 of the 65 Tier 1 entries are used in this text (50 found by `python3 tools/wordcheck.py texts/src/002.txt`, plus *na* = "that" in line 17, which the script cannot tell apart from *na* = "already").
+**Coverage:** 51 of the 65 Tier 1 entries are used in this text (50 found by `python3 tools/wordcheck.py cebuano/texts/src/002.txt`, plus *na* = "that" in line 17, which the script cannot tell apart from *na* = "already").
 **Cumulative after texts 001 + 002:** 55 of 65. Still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.

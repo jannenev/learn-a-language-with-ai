@@ -69,5 +69,5 @@ Read block 1 only. Count the lines you understood fully. 16 of 18 → ready for 
 
 All words are Tier 1. Proper names: Ana, Jun, Mama.
 
-**Coverage:** 40 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py texts/src/001.txt`).
+**Coverage:** 40 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/001.txt`).
 Not used here: siya, kami, kamo, sila, og, ug, mga, ni (of), dili, kinsa, pila, ayaw, inom, tulog, kasabot, dali, hulat, tubig, tawo, ugma, buntag/hapon/gabii (outside the greeting), dako, gamay, kana, diri.

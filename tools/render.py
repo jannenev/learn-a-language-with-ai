@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Render a dialogue source file (texts/src/NNN.txt) into the three-block learner layout.
+"""Render a dialogue source file (<language>/texts/src/NNN.txt) into the three-block learner layout.
 
 Block 1  Cebuano only, for a cold read or for listening along.
 Block 2  Cebuano on the left, English on the right.
@@ -22,8 +22,8 @@ Source format
   ===                          everything after this line is copied verbatim
 
 Usage
-  python3 tools/render.py texts/src/002.txt > texts/002-xxx.md
-  python3 tools/render.py --names texts/src/002.txt > texts/002-xxx.md
+  python3 tools/render.py cebuano/texts/src/002.txt > cebuano/texts/002-xxx.md
+  python3 tools/render.py --names cebuano/texts/src/002.txt > cebuano/texts/002-xxx.md
 """
 import re
 import sys

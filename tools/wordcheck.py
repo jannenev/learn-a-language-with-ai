@@ -2,11 +2,11 @@
 """Count which Tier 1 vocabulary entries a text file uses, and flag words outside the list.
 
 Usage:
-    python3 tools/wordcheck.py texts/src/001.txt                 # one text
-    python3 tools/wordcheck.py texts/src/001.txt texts/src/002.txt   # cumulative over several texts
-    python3 tools/wordcheck.py --counts texts/src/*.txt          # occurrences per entry, in exposure bands
+    python3 tools/wordcheck.py cebuano/texts/src/001.txt                 # one text
+    python3 tools/wordcheck.py cebuano/texts/src/001.txt cebuano/texts/src/002.txt   # cumulative over several texts
+    python3 tools/wordcheck.py --counts cebuano/texts/src/*.txt          # occurrences per entry, in exposure bands
 
-It reads the Cebuano column of texts/src/NNN.txt ("Speaker | Cebuano | English"); the old v1 markdown
+It reads the Cebuano column of cebuano/texts/src/NNN.txt ("Speaker | Cebuano | English"); the old v1 markdown
 layout (numbered lines with the Cebuano in bold) is still accepted.
 Matching is by surface form plus a light prefix/suffix strip (mo-, ni-, nag-, gi-, ... ; -on, -a).
 Two words are ambiguous in Cebuano and are resolved by a heuristic:

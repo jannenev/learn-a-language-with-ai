@@ -73,29 +73,31 @@ Move to the next tier when a *new* text at the current tier is understood on fir
 
 ## 3. Text format (decision v2, 2026-10-07)
 
-Each text is written as a plain-text source, `texts/src/NNN.txt` (`Speaker | Cebuano | English`, one gloss line per sentence, notes, scene markers), and rendered by `tools/render.py` into `texts/NNN-title.md` with three blocks:
+Each text is written as a plain-text source, `cebuano/texts/src/NNN.txt` (`Speaker | Cebuano | English`, one gloss line per sentence, notes, scene markers), and rendered by `tools/render.py` into `cebuano/texts/NNN-title.md` with three blocks:
 
 1. **Read** — Cebuano only, continuous. The speaker is shown by indentation (first speaker at the left margin, second indented, third indented further); names and line numbers do not appear. This is the block to read cold and, later, to listen with.
 2. **Side by side** — Cebuano on the left, English in its own column on the right. The English is *close English*: it follows the Cebuano words and, where English allows, their order (*Dali diri!* → "Quick, here!", *trabaho ni Mama* → "the work of Mama"), so every Cebuano word has a visible counterpart. It is deliberately not natural English.
 3. **Word by word** — each Cebuano word with its literal core meaning aligned under it (*dali* = quick, *naa* = there-is, *ang* = the(subj)), never the idiom; short notes give the idiomatic sense where it differs; line numbers here only, for reference.
 
-After the blocks: *Listen for* (the patterns the text exercises), *Self-check*, and *Word check* with the coverage counts from `python3 tools/wordcheck.py texts/src/NNN.txt`.
+After the blocks: *Listen for* (the patterns the text exercises), *Self-check*, and *Word check* with the coverage counts from `python3 tools/wordcheck.py cebuano/texts/src/NNN.txt`.
 
 Why this and not v1: read as plain text, the v1 layout put bold line numbers and speaker names in front of every Cebuano line and the English directly under it, so the Cebuano never read as a conversation and the eye kept sliding to the English. The three blocks separate reading, checking and looking up. Conventions borrowed: interlinear glossing (meaning under each word), parallel text (Assimil-style columns), uninterrupted target text first (graded readers), the Birkenbihl "decoding" idea of word-for-word translation, and chat-style indentation to mark the speaker. The renderer's `--names` option prints a name column instead of indentation, for texts with four or more speakers.
 
 ## 4. Repository layout
 
 ```
-PLAN.md            this file: goals, method, decisions, progress log
-vocabulary.md      Tier 1, Tier 2 (full entries) and Tier 3 backlog
-grammar-notes.md   listening grammar: what to recognise, not what to produce
-texts/src/         the texts as written: NNN.txt, one line per sentence with English and gloss
-texts/             the rendered texts, NNN-title.md (generated, do not edit by hand)
-tools/render.py    renders texts/src/NNN.txt into the three-block layout
-tools/wordcheck.py counts which Tier 1 entries a text uses; flags words outside the list
-tools/pron.py      generates the pronunciation files for a text
-pronunciation/     for software, not for reading: lexicon.tsv (stress and glottal marks per word),
-                   rules-for-ai.txt, and per text NNN.paste.txt / NNN.ipa.txt / NNN.ssml.xml
+README.md                  what the project is and how to use it
+METHOD.md                  the language-neutral instructions: how to build such a course with an AI
+tools/render.py            renders <language>/texts/src/NNN.txt into the three-block layout
+tools/wordcheck.py         counts which Tier 1 entries a text uses; flags words outside the list
+tools/pron.py              generates the pronunciation files for a text
+cebuano/PLAN.md            this file: goals, method, decisions, progress log for Cebuano
+cebuano/vocabulary.md      Tier 1, Tier 2 (full entries) and Tier 3 backlog
+cebuano/grammar-notes.md   listening grammar: what to recognise, not what to produce
+cebuano/texts/src/         the texts as written: NNN.txt, one line per sentence with English and gloss
+cebuano/texts/             the rendered texts, NNN-title.md (generated, do not edit by hand)
+cebuano/pronunciation/     for software, not for reading: lexicon.tsv (stress and glottal marks per word),
+                           rules-for-ai.txt, and per text NNN.paste.txt / NNN.ipa.txt / NNN.ssml.xml
 ```
 
 ## 5. Storyline for the texts
@@ -125,31 +127,44 @@ Planned sequence:
 
 ## 6a. Pronunciation files (2026-10-07)
 
-Pronunciation data lives in `pronunciation/`, separate from the texts, so the reading files stay clean and the audio side can be handed to software. Cebuano spelling is almost one letter, one sound; the two things it does not show are **stress** (pilá "how much" vs píla "a queue") and the **word-final glottal stop** (walâ "none" vs walá "left"). Those come from `pronunciation/lexicon.tsv`, one row per word, using the Philippine dictionary convention: acute = stressed syllable, grave on the final vowel = final glottal stop, circumflex = both. A `status` column marks entries to verify with a native speaker or Wolff's dictionary.
+Pronunciation data lives in `cebuano/pronunciation/`, separate from the texts, so the reading files stay clean and the audio side can be handed to software. Cebuano spelling is almost one letter, one sound; the two things it does not show are **stress** (pilá "how much" vs píla "a queue") and the **word-final glottal stop** (walâ "none" vs walá "left"). Those come from `cebuano/pronunciation/lexicon.tsv`, one row per word, using the Philippine dictionary convention: acute = stressed syllable, grave on the final vowel = final glottal stop, circumflex = both. A `status` column marks entries to verify with a native speaker or Wolff's dictionary.
 
 `tools/pron.py` turns a text into three machine files: `NNN.paste.txt` (the rule block plus the marked lines, to paste into a chat voice such as ChatGPT voice mode), `NNN.ipa.txt` (IPA per line, for reference), and `NNN.ssml.xml` (IPA inside SSML phoneme tags for an Azure Filipino voice, which has every sound Cebuano uses). Prefixed verb forms inherit the root's stress automatically; suffixed forms (-on, -a) move the stress and are listed explicitly. The Meta MMS Cebuano voice needs none of this, since it learned spelling-to-sound itself; it remains the candidate for consistent audio of every text.
 
 ## 7. Open questions
 
 - **Audio.** Listening is the goal, so an audio source is needed. Candidates, best first: a Cebuano speaker recording the texts (italki/Preply tutor); Meta MMS Cebuano TTS run locally (robotic but trained on real Cebuano); an Azure Filipino voice driven by the SSML files; ChatGPT voice mode with the paste files (approximate; weak on stress and glottal stops). macOS has no Filipino or Cebuano voice. See section 6a.
-- **Verify the lexicon.** Entries marked `check` in `pronunciation/lexicon.tsv` (e.g. dali, sige, palihug, kuan, the suffixed verb forms) need a native-speaker or dictionary check before the audio is trusted for stress.
+- **Verify the lexicon.** Entries marked `check` in `cebuano/pronunciation/lexicon.tsv` (e.g. dali, sige, palihug, kuan, the suffixed verb forms) need a native-speaker or dictionary check before the audio is trusted for stress.
 - **Frequency cross-check.** The lists are curated from knowledge of the language, not derived from a corpus. Worth checking Tier 1–2 against a real frequency list (e.g. from OPUS subtitles or a Cebuano Wikipedia dump), keeping in mind that written corpora under-represent spoken particles. The coverage estimate in section 2 is a reasoned guess and would be the first thing such a check would correct.
 - **Tier sizes.** 65 / ~50 are starting guesses. Prune Tier 1 if the first texts feel crowded.
 - **Cebu vs Mindanao.** Decide whether to note Davao-style variants at all, or stick to Cebu only.
 
 ## 8. Progress log
 
-- **2026-09-20** — Project started. Wrote PLAN.md, vocabulary.md (Tier 1 = 65, Tier 2 ≈ 50, Tier 3 backlog), grammar-notes.md, and the first sample text `texts/001-buntag-sa-balay.md` (Tier 1 only) to test the format.
-- **2026-10-06** — Text 002 `texts/002-hapon-sa-trabaho-ni-mama.md` (Tier 1 only, 27 lines, continues the same day; adds a Cebuano-only cold-read block as an experiment). Added `tools/wordcheck.py` and coverage counts to both texts: 001 uses 40/65 Tier 1 entries, 002 uses 51/65, together 55/65. Still unused after two texts: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
+- **2026-09-20** — Project started. Wrote PLAN.md, vocabulary.md (Tier 1 = 65, Tier 2 ≈ 50, Tier 3 backlog), grammar-notes.md, and the first sample text `cebuano/texts/001-buntag-sa-balay.md` (Tier 1 only) to test the format.
+- **2026-10-06** — Text 002 `cebuano/texts/002-hapon-sa-trabaho-ni-mama.md` (Tier 1 only, 27 lines, continues the same day; adds a Cebuano-only cold-read block as an experiment). Added `tools/wordcheck.py` and coverage counts to both texts: 001 uses 40/65 Tier 1 entries, 002 uses 51/65, together 55/65. Still unused after two texts: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
 - **2026-10-06** — Estimated how much everyday speech each tier covers (section 2). Added eight high-frequency spoken words to Tier 2 as section 2.9: mao, kuan, kanang, murag, siguro, basta, gani, sus. Tier 2 is now ≈ 58, total ≈ 123. Repository put under git.
-- **2026-10-07** — Layout v2 adopted (section 3): texts 001 and 002 rewritten as plain-text sources in `texts/src/` and rendered with the new `tools/render.py`: three blocks, speaker by indentation, close English, literal glosses. *dali* corrected to "quick" (the phrase *Dali diri!* is "come here"); *ang* glossed as the(subj) and the *ang* vs *naa'y* point added to grammar-notes. `wordcheck.py` reads the sources.
-- **2026-10-07** — Pronunciation files (section 6a): `pronunciation/` with a lexicon of 226 words marked for stress and final glottal stop, the rule block for AI voices, and `tools/pron.py` generating paste / IPA / SSML files for texts 001 and 002.
-- **2026-10-07** — Repetition estimate and reading schedule (section 2), with `wordcheck.py --counts` showing occurrences per entry.
+- **2026-10-07** — Layout v2 adopted (section 3): texts 001 and 002 rewritten as plain-text sources in `cebuano/texts/src/` and rendered with the new `tools/render.py`: three blocks, speaker by indentation, close English, literal glosses. *dali* corrected to "quick" (the phrase *Dali diri!* is "come here"); *ang* glossed as the(subj) and the *ang* vs *naa'y* point added to grammar-notes. `wordcheck.py` reads the sources.
+- **2026-10-07** — Pronunciation files (section 6a): `cebuano/pronunciation/` with a lexicon of 226 words marked for stress and final glottal stop, the rule block for AI voices, and `tools/pron.py` generating paste / IPA / SSML files for texts 001 and 002.
+- **2026-10-07** — Repetition estimate and reading schedule (section 2), with `wordcheck.py --counts` showing occurrences per entry. Surveyed outside readers and resources (section 10).
+- **2026-11-07** — Preparing to publish: all Cebuano material moved into `cebuano/` so the repository can hold the method and tools at the top level and other languages beside it; `tools/pron.py` finds the language folder from the text's path.
 
 ## 9. Next steps
 
-1. Verify the entries marked `check` in `pronunciation/lexicon.tsv` with a native speaker or Wolff's dictionary (dali, sige, palihug, kuan, the suffixed verb forms).
+1. Verify the entries marked `check` in `cebuano/pronunciation/lexicon.tsv` with a native speaker or Wolff's dictionary (dali, sige, palihug, kuan, the suffixed verb forms).
 2. Write text 003 (Tier 1 only): evening at home, Mama comes back. It should bring in the ten entries still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay.
 3. Decide the audio source; the Meta MMS Cebuano voice is the candidate for consistent audio of every text.
 4. Follow the reading schedule in section 2 for 001 and 002 while 003 to 005 are written.
 5. When Tier 2 texts start, extend `tools/wordcheck.py` and the lexicon with Tier 2.
+
+## 10. Outside resources (checked 2026-10-07)
+
+Names to search under, because each turns up different things: *Bisaya* (what speakers say), *Binisaya* / *Sinugbuanong Binisaya* (the school name, used by DepEd materials), *Cebuano* (academic and English), *Visayan* (the family; also covers Hiligaynon and Waray).
+
+**Graded readers for adults:** essentially none in the usual sense. Closest: a 20-story A1–A2 digital collection sold on Etsy (quality unknown); *Immersive Reader: Cebuano Visayan* (Borello, 25 lessons); Judy Diel Li's bilingual children's series with pronunciation guides.
+
+**Free leveled children's books (the real readers):** Bloom Library's Cebuano section (bloomlibrary.org, language ceb); Let's Read by the Asia Foundation (app and web, Philippine languages including Cebuano); StoryWeaver by Pratham (Cebuano and Sinugbuanong Binisaya); the DepEd *Pagbasa* Grade 1 Cebuano reading workbook (free PDF). Expect the written narrative register and concrete nouns (animals, colours, nature), with the spoken particles mostly absent.
+
+**Textbooks and reference:** Bunye and Yap, *Cebuano for Beginners* (University of Hawaii Press 1971, open access); Wolff, *Beginning Cebuano* (Yale) and Wolff's dictionary (online at SEAlang); Raisanen, *A Handbook of Cebuano Visayan*; binisaya.com dictionary.
+
+**How to use them here:** paste the text of a candidate book into a file and run `tools/wordcheck.py` on it to see how much of it is Tier 1–2 before spending time on it. Prefer adapting an outside story into the tiers over reading it raw.
