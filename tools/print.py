@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Make a printable A4 PDF of a text: the "pocket" version, the language on the left and the close
 English on the right, meant to be folded or covered for a cold read. One PDF per text, written to
-<language>/print/NNN-pocket.pdf; with --all also one PDF holding every text given, one text per page.
+<language>/print/<language>-NNN-pocket.pdf; with --all also a booklet holding every text given,
+<language>/print/<language>-pocket-NNN-MMM.pdf, with an intro page made from <language>/booklet-intro.md
+(if present) followed by the generated facts: variant, texts included with their dates, commit.
 
 Usage:
   python3 tools/print.py cebuano/texts/src/002.txt
@@ -66,6 +68,11 @@ div.il { display: inline-flex; flex-wrap: wrap; column-gap: 9pt; row-gap: 2pt; w
 div.il span { display: inline-block; }
 div.il span i { display: block; font-style: normal; font-size: 8.5pt; }
 div.wbw p.note { margin: 1pt 0 0 16pt; font-size: 8.5pt; }
+section.intro { font-size: 10.5pt; }
+section.intro h1 { font-size: 15pt; margin-bottom: 8pt; }
+section.intro p { margin: 0 0 7pt 0; }
+section.intro table.facts { width: auto; margin-top: 10pt; font-size: 9.5pt; }
+section.intro table.facts td { padding: 1pt 12pt 1pt 0; }
 div.tail { font-size: 9.5pt; }
 div.tail h2 { font-size: 10pt; margin: 9pt 0 2pt 0; }
 div.tail p, div.tail li { margin: 0 0 2pt 0; }
@@ -74,7 +81,7 @@ p.g { font-size: 9pt; line-height: 1.25; margin: 0 0 1pt 0; break-inside: avoid;
 p.g b { font-weight: 600; }
 """
 
-HOWTO = "Cover the right column and read the left; uncover to check. The English follows the Cebuano words on purpose."
+HOWTO = "Cover the right column and read the left; uncover to check. The English is word for word, not natural English."
 
 
 def git(*args):
@@ -275,6 +282,22 @@ def full_section(header, entries, tail):
     return "\n".join(out)
 
 
+def intro_section(lang, paths, variant, dates):
+    """The booklet's first page: the hand-written intro (booklet-intro.md), then the generated facts."""
+    md_path = lang / "booklet-intro.md"
+    body = tail_html(md_path.read_text(encoding="utf-8").splitlines()) if md_path.exists() else ""
+    kind = {"pocket": "This is the pocket version: one page per text, with the word-for-word notes below the dialogue.",
+            "full": "This is the full version: for each text, the Cebuano alone, the Cebuano beside the English, and the word-by-word block with notes."}[variant]
+    rows = []
+    for p, d in zip(paths, dates):
+        header, _, _ = parse(p)
+        rows.append(f"<tr><td>{html.escape(header['title'])}</td><td>{d}</td></tr>")
+    commit = git("log", "-1", "--format=%h", "--", *[str(p) for p in paths])
+    facts = (f"<p>{kind}</p><table class='facts'>" + "".join(rows) + "</table>"
+             + (f"<p style='font-size:9pt'>Version: content dated {max(dates)}, commit {commit}.</p>" if commit else ""))
+    return f"<section class='intro'>{body}{facts}</section>"
+
+
 def document(sections, date=""):
     return ("<!doctype html><html><head><meta charset='utf-8'><title>pocket</title>"
             f"<style>{CSS}</style></head><body>\n" + (footer(date) if date else "") + "\n"
@@ -312,24 +335,28 @@ def main(argv):
         print(__doc__)
         return 1
     sections, dates = [], []
-    out_dir = None
+    out_dir = lang = None
     for p in paths:
         header, entries, tail = parse(p)
         validate(entries)
         lang = next(d for d in p.resolve().parents if (d / "texts").is_dir())
         out_dir = lang / "print"
         stem = p.stem[:3] + tag
+        variant = "full" if full else "pocket"
         sec = full_section(header, entries, tail) if full else text_section(header, entries, glosses)
-        pdf = out_dir / (f"{stem}-full.pdf" if full else f"{stem}-pocket.pdf")
+        pdf = out_dir / f"{lang.name}-{stem}-{variant}.pdf"
         date = content_date(p)
         to_pdf(document([sec], date), pdf, keep_html)
         print(f"{p.name} -> {pdf.relative_to(lang.parent)}  ({date})")
         sections.append(sec)
         dates.append(date)
     if want_all and len(sections) > 1:
-        pdf = out_dir / (f"full{tag}-all.pdf" if full else f"pocket{tag}-all.pdf")
-        to_pdf(document(sections, max(dates)), pdf, keep_html)
-        print(f"all -> {pdf.relative_to(out_dir.parent.parent)}  ({max(dates)})")
+        variant = "full" if full else "pocket"
+        first, last = paths[0].stem[:3], paths[-1].stem[:3]
+        pdf = out_dir / f"{lang.name}-{variant}{tag}-{first}-{last}.pdf"
+        intro = intro_section(lang, paths, variant, dates)
+        to_pdf(document([intro] + sections, max(dates)), pdf, keep_html)
+        print(f"booklet -> {pdf.relative_to(out_dir.parent.parent)}  ({max(dates)})")
     return 0
 
 
