@@ -5,13 +5,15 @@ Usage:
     python3 tools/wordcheck.py cebuano/texts/src/001.txt                 # one text
     python3 tools/wordcheck.py cebuano/texts/src/001.txt cebuano/texts/src/002.txt   # cumulative over several texts
     python3 tools/wordcheck.py --counts cebuano/texts/src/*.txt          # occurrences per entry, in exposure bands
+    python3 tools/wordcheck.py --new cebuano/texts/src/*.txt             # which entries each text brings in for the first time
 
 It reads the Cebuano column of cebuano/texts/src/NNN.txt ("Speaker | Cebuano | English"); the old v1 markdown
 layout (numbered lines with the Cebuano in bold) is still accepted.
 Matching is by surface form plus a light prefix/suffix strip (mo-, ni-, nag-, gi-, ... ; -on, -a).
-Two words are ambiguous in Cebuano and are resolved by a heuristic:
+Two words are ambiguous in Cebuano. When the source has a gloss line under the sentence, the gloss decides
+(ni=of, ni=this, na=that); without one a heuristic is used:
     ni  -> "of" when the next word is a capitalised name, otherwise "this" (kini)
-    na  -> always counted as the particle "already/now"; it can also be "that" (kana), so check by eye.
+    na  -> the particle "already/now" (it can also be "that", kana).
 Anything it cannot match is printed as UNMATCHED so you can decide whether it is a name, a loanword,
 a form the list should know about, or a word that does not belong in the text yet.
 """
@@ -94,7 +96,7 @@ TIER1 = {
     "lami": {"lami"},
     # 1.11 pointing
     "kini/ni (this)": {"kini"},   # bare "ni" added by the heuristic
-    "kana/na (that)": {"kana"},   # bare "na" is NOT credited here; check by eye
+    "kana/na (that)": {"kana"},   # bare "na" is credited here only when its gloss says "that"
     "diri": {"diri", "dinhi", "ari"},
     "didto": {"didto"},
 }
@@ -147,20 +149,46 @@ def cebuano_lines(path):
                 yield bolds[-1]
 
 
+def cebuano_entries(path):
+    """Yield (cebuano_text, glosses) per dialogue line of a plain-text source; glosses is the list of
+    (word, gloss) pairs from the indented gloss line, or None when the line has none."""
+    if not str(path).endswith(".txt"):
+        for text in cebuano_lines(path):
+            yield text, None
+        return
+    lines = Path(path).read_text(encoding="utf-8").splitlines()
+    for i, line in enumerate(lines):
+        if " | " in line and not line[0].isspace() and not re.match(r"^[a-z]+:\s", line):
+            gl = None
+            for nxt in lines[i + 1:]:
+                if not nxt[:1].isspace():
+                    break
+                s = nxt.strip()
+                if s and not s.startswith("!"):
+                    gl = [t.split("=", 1) if "=" in t else [t, ""] for t in s.split()]
+                    break
+            yield line.split("|")[1].strip(), gl
+
+
 def analyse(paths):
     covered = {}       # entry -> set of surface forms seen
     unmatched = {}     # token -> count
     counts = {}        # entry -> number of occurrences
     for path in paths:
-        for text in cebuano_lines(path):
+        for text, gl in cebuano_entries(path):
             raw = re.findall(r"[A-Za-z'\-]+", text)
             # contractions: naa'y, ko'y, wala'y, unsa'y -> drop the 'y
             raw = [w.replace("'y", "").replace("'", "") for w in raw]
             raw = [w for w in raw if w]
             lower = [w.lower() for w in raw]
+            # the gloss of each token, when the gloss line lines up with the tokens
+            glosses = [g.lower() for w, g in gl if re.search(r"[A-Za-z]", w)] if gl else []
+            if len(glosses) != len(raw):
+                glosses = [""] * len(raw)
             i = 0
             while i < len(lower):
                 w = lower[i]
+                g = glosses[i]
                 nxt_raw = raw[i + 1] if i + 1 < len(raw) else ""
                 nxt = nxt_raw.lower()
                 if w == "maayong" and nxt in {"buntag", "hapon", "gabii"}:
@@ -171,9 +199,14 @@ def analyse(paths):
                         counts[e] = counts.get(e, 0) + 1
                     i += 2
                     continue
-                if w == "ni":
-                    entry = "ni (of)" if nxt_raw[:1].isupper() else "kini/ni (this)"
-                    covered.setdefault(entry, set()).add("ni")
+                if w == "ni" or (w == "na" and g == "that"):
+                    if w == "na":
+                        entry = "kana/na (that)"
+                    elif g in ("of", "this"):
+                        entry = "ni (of)" if g == "of" else "kini/ni (this)"
+                    else:
+                        entry = "ni (of)" if nxt_raw[:1].isupper() else "kini/ni (this)"
+                    covered.setdefault(entry, set()).add(w)
                     counts[entry] = counts.get(entry, 0) + 1
                     i += 1
                     continue
@@ -198,9 +231,21 @@ def main(argv):
         print(__doc__)
         return 1
     show_counts = "--counts" in argv
+    show_new = "--new" in argv
     argv = [a for a in argv if not a.startswith("--")]
-    covered, unmatched, counts = analyse(argv)
     total = len(TIER1)
+    if show_new:
+        seen = set()
+        for path in argv:
+            here = set(analyse([path])[0])
+            new = [e for e in TIER1 if e in here and e not in seen]
+            seen |= here
+            print(f"{Path(path).name}: {len(new)} entries first appear here (cumulative {len(seen)} / {total})")
+            print("  " + (", ".join(new) if new else "none"))
+        left = [e for e in TIER1 if e not in seen]
+        print(f"\nStill unused after these texts: {', '.join(left) if left else 'none'}")
+        return 0
+    covered, unmatched, counts = analyse(argv)
     print(f"Files: {', '.join(Path(p).name for p in argv)}")
     print(f"Tier 1 coverage: {len(covered)} / {total} entries\n")
     if show_counts:
@@ -226,7 +271,7 @@ def main(argv):
             print(f"  {w} x{n}")
     else:
         print("  none")
-    print("\nNote: bare 'na' is counted as the particle; if the text uses it as 'that' (kana), credit that by eye.")
+    print("\nNote: 'na' counts as 'that' (kana) only where the gloss line says so; otherwise it is the particle.")
     return 0
 
 
