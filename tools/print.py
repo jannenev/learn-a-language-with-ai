@@ -3,7 +3,8 @@
 English on the right, meant to be folded or covered for a cold read. One PDF per text, written to
 <language>/print/<language>-NNN-pocket.pdf; with --all also a booklet holding every text given,
 <language>/print/<language>-pocket-NNN-MMM.pdf, with an intro page made from <language>/booklet-intro.md
-(if present) followed by the generated facts: variant, texts included with their dates, commit.
+(if present) followed by the generated facts: variant, a table of the texts with their dates and word counts
+(core entries used, new in the text, known after it; counted by tools/wordcheck.py), commit.
 
 Usage:
   python3 tools/print.py cebuano/texts/src/002.txt
@@ -32,6 +33,10 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 from render import parse, validate, legend  # noqa: E402
+try:
+    from wordcheck import analyse, TIER1  # noqa: E402   # the core-word table; Cebuano-specific
+except ImportError:                                      # another language without a word checker
+    analyse = TIER1 = None
 
 CHROME = ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "google-chrome", "chromium", "chromium-browser"]
 
@@ -68,11 +73,17 @@ div.il { display: inline-flex; flex-wrap: wrap; column-gap: 9pt; row-gap: 2pt; w
 div.il span { display: inline-block; }
 div.il span i { display: block; font-style: normal; font-size: 8.5pt; }
 div.wbw p.note { margin: 1pt 0 0 16pt; font-size: 8.5pt; }
+table.pg { width: 100%; border-collapse: collapse; }
+table.pg > tbody > tr > td.pgc { padding: 0; }
+table.pg > tfoot > tr > td.sp { height: 14pt; padding: 0; }
 section.intro { font-size: 10.5pt; }
 section.intro h1 { font-size: 15pt; margin-bottom: 8pt; }
 section.intro p { margin: 0 0 7pt 0; }
 section.intro table.facts { width: auto; margin-top: 10pt; font-size: 9.5pt; }
-section.intro table.facts td { padding: 1pt 12pt 1pt 0; }
+section.intro table.facts td, section.intro table.facts th { padding: 1pt 12pt 1pt 0; text-align: left; font-weight: normal; }
+section.intro table.facts th { font-weight: 600; border-bottom: 0.6pt solid #000; }
+section.intro table.facts td.n, section.intro table.facts th.n { text-align: right; }
+section.intro p.words { font-size: 9pt; margin-top: 4pt; }
 div.tail { font-size: 9.5pt; }
 div.tail h2 { font-size: 10pt; margin: 9pt 0 2pt 0; }
 div.tail p, div.tail li { margin: 0 0 2pt 0; }
@@ -288,20 +299,40 @@ def intro_section(lang, paths, variant, dates):
     body = tail_html(md_path.read_text(encoding="utf-8").splitlines()) if md_path.exists() else ""
     kind = {"pocket": "This is the pocket version: one page per text, with the word-for-word notes below the dialogue.",
             "full": "This is the full version: for each text, the Cebuano alone, the Cebuano beside the English, and the word-by-word block with notes."}[variant]
-    rows = []
+    counting = analyse is not None
+    rows = ["<tr><th>Text</th><th>Date</th>" + ("<th class='n'>Words used</th><th class='n'>New here</th><th class='n'>Known after</th>" if counting else "") + "</tr>"]
+    seen = set()
     for p, d in zip(paths, dates):
         header, _, _ = parse(p)
-        rows.append(f"<tr><td>{html.escape(header['title'])}</td><td>{d}</td></tr>")
+        cells = f"<td>{html.escape(header['title'])}</td><td>{d}</td>"
+        if counting:
+            used = set(analyse([p])[0])
+            new = used - seen
+            seen |= used
+            cells += f"<td class='n'>{len(used)}</td><td class='n'>{len(new)}</td><td class='n'>{len(seen)}</td>"
+        rows.append(f"<tr>{cells}</tr>")
+    words_note = ""
+    if counting:
+        words_note = (f"<p class='words'>Words are counted as entries of the core list, {len(TIER1)} in Tier 1; an entry is a word with "
+                      "its spoken forms (kaon, mokaon, nikaon count as one). The columns give how many entries the text uses, how many "
+                      "appear in it for the first time, and how many have appeared by the end of it.</p>")
     commit = git("log", "-1", "--format=%h", "--", *[str(p) for p in paths])
-    facts = (f"<p>{kind}</p><table class='facts'>" + "".join(rows) + "</table>"
+    facts = (f"<p>{kind}</p><table class='facts'>" + "".join(rows) + "</table>" + words_note
              + (f"<p style='font-size:9pt'>Version: content dated {max(dates)}, commit {commit}.</p>" if commit else ""))
     return f"<section class='intro'>{body}{facts}</section>"
 
 
 def document(sections, date=""):
+    body = "\n".join(sections)
+    foot = footer(date) if date else ""
+    if foot:
+        # The footer is position: fixed, which Chrome repeats on every page but which reserves no room, so
+        # on a full page the last line would print under it. Wrapping the content in a table whose empty
+        # <tfoot> Chrome repeats at every page break keeps that much space clear at the foot of each page.
+        body = ("<table class='pg'><tfoot><tr><td class='sp'></td></tr></tfoot>"
+                "<tbody><tr><td class='pgc'>\n" + body + "\n</td></tr></tbody></table>")
     return ("<!doctype html><html><head><meta charset='utf-8'><title>pocket</title>"
-            f"<style>{CSS}</style></head><body>\n" + (footer(date) if date else "") + "\n"
-            + "\n".join(sections) + "\n</body></html>\n")
+            f"<style>{CSS}</style></head><body>\n" + foot + "\n" + body + "\n</body></html>\n")
 
 
 def to_pdf(html_text, pdf_path, keep_html=False):
