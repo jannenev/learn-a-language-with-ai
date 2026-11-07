@@ -25,14 +25,14 @@ Ana | Didto. Naa didto si Mama. | There. Mama is there.
 Jun | Daghan kaayo ang tawo didto! | Very many, the people there!
     Daghan=many kaayo=very ang=the(subj) tawo=people didto!=there
 Ana | Oo. Daghan gyud. Dali, Dong. | Yes. Really many. Quick, Dong.
-    Oo.=yes Daghan=many gyud.=really Dali,=quick Dong.=Dong
+    Oo.=yes Daghan=many gyud.=really Dali,=quick Dong.=to-a-boy
     ! Dali, Dong = "quick, Dong" = come on / hurry up
     ! Dong = how you address a boy or a younger brother (short for Dodong)
 Mama | Ana! Jun! Kumusta mo? | Ana! Jun! How are you two?
     Ana! Jun! Kumusta=how-are mo?=you(pl)
     ! mo = you, several people (short for kamo). One person would be ka.
 Ana | Maayo ra mi, Ma. Ikaw? | We're just fine, Ma. You?
-    Maayo=fine ra=just mi,=we Ma.=Mom Ikaw?=you
+    Maayo=fine ra=just mi,=we Ma.=Ma Ikaw?=you
     ! ra = Cebu form of lang. mi = we, not including you (short for kami).
 Mama | Maayo pud. Nikaon na mo? | Fine too. Have you eaten already?
     Maayo=fine pud.=also Nikaon=ate na=already mo?=you(pl)
@@ -42,40 +42,40 @@ Mama | Maayo. Gusto ba mo og tubig? | Good. Do you want some water?
     Maayo.=good Gusto=want ba=[?] mo=you(pl) og=some tubig?=water
     ! ba turns the sentence into a yes/no question
 Jun | Oo, gusto ko. Salamat, Ma. | Yes, I want. Thanks, Ma.
-    Oo,=yes gusto=want ko.=I Salamat,=thanks Ma.=Mom
+    Oo,=yes gusto=want ko.=I Salamat,=thanks Ma.=Ma
 Ana | Ako pud. | I too.
     Ako=I pud.=also
 Jun | Ma, unsa ni? | Ma, what's this?
-    Ma,=Mom unsa=what ni?=this
+    Ma,=Ma unsa=what ni?=this
     ! ni = this (short for kini). Compare line 5, where ni = "of".
 Mama | Pagkaon na. Gusto ka? | That's food. You want?
     Pagkaon=food na.=that Gusto=want ka?=you
     ! na here = that (short for kana), not "already"
 Jun | Dili na, Ma. Daghan na kaayo ang akong gikaon. | Not anymore, Ma. What I ate is already very much.
-    Dili=no na,=anymore Ma.=Mom Daghan=much na=already kaayo=very ang=the(subj) akong=my gikaon.=eaten
+    Dili=no na,=anymore Ma.=Ma Daghan=much na=already kaayo=very ang=the(subj) akong=my gikaon.=eaten
     ! ang akong gikaon = "what I ate" (literally: the my eaten). gi- = done to it.
 Ana | Ma, naa ko'y kwarta. Pila ni? | Ma, I have money. How much, this?
-    Ma,=Mom naa=there-is ko'y=I kwarta.=money Pila=how-much ni?=this
+    Ma,=Ma naa=there-is ko'y=I kwarta.=money Pila=how-much ni?=this
     ! naa ko'y kwarta = literally "there is, I, money" = I have money (naa + ko + 'y)
 Mama | Ayaw na, Day. Imoha na. | Don't anymore, Day. It's yours now.
-    Ayaw=don't na,=anymore Day.=Day Imoha=yours na.=now
+    Ayaw=don't na,=anymore Day.=to-a-girl Imoha=yours na.=now
     ! Day = how you address a girl or a daughter (short for Inday)
 Ana | Salamat kaayo, Ma! | Thanks very much, Ma!
-    Salamat=thanks kaayo,=very Ma!=Mom
+    Salamat=thanks kaayo,=very Ma!=Ma
 Mama | Sige. Adto na mo sa balay. Gabii na unya. | OK. You two go to the house now. Later it will already be night.
     Sige.=okay Adto=go na=now mo=you(pl) sa=to balay.=house Gabii=night na=already unya.=later
     ! Gabii na unya, literally "later (it is) already night"
 Jun | Ikaw, Ma? Moadto ba ka sa balay unya? | You, Ma? Will you go to the house later?
-    Ikaw,=you Ma?=Mom Moadto=will-go ba=[?] ka=you sa=to balay=house unya?=later
+    Ikaw,=you Ma?=Ma Moadto=will-go ba=[?] ka=you sa=to balay=house unya?=later
 Mama | Oo, unya. Naa pa ko'y trabaho. | Yes, later. I still have work.
     Oo,=yes unya.=later Naa=there-is pa=still ko'y=I trabaho.=work
 Ana | Sige, Ma. Maghulat mi nimo sa balay. | OK, Ma. We'll wait for you at the house.
-    Sige,=okay Ma.=Mom Maghulat=will-wait mi=we nimo=you sa=at balay.=house
+    Sige,=okay Ma.=Ma Maghulat=will-wait mi=we nimo=you sa=at balay.=house
     ! mag- = future, same job as mo-; some verbs prefer it
 Mama | Sige. Salamat, Day. Salamat, Dong. | OK. Thanks, Day. Thanks, Dong.
-    Sige.=okay Salamat,=thanks Day.=Day Salamat,=thanks Dong.=Dong
+    Sige.=okay Salamat,=thanks Day.=to-a-girl Salamat,=thanks Dong.=to-a-boy
 Both | Sige, Ma! | OK, Ma!
-    Sige,=bye Ma!=Mom
+    Sige,=okay Ma!=Ma
     ! sige closes a conversation: the normal Bisaya goodbye
 ===
 ## Listen for

@@ -126,7 +126,7 @@ Sige, Dong.                             OK, Dong.
     thanks
 
 18  Sige,  Dong.
-    okay   Dong
+    okay   to-a-boy
     · Dong = how you address a boy or a younger brother (short for Dodong); sige here = "sure, alright"
 ```
 

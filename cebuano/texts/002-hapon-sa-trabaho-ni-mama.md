@@ -120,7 +120,7 @@ Both: Sige, Ma!                                          OK, Ma!
     many    very   the(subj)  people  there
 
  8  Oo.  Daghan  gyud.   Dali,  Dong.
-    yes  many    really  quick  Dong
+    yes  many    really  quick  to-a-boy
     · Dali, Dong = "quick, Dong" = come on / hurry up
     · Dong = how you address a boy or a younger brother (short for Dodong)
 
@@ -129,7 +129,7 @@ Both: Sige, Ma!                                          OK, Ma!
     · mo = you, several people (short for kamo). One person would be ka.
 
 10  Maayo  ra    mi,  Ma.  Ikaw?
-    fine   just  we   Mom  you
+    fine   just  we   Ma   you
     · ra = Cebu form of lang. mi = we, not including you (short for kami).
 
 11  Maayo  pud.  Nikaon  na       mo?
@@ -143,13 +143,13 @@ Both: Sige, Ma!                                          OK, Ma!
     · ba turns the sentence into a yes/no question
 
 14  Oo,  gusto  ko.  Salamat,  Ma.
-    yes  want   I    thanks    Mom
+    yes  want   I    thanks    Ma
 
 15  Ako  pud.
     I    also
 
 16  Ma,  unsa  ni?
-    Mom  what  this
+    Ma   what  this
     · ni = this (short for kini). Compare line 5, where ni = "of".
 
 17  Pagkaon  na.   Gusto  ka?
@@ -157,39 +157,39 @@ Both: Sige, Ma!                                          OK, Ma!
     · na here = that (short for kana), not "already"
 
 18  Dili  na,      Ma.  Daghan  na       kaayo  ang        akong  gikaon.
-    no    anymore  Mom  much    already  very   the(subj)  my     eaten
+    no    anymore  Ma   much    already  very   the(subj)  my     eaten
     · ang akong gikaon = "what I ate" (literally: the my eaten). gi- = done to it.
 
 19  Ma,  naa       ko'y  kwarta.  Pila      ni?
-    Mom  there-is  I     money    how-much  this
+    Ma   there-is  I     money    how-much  this
     · naa ko'y kwarta = literally "there is, I, money" = I have money (naa + ko + 'y)
 
-20  Ayaw   na,      Day.  Imoha  na.
-    don't  anymore  Day   yours  now
+20  Ayaw   na,      Day.       Imoha  na.
+    don't  anymore  to-a-girl  yours  now
     · Day = how you address a girl or a daughter (short for Inday)
 
 21  Salamat  kaayo,  Ma!
-    thanks   very    Mom
+    thanks   very    Ma
 
 22  Sige.  Adto  na   mo       sa  balay.  Gabii  na       unya.
     okay   go    now  you(pl)  to  house   night  already  later
     · Gabii na unya, literally "later (it is) already night"
 
 23  Ikaw,  Ma?  Moadto   ba   ka   sa  balay  unya?
-    you    Mom  will-go  [?]  you  to  house  later
+    you    Ma   will-go  [?]  you  to  house  later
 
 24  Oo,  unya.  Naa       pa     ko'y  trabaho.
     yes  later  there-is  still  I     work
 
 25  Sige,  Ma.  Maghulat   mi  nimo  sa  balay.
-    okay   Mom  will-wait  we  you   at  house
+    okay   Ma   will-wait  we  you   at  house
     · mag- = future, same job as mo-; some verbs prefer it
 
-26  Sige.  Salamat,  Day.  Salamat,  Dong.
-    okay   thanks    Day   thanks    Dong
+26  Sige.  Salamat,  Day.       Salamat,  Dong.
+    okay   thanks    to-a-girl  thanks    to-a-boy
 
 27  Sige,  Ma!
-    bye    Mom
+    okay   Ma
     · sige closes a conversation: the normal Bisaya goodbye
 ```
 

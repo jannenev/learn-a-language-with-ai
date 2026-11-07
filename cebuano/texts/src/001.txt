@@ -50,7 +50,7 @@ Ana | Sige. Kaon ta karon, adto ta unya. | OK. Let's eat now, let's go later.
 Jun | Salamat, Ana! | Thanks, Ana!
     Salamat,=thanks Ana!
 Ana | Sige, Dong. | OK, Dong.
-    Sige,=okay Dong.=Dong
+    Sige,=okay Dong.=to-a-boy
     ! Dong = how you address a boy or a younger brother (short for Dodong); sige here = "sure, alright"
 ===
 ## Listen for
