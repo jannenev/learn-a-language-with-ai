@@ -21,7 +21,7 @@ Free material for beginners. Everything for Cebuano is in [`cebuano/`](cebuano/)
 - pronunciation files for software and AI voices, in [`cebuano/pronunciation/`](cebuano/pronunciation/): paste `NNN.paste.txt` into a chat voice that reads aloud to hear a text
 - the plan and the log of decisions: [PLAN.md](cebuano/PLAN.md)
 
-To use it: skim Tier 1 of the word list once without memorising it, then read text 001, cold first, and follow the schedule above. The texts open in the browser on GitHub, so nothing needs to be installed; to print, use the browser's print to PDF.
+To use it: skim Tier 1 of the word list once without memorising it, then read text 001, cold first, and follow the schedule above. The texts open in the browser on GitHub, so nothing needs to be installed. For paper, `tools/print.py` makes a one-page A4 version of a text, Cebuano left and English right with a word-for-word footnote; ready-made PDFs will be added once the layout is settled.
 
 ## Another language
 

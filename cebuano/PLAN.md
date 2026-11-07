@@ -91,6 +91,7 @@ METHOD.md                  the language-neutral instructions: how to build such 
 tools/render.py            renders <language>/texts/src/NNN.txt into the three-block layout
 tools/wordcheck.py         counts which Tier 1 entries a text uses; flags words outside the list
 tools/pron.py              generates the pronunciation files for a text
+tools/print.py             makes one-page A4 PDFs of the texts (Cebuano left, English right) through Chrome
 cebuano/PLAN.md            this file: goals, method, decisions, progress log for Cebuano
 cebuano/vocabulary.md      Tier 1, Tier 2 (full entries) and Tier 3 backlog
 cebuano/grammar-notes.md   listening grammar: what to recognise, not what to produce
@@ -98,6 +99,7 @@ cebuano/texts/src/         the texts as written: NNN.txt, one line per sentence 
 cebuano/texts/             the rendered texts, NNN-title.md (generated, do not edit by hand)
 cebuano/pronunciation/     for software, not for reading: lexicon.tsv (stress and glottal marks per word),
                            rules-for-ai.txt, and per text NNN.paste.txt / NNN.ipa.txt / NNN.ssml.xml
+cebuano/print/             generated PDFs for printing; not committed until the layout is settled
 ```
 
 ## 5. Storyline for the texts
@@ -149,6 +151,7 @@ Pronunciation data lives in `cebuano/pronunciation/`, separate from the texts, s
 - **2026-10-07** — Pronunciation files (section 6a): `cebuano/pronunciation/` with a lexicon of 226 words marked for stress and final glottal stop, the rule block for AI voices, and `tools/pron.py` generating paste / IPA / SSML files for texts 001 and 002.
 - **2026-10-07** — Repetition estimate and reading schedule (section 2), with `wordcheck.py --counts` showing occurrences per entry. Surveyed outside readers and resources (section 10).
 - **2026-11-07** — Preparing to publish: all Cebuano material moved into `cebuano/` so the repository can hold the method and tools at the top level and other languages beside it; `tools/pron.py` finds the language folder from the text's path.
+- **2026-11-07** — Pocket print version, first tries. `tools/print.py` turns a text source into an A4 PDF, Cebuano left and close English right, to cover for a cold read. Lessons so far: grey text printed weak, so everything is solid black; Chrome stamps the time into the PDF, so the script pins it and an unchanged text regenerates byte-identical; a "Word for word" footnote lists only the sentences whose English does not use the gloss words (order ignored, English glue such as *is* and *the* ignored), as the words in order without repeating the Cebuano, in two columns; margins down to 10 mm and the dialogue at 10.5 pt so a 27-line text fits one page. Open: whether the footnote version replaces the plain one; how to show *Day* and *Dong* (gloss as to-a-girl / to-a-boy, translate, or a note); whether to cap text length for one page or let longer texts take a sheet. PDFs not committed until the version settles. A full variant (`--full`: all three blocks, notes, and the sections after the text) exists for the first reading; the pocket page for the later passes. Decision: the printable page is defined as HTML and CSS; Chrome is only the current printer (one small function), so another engine, Edge, Chromium, WeasyPrint, or printing the HTML from any browser, can replace it later without touching the layout.
 - **2026-11-07** — Publishing files added at the top level: README.md (the idea, how it works, the Cebuano material, status), METHOD.md (the method in six steps, the reasons, files and tools), and AGENTS.md with CLAUDE.md importing it, telling an assistant how to help a learner with the existing material, extend it, or do the same for another language.
 
 ## 9. Next steps
