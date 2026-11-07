@@ -1,6 +1,6 @@
 # Learn a language with AI
 
-Use an AI assistant to build the core of a language fast, and learn it by reading, and by listening once there is a voice for it. The assistant picks the words everyday speech is made of, writes short connected texts that use only those words, and shows the meaning of every word under it. You read the texts a few times each on a schedule, and the words stick because they keep coming back in context. The method is written up so that it can be repeated for another language; the first language it has been used for is Cebuano, called Bisaya by its speakers, the language of Cebu in the Philippines.
+Use an AI assistant to build the core of a language fast, and learn it by reading, and by listening once there is a voice for it. The assistant picks the words everyday speech is made of, writes short connected texts that use only those words, graded readers in the usual term, though here they are dialogues with the meaning of every word shown. You read the texts a few times each on a schedule, and the words stick because they keep coming back in context. The method is written up so that it can be repeated for another language; the first language it has been used for is Cebuano, called Bisaya by its speakers, the language of Cebu in the Philippines.
 
 ## How it works
 
@@ -13,7 +13,7 @@ The full instructions, with the prompts used, are in [METHOD.md](METHOD.md).
 
 ## Cebuano (Bisaya)
 
-Everything for Cebuano is in [`cebuano/`](cebuano/):
+Free material for beginners. Everything for Cebuano is in [`cebuano/`](cebuano/):
 
 - the word list in tiers: [vocabulary.md](cebuano/vocabulary.md)
 - a short grammar sheet for listeners: [grammar-notes.md](cebuano/grammar-notes.md)
