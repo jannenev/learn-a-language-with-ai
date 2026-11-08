@@ -40,6 +40,7 @@ grammar-notes.md    the few patterns a listener needs to recognise: markers, ver
 texts.md            index of the texts: one row per text, planned or written, with scene, words brought in, patterns
 texts/src/NNN.txt   each text as written: speaker, sentence, close English, a gloss line, notes
 texts/NNN-title.md  the same text rendered into the three blocks; generated, not edited
+audio.md            the listening side: pronunciation data, the voices tried, and what a native speaker said of them
 pronunciation/      optional: per-word stress marks, a rule block for AI voices, generated files per text
 print/              one-page A4 PDFs of the texts, target language left and English right; generated
 ```
