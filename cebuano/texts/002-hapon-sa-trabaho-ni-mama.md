@@ -12,7 +12,7 @@ The words this text brings in, each with the meaning it has here. Read them once
 
 ```
 dali  quick   diri   here     hulat   wait
-og    some    tubig  water    moinom  will-drink
+og    some    tubig  water    moinom  will-drink (inom)
 ni    of      tawo   people   mo      you(pl)
 mi    we      dili   no       pila    how-much
 ayaw  don't   gabii  night

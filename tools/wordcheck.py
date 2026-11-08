@@ -247,10 +247,33 @@ def analyse(paths):
     return covered, unmatched, counts
 
 
+def root_of(w, entry):
+    """The listed form an affixed token reduces to (moinom -> inom, daghang -> daghan), or None when the
+    token is itself a listed form of its entry."""
+    forms = TIER1.get(entry, set())
+    if not forms or w in forms:
+        return None
+    if w.endswith("ng") and w[:-2] in forms:
+        return w[:-2]
+    for pre in PREFIXES:
+        if w.startswith(pre):
+            rest = w[len(pre):].lstrip("-")
+            if rest in forms:
+                return rest
+            for suf in SUFFIXES:
+                if rest.endswith(suf) and rest[: -len(suf)] in forms:
+                    return rest[: -len(suf)]
+    for suf in SUFFIXES:
+        if w.endswith(suf) and w[: -len(suf)] in forms:
+            return w[: -len(suf)]
+    return None
+
+
 def new_in_text(path):
     """The entries a text brings in, compared with the lower-numbered sources in its folder (by the three-digit
     number, so 002b is compared with 001 only): a list of (surface, gloss, entry) in order of first appearance,
-    the gloss taken from the gloss line of that first occurrence. Used by render.py and print.py."""
+    the gloss taken from the gloss line of that first occurrence, with the root in parentheses when the text
+    has an affixed form (moinom  will-drink (inom)). Used by render.py and print.py."""
     path = Path(path)
     num = path.stem[:3]
     earlier = sorted(q for q in path.parent.glob("*.txt") if q.stem[:3].isdigit() and q.stem[:3] < num)
@@ -262,7 +285,8 @@ def new_in_text(path):
                 continue
             if entry not in seen and entry not in found:
                 found.add(entry)
-                out.append((w, g, entry))
+                root = root_of(w, entry)
+                out.append((w, f"{g} ({root})".strip() if root else g, entry))
             for e, form in extras:
                 if e not in seen and e not in found:
                     side.setdefault(e, form)
