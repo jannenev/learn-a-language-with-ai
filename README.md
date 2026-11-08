@@ -25,7 +25,7 @@ To use it: skim Tier 1 of the word list once without memorising it, then read te
 
 ## Another language
 
-[METHOD.md](METHOD.md) gives the method in six steps, the reasons, and the files and tools involved, in a language-neutral way. An AI assistant pointed at this repository can follow it directly ("read METHOD.md and set this up for French"); a person can follow it by hand. Expect hand work for a new language, especially a small one.
+[METHOD.md](METHOD.md) gives the method in six steps, the reasons, and the files and tools involved, in a language-neutral way; [CREATING-TEXTS.md](CREATING-TEXTS.md) is the step-by-step for one text, with the rules it follows. An AI assistant pointed at this repository can follow it directly ("read METHOD.md and set this up for French"); a person can follow it by hand. Expect hand work for a new language, especially a small one.
 
 ## Status
 

@@ -44,6 +44,8 @@ pronunciation/      optional: per-word stress marks, a rule block for AI voices,
 print/              one-page A4 PDFs of the texts, target language left and English right; generated
 ```
 
+How one text is made, step by step, with the rules it follows and where they came from, is `CREATING-TEXTS.md` at the top level.
+
 The scripts in `tools/` document their own formats and usage; run any of them without arguments to see.
 
 - `render.py` turns a text source into the three-block layout. Language-neutral.

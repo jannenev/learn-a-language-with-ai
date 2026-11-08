@@ -10,7 +10,7 @@ This repository holds a method for learning the core of a language from short te
 
 ## Extending the Cebuano material
 
-- Start from the text's row in `cebuano/texts.md`: the scene, the words it must bring in or introduce, and the patterns to exercise. If the row is not there yet, write it first, looking at the words still under-exposed (`python3 tools/wordcheck.py --counts cebuano/texts/src/*.txt`) and at the stage and storyline in `cebuano/PLAN.md`, section 5. Write the text as `cebuano/texts/src/NNN.txt` in the source format documented in `tools/render.py`, using only the allowed tiers plus names. Render it with `tools/render.py`, generate its pronunciation files with `tools/pron.py` and its PDF with `tools/print.py`, date the row in `cebuano/texts.md`, and log the work with the date in `cebuano/PLAN.md`.
+- Follow `CREATING-TEXTS.md`: start from the text's row in `cebuano/texts.md` (write the row first if it is missing), write `cebuano/texts/src/NNN.txt` to the rules there, run the checks, show the source before rendering, then render, generate the pronunciation files and the PDF, date the row and log the work with the date in `cebuano/PLAN.md`.
 
 ## Doing the same for another language
 
