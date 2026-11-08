@@ -6,6 +6,7 @@ Usage:
     python3 tools/wordcheck.py cebuano/texts/src/001.txt cebuano/texts/src/002.txt   # cumulative over several texts
     python3 tools/wordcheck.py --counts cebuano/texts/src/*.txt          # occurrences per entry, in exposure bands
     python3 tools/wordcheck.py --new cebuano/texts/src/*.txt             # which entries each text brings in for the first time
+    python3 tools/wordcheck.py --chains cebuano/texts/src/*.txt          # lines with three or more small words in a row (--chains=2 for pairs)
 
 It reads the Cebuano column of cebuano/texts/src/NNN.txt ("Speaker | Cebuano | English"); the old v1 markdown
 layout (numbered lines with the Cebuano in bold) is still accepted.
@@ -16,6 +17,8 @@ Two words are ambiguous in Cebuano. When the source has a gloss line under the s
     na  -> the particle "already/now" (it can also be "that", kana).
 Anything it cannot match is printed as UNMATCHED so you can decide whether it is a name, a loanword,
 a form the list should know about, or a word that does not belong in the text yet.
+The small words (pronouns, markers, particles) are hard to parse when several stand in a row and are
+new (na mo sa, pa ko og); --chains lists such lines with each member's exposure before that line.
 """
 import re
 import sys
@@ -102,6 +105,13 @@ TIER1 = {
 }
 
 NAMES = {"ana", "jun"}
+NAME = "[name]"      # the entry given to a proper name by resolve()
+
+# The small grammatical words: pronouns, markers, particles and the short pointing words. Used by --chains.
+SMALL = {"ako", "ikaw", "siya", "kita (we)", "kami", "kamo", "sila",
+         "ang", "si", "sa", "og", "ug", "nga", "mga", "ni (of)",
+         "ba", "na", "pa", "lang", "gyud", "pud",
+         "kini/ni (this)", "kana/na (that)"}
 
 PREFIXES = ["naka", "maka", "nag", "mag", "pag", "mo", "mi", "ni", "gi", "ma", "na", "ka", "i"]
 SUFFIXES = ["on", "a"]
@@ -170,60 +180,108 @@ def cebuano_entries(path):
             yield line.split("|")[1].strip(), gl
 
 
+def resolve(text, gl):
+    """Resolve one dialogue line into (surface, entry, extras, boundary) per token, in order.
+
+    entry is the Tier 1 entry, NAME for a proper name, or None when nothing matched. extras lists
+    (entry, form) pairs credited on the side: maayo and the -ng linker in "maayong buntag", the
+    linker on words like daghang. boundary is True when punctuation follows the token."""
+    toks = re.findall(r"([A-Za-z'\-]+)([^A-Za-z'\-]*)", text)
+    # contractions: naa'y, ko'y, wala'y, unsa'y -> drop the 'y
+    raw = [(w.replace("'y", "").replace("'", ""), bool(re.search(r"[.,!?;:\u2026]", t))) for w, t in toks]
+    raw = [(w, b) for w, b in raw if w]
+    # the gloss of each token, when the gloss line lines up with the tokens
+    glosses = [g.lower() for w, g in gl if re.search(r"[A-Za-z]", w)] if gl else []
+    if len(glosses) != len(raw):
+        glosses = [""] * len(raw)
+    out = []
+    i = 0
+    while i < len(raw):
+        w, brk = raw[i]
+        lw = w.lower()
+        g = glosses[i]
+        nxt_raw, nxt_brk = raw[i + 1] if i + 1 < len(raw) else ("", False)
+        nxt = nxt_raw.lower()
+        if lw == "maayong" and nxt in {"buntag", "hapon", "gabii"}:
+            out.append((lw + " " + nxt, "maayong buntag/hapon/gabii", [("maayo", "maayong"), ("nga", "-ng")], nxt_brk))
+            i += 2
+            continue
+        if lw == "ni" or (lw == "na" and g == "that"):
+            if lw == "na":
+                entry = "kana/na (that)"
+            elif g in ("of", "this"):
+                entry = "ni (of)" if g == "of" else "kini/ni (this)"
+            else:
+                entry = "ni (of)" if nxt_raw[:1].isupper() else "kini/ni (this)"
+            out.append((lw, entry, [], brk))
+        elif lw in NAMES:
+            out.append((lw, NAME, [], brk))
+        else:
+            entry = lookup(lw)
+            extras = [("nga", "-ng")] if entry and lw.endswith("ng") and lw[:-2] in form_to_entry else []
+            out.append((lw, entry, extras, brk))
+        i += 1
+    return out
+
+
 def analyse(paths):
     covered = {}       # entry -> set of surface forms seen
     unmatched = {}     # token -> count
     counts = {}        # entry -> number of occurrences
     for path in paths:
         for text, gl in cebuano_entries(path):
-            raw = re.findall(r"[A-Za-z'\-]+", text)
-            # contractions: naa'y, ko'y, wala'y, unsa'y -> drop the 'y
-            raw = [w.replace("'y", "").replace("'", "") for w in raw]
-            raw = [w for w in raw if w]
-            lower = [w.lower() for w in raw]
-            # the gloss of each token, when the gloss line lines up with the tokens
-            glosses = [g.lower() for w, g in gl if re.search(r"[A-Za-z]", w)] if gl else []
-            if len(glosses) != len(raw):
-                glosses = [""] * len(raw)
-            i = 0
-            while i < len(lower):
-                w = lower[i]
-                g = glosses[i]
-                nxt_raw = raw[i + 1] if i + 1 < len(raw) else ""
-                nxt = nxt_raw.lower()
-                if w == "maayong" and nxt in {"buntag", "hapon", "gabii"}:
-                    covered.setdefault("maayong buntag/hapon/gabii", set()).add(w + " " + nxt)
-                    covered.setdefault("maayo", set()).add("maayong")
-                    covered.setdefault("nga", set()).add("-ng")
-                    for e in ("maayong buntag/hapon/gabii", "maayo", "nga"):
-                        counts[e] = counts.get(e, 0) + 1
-                    i += 2
-                    continue
-                if w == "ni" or (w == "na" and g == "that"):
-                    if w == "na":
-                        entry = "kana/na (that)"
-                    elif g in ("of", "this"):
-                        entry = "ni (of)" if g == "of" else "kini/ni (this)"
-                    else:
-                        entry = "ni (of)" if nxt_raw[:1].isupper() else "kini/ni (this)"
-                    covered.setdefault(entry, set()).add(w)
-                    counts[entry] = counts.get(entry, 0) + 1
-                    i += 1
-                    continue
-                if w in NAMES:
-                    i += 1
-                    continue
-                entry = lookup(w)
-                if entry:
-                    covered.setdefault(entry, set()).add(w)
-                    counts[entry] = counts.get(entry, 0) + 1
-                    if w.endswith("ng") and w[:-2] in form_to_entry:
-                        covered.setdefault("nga", set()).add("-ng")
-                        counts["nga"] = counts.get("nga", 0) + 1
-                else:
+            for w, entry, extras, _ in resolve(text, gl):
+                if entry is None:
                     unmatched[w] = unmatched.get(w, 0) + 1
-                i += 1
+                    continue
+                if entry == NAME:
+                    continue
+                covered.setdefault(entry, set()).add(w)
+                counts[entry] = counts.get(entry, 0) + 1
+                for e, form in extras:
+                    covered.setdefault(e, set()).add(form)
+                    counts[e] = counts.get(e, 0) + 1
     return covered, unmatched, counts
+
+
+def chains(paths, n):
+    """Print the lines where n or more small words stand in a row, with each member's exposure so far."""
+    prior, forms = {}, set()
+    print(f"Chains of {n} or more small words in a row (pronouns, markers, particles; punctuation breaks a chain).")
+    print("The number after a word is how often its entry occurred in these texts before that line; * = fewer than 5;")
+    print("'new form' = this form of the entry (nimo for ikaw, mi for kami) has not appeared before.\n")
+    for path in paths:
+        print(Path(path).name)
+        n2 = n3 = ln = 0
+        for ln, (text, gl) in enumerate(cebuano_entries(path), 1):
+            items = resolve(text, gl)
+            runs, run = [], []
+            for w, entry, extras, brk in items:
+                if entry in SMALL:
+                    run.append((w, entry))
+                if entry not in SMALL or brk:
+                    if len(run) >= 2:
+                        runs.append(run)
+                    run = []
+            if len(run) >= 2:
+                runs.append(run)
+            longest = max((len(r) for r in runs), default=0)
+            n2 += longest >= 2
+            n3 += longest >= 3
+            shown = [r for r in runs if len(r) >= n]
+            if shown:
+                print(f"  {ln:2d}  {text}")
+                for r in shown:
+                    print("      " + "   ".join(
+                        f"{w}({prior.get(e, 0)}{'*' if prior.get(e, 0) < 5 else ''}"
+                        f"{', new form' if w not in forms else ''})" for w, e in r))
+            for w, entry, extras, brk in items:
+                if entry and entry != NAME:
+                    prior[entry] = prior.get(entry, 0) + 1
+                    forms.add(w)
+                    for e, _ in extras:
+                        prior[e] = prior.get(e, 0) + 1
+        print(f"  lines: {ln}; with two small words in a row: {n2}; with three or more: {n3}\n")
 
 
 def main(argv):
@@ -232,8 +290,12 @@ def main(argv):
         return 1
     show_counts = "--counts" in argv
     show_new = "--new" in argv
+    chain_n = next((int(a.split("=", 1)[1]) if "=" in a else 3 for a in argv if a.startswith("--chains")), None)
     argv = [a for a in argv if not a.startswith("--")]
     total = len(TIER1)
+    if chain_n:
+        chains(argv, chain_n)
+        return 0
     if show_new:
         seen = set()
         for path in argv:
