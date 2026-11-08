@@ -71,28 +71,27 @@ So a single read of both texts gets only three words past the threshold. Repetit
 
 Move to the next tier when a *new* text at the current tier is understood on first read (later: first listen) at roughly 90%. If not, write more texts at the same tier rather than adding words.
 
-## 3. Text format (decision v2, 2026-10-07)
+## 3. Text format
 
-Each text is written as a plain-text source, `cebuano/texts/src/NNN.txt` (`Speaker | Cebuano | English`, one gloss line per sentence, notes, scene markers), and rendered by `tools/render.py` into `cebuano/texts/NNN-title.md` with three blocks:
+The source format, the three-block layout and the rules for writing a text (close English, glosses, notes, small words one at a time, length) are language-neutral and live in `CREATING-TEXTS.md` at the top level, with the reasons and the alternatives considered. Cebuano specifics:
 
-1. **Read** — Cebuano only, continuous. The speaker is shown by indentation (first speaker at the left margin, second indented, third indented further); names and line numbers do not appear. This is the block to read cold and, later, to listen with.
-2. **Side by side** — Cebuano on the left, English in its own column on the right. The English is *close English*: it follows the Cebuano words and, where English allows, their order (*Dali diri!* → "Quick, here!", *trabaho ni Mama* → "the work of Mama"), so every Cebuano word has a visible counterpart. When a Cebuano word's counterpart is two English words and another word would come between them, they are written with a hyphen, as in the gloss line: *naa pa* → "there-is still", not "there still is" (decided 2026-11-07). It is deliberately not natural English.
-3. **Word by word** — each Cebuano word with its literal core meaning aligned under it (*dali* = quick, *naa* = there-is, *ang* = the(subj)), never the idiom; short notes give the idiomatic sense where it differs; line numbers here only, for reference.
-
-After the blocks: *Listen for* (the patterns the text exercises), *Self-check*, and *Word check* with the coverage counts from `python3 tools/wordcheck.py cebuano/texts/src/NNN.txt`.
-
-Why this and not v1: read as plain text, the v1 layout put bold line numbers and speaker names in front of every Cebuano line and the English directly under it, so the Cebuano never read as a conversation and the eye kept sliding to the English. The three blocks separate reading, checking and looking up. Conventions borrowed: interlinear glossing (meaning under each word), parallel text (Assimil-style columns), uninterrupted target text first (graded readers), the Birkenbihl "decoding" idea of word-for-word translation, and chat-style indentation to mark the speaker. The renderer's `--names` option prints a name column instead of indentation, for texts with four or more speakers.
+- Speakers Ana, Jun and Mama are shown by indentation in that order (`speakers:` header); a fourth speaker would call for `--names`.
+- The small words for the chain rule are the pronouns, markers, particles and the short pointing words *ni* and *na*; the set, the affix list and the names are tables in `tools/wordcheck.py`. *Kaayo* is not counted as one.
+- *Word check* coverage is against Tier 1 (65 entries); Tier 2 is to be added to the checker before Stage B.
+- History: layout v1 (2026-09-20) had the English under each numbered line; v2, the three blocks, was adopted 2026-10-07 and both texts rewritten as sources (log). The hyphen rule for two-word counterparts was added 2026-11-07, the small-words rule 2026-11-08.
 
 ## 4. Repository layout
 
 ```
 README.md                  what the project is and how to use it
 METHOD.md                  the language-neutral instructions: how to build such a course with an AI
+CREATING-TEXTS.md          how one text is made: steps, rules, and the reasons behind them
 tools/render.py            renders <language>/texts/src/NNN.txt into the three-block layout
 tools/wordcheck.py         counts which Tier 1 entries a text uses; flags words outside the list
 tools/pron.py              generates the pronunciation files for a text
 tools/print.py             makes one-page A4 PDFs of the texts (Cebuano left, English right) through Chrome
 cebuano/PLAN.md            this file: goals, method, decisions, progress log for Cebuano
+cebuano/texts.md           the texts: index, plan and record, one row per text
 cebuano/vocabulary.md      Tier 1, Tier 2 (full entries) and Tier 3 backlog
 cebuano/grammar-notes.md   listening grammar: what to recognise, not what to produce
 cebuano/texts/src/         the texts as written: NNN.txt, one line per sentence with English and gloss
