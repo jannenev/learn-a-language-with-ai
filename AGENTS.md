@@ -10,7 +10,7 @@ This repository holds a method for learning the core of a language from short te
 
 ## Extending the Cebuano material
 
-- Follow `CREATING-TEXTS.md`: start from the text's row in `cebuano/texts.md` (write the row first if it is missing), write `cebuano/texts/src/NNN.txt` to the rules there, run the checks, show the source before rendering, then render, generate the pronunciation files and the PDF, date the row and log the work with the date in `cebuano/PLAN.md`.
+- Follow `CREATING-TEXTS.md`: start from the text's row in `cebuano/texts.md` (write the row first if it is missing), write `cebuano/texts/src/NNN.txt` to the rules there, run the checks, show the source before rendering, then render, generate the pronunciation files and the PDF, date the row and log the work with the date in `cebuano/LOG.md`.
 
 ## Doing the same for another language
 

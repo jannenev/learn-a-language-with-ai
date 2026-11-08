@@ -34,7 +34,8 @@ Of all this, the research-backed parts are the spacing, reading cold before chec
 A language lives in its own folder, like `cebuano/`:
 
 ```
-PLAN.md             goal, decisions, estimates, open questions, dated log
+PLAN.md             goal, decisions, estimates, open questions, next steps
+LOG.md              dated log of the work, oldest first, including the decisions that were reversed
 vocabulary.md       the tiers, with spoken forms and one example per entry
 grammar-notes.md    the few patterns a listener needs to recognise: markers, verb forms, particles, contractions, sentence frames
 texts.md            index of the texts: one row per text, planned or written, with scene, words brought in, patterns
@@ -54,4 +55,4 @@ The scripts in `tools/` document their own formats and usage; run any of them wi
 - `pron.py` generates the pronunciation files. Its spelling-to-sound rules are Cebuano; a language with good text-to-speech may not need it.
 - `print.py` makes the one-page PDFs for paper, through Chrome. Language-neutral.
 
-What is specific to Cebuano or to the learner is marked as such in the files: the comparisons to Finnish in the grammar notes, for instance, are asides, not part of the method. The dated log in `cebuano/PLAN.md` records each decision, including the ones that were reversed, and is the most honest account of how this was built.
+What is specific to Cebuano or to the learner is marked as such in the files: the comparisons to Finnish in the grammar notes, for instance, are asides, not part of the method. The dated log in `cebuano/LOG.md` records each decision, including the ones that were reversed, and is the most honest account of how this was built.
