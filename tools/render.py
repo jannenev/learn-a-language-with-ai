@@ -21,6 +21,9 @@ Source format
       ! note                   (indented, starts with !) shown under the gloss
   ===                          everything after this line is copied verbatim
 
+Before block 1 the renderer lists the words the text brings in, with the gloss of their first
+occurrence, when tools/wordcheck.py (which knows the core-word list) is present.
+
 Usage
   python3 tools/render.py cebuano/texts/src/002.txt > cebuano/texts/002-xxx.md
   python3 tools/render.py --names cebuano/texts/src/002.txt > cebuano/texts/002-xxx.md
@@ -30,10 +33,18 @@ import sys
 import textwrap
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).parent))
+try:
+    from wordcheck import new_in_text  # noqa: E402   # the core-word table; Cebuano-specific
+except ImportError:                                 # another language without a word checker
+    new_in_text = None
+
 STEP1 = 8     # indent per speaker level, block 1
 STEP2 = 4     # indent per speaker level, block 2
 EN_W = 38     # wrap width for the English column
 GAP = 3       # spaces between the Cebuano and English columns
+
+NEW_HOWTO = ("The words this text brings in, each with the meaning it has here. Read them once before block 1.")
 
 HOWTO = ("How to use: read block 1 on its own first. Then block 2 to check what you understood. "
          "Block 3 only for the words you could not place. The English in block 2 stays close to the "
@@ -107,7 +118,26 @@ def legend(levels):
     return "Who speaks: " + ", ".join(parts) + ". Names are not repeated."
 
 
-def render(header, entries, tail, names_mode=False):
+def new_words_block(path, cols=3):
+    """The 'New in this text' section: word and gloss pairs laid out in columns, or [] when unavailable."""
+    if not (new_in_text and path):
+        return []
+    items = new_in_text(path)
+    if not items:
+        return []
+    pairs = [(w, g) for w, g, _ in items]
+    rows = [pairs[i:i + cols] for i in range(0, len(pairs), cols)]
+    ww = [max(len(r[c][0]) for r in rows if c < len(r)) for c in range(cols)]          # word width per column
+    cells = [[f"{w:<{ww[c]}}  {g}".rstrip() for c, (w, g) in enumerate(r)] for r in rows]
+    cw = [max(len(r[c]) for r in cells if c < len(r)) + 3 for c in range(cols)]        # cell width per column
+    out = [f"## New in this text ({len(items)})", "", NEW_HOWTO, "", "```"]
+    for r in cells:
+        out.append("".join(f"{cell:<{cw[c]}}" for c, cell in enumerate(r)).rstrip())
+    out += ["```", ""]
+    return out
+
+
+def render(header, entries, tail, names_mode=False, path=None):
     lines = [e for e in entries if e["type"] == "line"]
     levels = None if names_mode else (
         {s.strip(): i for i, s in enumerate(header["speakers"].split("|"))} if "speakers" in header else None)
@@ -117,6 +147,7 @@ def render(header, entries, tail, names_mode=False):
         if key in header:
             out += [header[key], ""]
     out += [HOWTO, ""]
+    out += new_words_block(path)
 
     # Block 1
     out += ["## 1 · Read (Cebuano only)", ""]
@@ -180,7 +211,7 @@ def main(argv):
         return 1
     header, entries, tail = parse(paths[0])
     validate(entries)
-    sys.stdout.write(render(header, entries, tail, names_mode))
+    sys.stdout.write(render(header, entries, tail, names_mode, paths[0]))
     return 0
 
 

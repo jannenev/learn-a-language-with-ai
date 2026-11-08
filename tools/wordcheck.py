@@ -7,6 +7,7 @@ Usage:
     python3 tools/wordcheck.py --counts cebuano/texts/src/*.txt          # occurrences per entry, in exposure bands
     python3 tools/wordcheck.py --new cebuano/texts/src/*.txt             # which entries each text brings in for the first time
     python3 tools/wordcheck.py --chains cebuano/texts/src/*.txt          # lines with three or more small words in a row (--chains=2 for pairs)
+    python3 tools/wordcheck.py --list cebuano/texts/src/002.txt          # the words a text brings in, with their glosses (what render.py and print.py show)
 
 It reads the Cebuano column of cebuano/texts/src/NNN.txt ("Speaker | Cebuano | English"); the old v1 markdown
 layout (numbered lines with the Cebuano in bold) is still accepted.
@@ -181,17 +182,18 @@ def cebuano_entries(path):
 
 
 def resolve(text, gl):
-    """Resolve one dialogue line into (surface, entry, extras, boundary) per token, in order.
+    """Resolve one dialogue line into (surface, entry, extras, boundary, gloss) per token, in order.
 
     entry is the Tier 1 entry, NAME for a proper name, or None when nothing matched. extras lists
     (entry, form) pairs credited on the side: maayo and the -ng linker in "maayong buntag", the
-    linker on words like daghang. boundary is True when punctuation follows the token."""
+    linker on words like daghang. boundary is True when punctuation follows the token. gloss is
+    the token's gloss from the gloss line, "" when there is none."""
     toks = re.findall(r"([A-Za-z'\-]+)([^A-Za-z'\-]*)", text)
     # contractions: naa'y, ko'y, wala'y, unsa'y -> drop the 'y
     raw = [(w.replace("'y", "").replace("'", ""), bool(re.search(r"[.,!?;:\u2026]", t))) for w, t in toks]
     raw = [(w, b) for w, b in raw if w]
     # the gloss of each token, when the gloss line lines up with the tokens
-    glosses = [g.lower() for w, g in gl if re.search(r"[A-Za-z]", w)] if gl else []
+    glosses = [g for w, g in gl if re.search(r"[A-Za-z]", w)] if gl else []
     if len(glosses) != len(raw):
         glosses = [""] * len(raw)
     out = []
@@ -203,23 +205,24 @@ def resolve(text, gl):
         nxt_raw, nxt_brk = raw[i + 1] if i + 1 < len(raw) else ("", False)
         nxt = nxt_raw.lower()
         if lw == "maayong" and nxt in {"buntag", "hapon", "gabii"}:
-            out.append((lw + " " + nxt, "maayong buntag/hapon/gabii", [("maayo", "maayong"), ("nga", "-ng")], nxt_brk))
+            out.append((lw + " " + nxt, "maayong buntag/hapon/gabii", [("maayo", "maayong"), ("nga", "-ng")], nxt_brk,
+                        (g + " " + glosses[i + 1]).strip()))
             i += 2
             continue
-        if lw == "ni" or (lw == "na" and g == "that"):
+        if lw == "ni" or (lw == "na" and g.lower() == "that"):
             if lw == "na":
                 entry = "kana/na (that)"
-            elif g in ("of", "this"):
-                entry = "ni (of)" if g == "of" else "kini/ni (this)"
+            elif g.lower() in ("of", "this"):
+                entry = "ni (of)" if g.lower() == "of" else "kini/ni (this)"
             else:
                 entry = "ni (of)" if nxt_raw[:1].isupper() else "kini/ni (this)"
-            out.append((lw, entry, [], brk))
+            out.append((lw, entry, [], brk, g))
         elif lw in NAMES:
-            out.append((lw, NAME, [], brk))
+            out.append((lw, NAME, [], brk, g))
         else:
             entry = lookup(lw)
             extras = [("nga", "-ng")] if entry and lw.endswith("ng") and lw[:-2] in form_to_entry else []
-            out.append((lw, entry, extras, brk))
+            out.append((lw, entry, extras, brk, g))
         i += 1
     return out
 
@@ -230,7 +233,7 @@ def analyse(paths):
     counts = {}        # entry -> number of occurrences
     for path in paths:
         for text, gl in cebuano_entries(path):
-            for w, entry, extras, _ in resolve(text, gl):
+            for w, entry, extras, _, _ in resolve(text, gl):
                 if entry is None:
                     unmatched[w] = unmatched.get(w, 0) + 1
                     continue
@@ -242,6 +245,32 @@ def analyse(paths):
                     covered.setdefault(e, set()).add(form)
                     counts[e] = counts.get(e, 0) + 1
     return covered, unmatched, counts
+
+
+def new_in_text(path):
+    """The entries a text brings in, compared with the lower-numbered sources in its folder (by the three-digit
+    number, so 002b is compared with 001 only): a list of (surface, gloss, entry) in order of first appearance,
+    the gloss taken from the gloss line of that first occurrence. Used by render.py and print.py."""
+    path = Path(path)
+    num = path.stem[:3]
+    earlier = sorted(q for q in path.parent.glob("*.txt") if q.stem[:3].isdigit() and q.stem[:3] < num)
+    seen = set(analyse(earlier)[0]) if earlier else set()
+    out, found, side = [], set(), {}
+    for text, gl in cebuano_entries(path):
+        for w, entry, extras, _, g in resolve(text, gl):
+            if not entry or entry == NAME:
+                continue
+            if entry not in seen and entry not in found:
+                found.add(entry)
+                out.append((w, g, entry))
+            for e, form in extras:
+                if e not in seen and e not in found:
+                    side.setdefault(e, form)
+    for e, form in side.items():          # entries met only on the side, such as nga as the -ng linker
+        if e not in found:
+            found.add(e)
+            out.append((form, "linker" if e == "nga" else e, e))
+    return out
 
 
 def chains(paths, n):
@@ -256,7 +285,7 @@ def chains(paths, n):
         for ln, (text, gl) in enumerate(cebuano_entries(path), 1):
             items = resolve(text, gl)
             runs, run = [], []
-            for w, entry, extras, brk in items:
+            for w, entry, extras, brk, _ in items:
                 if entry in SMALL:
                     run.append((w, entry))
                 if entry not in SMALL or brk:
@@ -275,7 +304,7 @@ def chains(paths, n):
                     print("      " + "   ".join(
                         f"{w}({prior.get(e, 0)}{'*' if prior.get(e, 0) < 5 else ''}"
                         f"{', new form' if w not in forms else ''})" for w, e in r))
-            for w, entry, extras, brk in items:
+            for w, entry, extras, brk, _ in items:
                 if entry and entry != NAME:
                     prior[entry] = prior.get(entry, 0) + 1
                     forms.add(w)
@@ -291,8 +320,16 @@ def main(argv):
     show_counts = "--counts" in argv
     show_new = "--new" in argv
     chain_n = next((int(a.split("=", 1)[1]) if "=" in a else 3 for a in argv if a.startswith("--chains")), None)
+    show_list = "--list" in argv
     argv = [a for a in argv if not a.startswith("--")]
     total = len(TIER1)
+    if show_list:
+        for path in argv:
+            items = new_in_text(path)
+            print(f"{Path(path).name}: {len(items)} entries first appear here")
+            for w, g, e in items:
+                print(f"  {w:18s} {g:16s} ({e})")
+        return 0
     if chain_n:
         chains(argv, chain_n)
         return 0

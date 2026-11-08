@@ -10,7 +10,7 @@ How a new text is made for any language in this repository, from its row in the 
    - `python3 tools/wordcheck.py <language>/texts/src/NNN.txt`: nothing unmatched except names; the coverage count goes into the Word check section.
    - `python3 tools/wordcheck.py --new <language>/texts/src/*.txt`: the entries the text brings in match its row.
    - `python3 tools/wordcheck.py --chains <language>/texts/src/*.txt`: no chain against the small-words rule below.
-   - `python3 tools/render.py` refuses a gloss line that does not line up with the words.
+   - `python3 tools/render.py` refuses a gloss line that does not line up with the words; `wordcheck.py --list` shows the "New in this text" list the readers will see.
 4. **Show the source** to whoever reviews before rendering. A change is cheaper in the source than after three generated files exist.
 5. **Generate**: the rendered text `<language>/texts/NNN-title.md` with `tools/render.py`; the pronunciation files with `tools/pron.py` if the language has them; the pocket PDF with `tools/print.py --glosses`, the booklet with `--all`.
 6. **Record**: date the row in `texts.md` and add a dated line to the language's log. Nothing is committed until the reviewer agrees.
@@ -65,14 +65,14 @@ After `===`, copied as written:
 
 ## The layout, and the alternatives considered
 
-Each text is rendered into three blocks: the text alone, for the cold read and for listening; the text with the close English beside it, for checking; word by word with notes, for looking up. For paper, `print.py` puts the text left and the close English right on one page, with the word-for-word as a footnote for the lines whose English does not already contain the gloss words. The booklet (`--all`) adds an intro page with a table of the texts and their word counts.
+Each text is rendered into a list of the words it brings in, each with the gloss of its first occurrence, and then three blocks: the text alone, for the cold read and for listening; the text with the close English beside it, for checking; word by word with notes, for looking up. For paper, `print.py` puts the text left and the close English right on one page, with the word-for-word as a footnote for the lines whose English does not already contain the gloss words. The booklet (`--all`) adds an intro page with a table of the texts and their word counts.
 
 The layouts not chosen, and why (2026-10-07 and 2026-11-08):
 
 - **English interleaved under each line**, as in Assimil and most textbooks. The first version here did that, with bold line numbers and speaker names in front of each line; the text never read as a conversation and the eye slid to the English. Dropped.
 - **A natural translation on a facing page**, as in the bilingual readers. Reads well and hides the words. Useful at a later stage, when the reader already parses the sentence and only confirms the meaning.
 - **Interlinear gloss only**, the Hamiltonian system, Interlinear Books. Dense, good for lookup, poor for reading. That is block 3, kept apart on purpose.
-- **A lesson with a word list before the text and questions after**, the classic textbook shape. Pre-teaching the new words gives a modest, consistent gain. A "New in this text" line before block 1, generated from the gloss lines, is under consideration (2026-11-08); the self-check stands in for the questions.
+- **A lesson with a word list before the text and questions after**, the classic textbook shape. Pre-teaching the new words gives a modest, consistent gain, so the word list is taken over (2026-11-08): "New in this text" before block 1, generated from the gloss lines, in the rendered text, the full version and, as one compact line, on the pocket page; the self-check stands in for the questions.
 - **Listening first** (Pimsleur, TPR) waits for audio.
 
 No layout has been shown better than another in studies. What the studies support is the share of known words (about 95 percent and up for comfortable reading), spaced re-reading, retrieving before checking, glosses available but out of the way, and reading while listening; the three blocks and the schedule in `METHOD.md` keep to those. What a layout cannot do is make a chain of new small words parseable from a translation; that is solved in the writing, by the rule above.

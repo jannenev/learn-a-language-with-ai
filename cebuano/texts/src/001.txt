@@ -1,6 +1,6 @@
 title: 001 — Buntag sa balay (Morning at home)
 intro: Ana and her younger brother Jun, at home in Cebu, early morning. Mama has already left for work.
-tier: Words: Tier 1 only. First text; everything in it is Tier 1.
+tier: Words: Tier 1 only. First text: every word in it is new; the list follows.
 speakers: Ana | Jun
 
 @ Morning at home.

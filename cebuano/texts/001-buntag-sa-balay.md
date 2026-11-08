@@ -2,9 +2,30 @@
 
 Ana and her younger brother Jun, at home in Cebu, early morning. Mama has already left for work.
 
-Words: Tier 1 only. First text; everything in it is Tier 1.
+Words: Tier 1 only. First text: every word in it is new; the list follows.
 
 How to use: read block 1 on its own first. Then block 2 to check what you understood. Block 3 only for the words you could not place. The English in block 2 stays close to the Cebuano words, so it is not always natural English; where the real meaning differs, block 3 says so.
+
+## New in this text (40)
+
+The words this text brings in, each with the meaning it has here. Read them once before block 1.
+
+```
+maayong buntag  good morning   kumusta  how-are    ka       you
+maayo           good           salamat  thanks     pud      also
+nikaon          ate            na       already    wala     not
+pa              yet            gusto    want       ko       I
+karon           now            naa      there-is   pagkaon  food
+sa              in             balay    house      ta       we(let's)
+sige            okay           lami     tasty      ba       [?]
+oo              yes            kaayo    very       daghan   much
+ang             the(subj)      unsa     what       ni       this
+kabalo          know           lang     just       gyud     really
+asa             where          si       [name]     mama
+trabaho         work           moadto   will-go    didto    there
+unya            later          kwarta   money      dong     to-a-boy
+-ng             linker
+```
 
 ## 1 · Read (Cebuano only)
 

@@ -34,9 +34,9 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 from render import parse, validate, legend  # noqa: E402
 try:
-    from wordcheck import analyse, TIER1  # noqa: E402   # the core-word table; Cebuano-specific
-except ImportError:                                      # another language without a word checker
-    analyse = TIER1 = None
+    from wordcheck import analyse, TIER1, new_in_text  # noqa: E402   # the core-word table; Cebuano-specific
+except ImportError:                                                   # another language without a word checker
+    analyse = TIER1 = new_in_text = None
 
 CHROME = ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome", "google-chrome", "chromium", "chromium-browser"]
 
@@ -50,6 +50,9 @@ section:last-child { page-break-after: auto; }
 h1 { font-size: 14pt; margin: 0 0 2pt 0; font-weight: 600; }
 p.intro { margin: 0 0 4pt 0; font-size: 9.5pt; }
 p.howto { margin: 0 0 6pt 0; font-size: 8.5pt; }
+p.new { margin: 0 0 6pt 0; font-size: 8.5pt; line-height: 1.3; }
+div.newlist { columns: 3; column-gap: 14pt; font-size: 9.5pt; margin-bottom: 4pt; }
+div.newlist p { margin: 0 0 1pt 0; break-inside: avoid; }
 table { border-collapse: collapse; width: 100%; }
 td { vertical-align: top; padding: 1pt 0; }
 td.ceb { width: 54%; padding-right: 10pt; }
@@ -217,13 +220,25 @@ def footnote(entries):
             "<div class='gl'>" + "\n".join(items) + "</div>")
 
 
-def text_section(header, entries, glosses=False):
+def new_words(path):
+    """(count, [(word, gloss), ...]) for the words a text brings in, or (0, []) when unknown."""
+    if not (new_in_text and path):
+        return 0, []
+    items = new_in_text(path)
+    return len(items), [(w, g) for w, g, _ in items]
+
+
+def text_section(header, entries, glosses=False, path=None):
     levels = {s.strip(): i for i, s in enumerate(header["speakers"].split("|"))} if "speakers" in header else None
     out = [f"<section><h1>{html.escape(header['title'])}</h1>"]
     if "intro" in header:
         out.append(f"<p class='intro'>{html.escape(header['intro'])}</p>")
     who = legend(levels).replace("Who speaks: ", "") if levels else "Speaker names at the left."
     out.append(f"<p class='howto'>{html.escape(HOWTO)} {html.escape(who)}</p>")
+    n, pairs = new_words(path)
+    if n:
+        joined = " · ".join(f"<b>{html.escape(w)}</b> {html.escape(g)}" for w, g in pairs)
+        out.append(f"<p class='new'><b>New in this text ({n}):</b> {joined}</p>")
     out.append("<table>")
     for e in entries:
         if e["type"] == "scene":
@@ -256,12 +271,17 @@ def tail_html(tail):
     return r.stdout
 
 
-def full_section(header, entries, tail):
+def full_section(header, entries, tail, path=None):
     levels = {s.strip(): i for i, s in enumerate(header["speakers"].split("|"))} if "speakers" in header else None
     out = [f"<section><h1>{html.escape(header['title'])}</h1>"]
     for key in ("intro", "tier"):
         if key in header:
             out.append(f"<p class='intro'>{html.escape(header[key])}</p>")
+    n, pairs = new_words(path)
+    if n:
+        out.append(f"<h2 class='blk'>New in this text ({n})</h2>")
+        out.append("<p class='howto'>The words this text brings in, each with the meaning it has here. Read them once before block 1.</p>")
+        out.append("<div class='newlist'>" + "".join(f"<p><b>{html.escape(w)}</b> {html.escape(g)}</p>" for w, g in pairs) + "</div>")
     # block 1: the language only
     out.append("<h2 class='blk'>1 · Read (Cebuano only)</h2>")
     if levels:
@@ -374,7 +394,7 @@ def main(argv):
         out_dir = lang / "print"
         stem = p.stem[:3] + tag
         variant = "full" if full else "pocket"
-        sec = full_section(header, entries, tail) if full else text_section(header, entries, glosses)
+        sec = full_section(header, entries, tail, p) if full else text_section(header, entries, glosses, p)
         pdf = out_dir / f"{lang.name}-{stem}-{variant}.pdf"
         date = content_date(p)
         to_pdf(document([sec], date), pdf, keep_html)
