@@ -1,8 +1,25 @@
 # The texts: index, plan and record
 
-One row per text, written or planned. For a written text the row records the scene, the words it brought in and the patterns it exercises; for a planned text it is the brief to write from. The row is filled before a text is written and dated when it is done, so the plan and the record are the same table. The word columns are checked against the texts: `python3 tools/wordcheck.py --new cebuano/texts/src/*.txt` lists the entries that first appear in each text, `--counts` the occurrences per entry. The stages, the storyline and the characters are in `PLAN.md`, section 5; the words themselves in `vocabulary.md`.
+One row per text, written or planned. For a written text the row records the scene, the words it brought in and the patterns it exercises; for a planned text it is the brief to write from. The row is filled before a text is written and dated when it is done, so the plan and the record are the same table. The word columns are checked against the texts: `python3 tools/wordcheck.py --new cebuano/texts/src/*.txt` lists the entries that first appear in each text, `--counts` the occurrences per entry. The characters and the stages are below; the words themselves are in `vocabulary.md`, and how a text is written in `CREATING-TEXTS.md` at the top level.
 
 Everything here was written with AI assistance and has not been checked by a native speaker.
+
+## Characters and stages
+
+Recurring characters, so that the words recur naturally:
+
+- **Ana** — young woman, lives in Cebu with her family.
+- **Jun** — her younger brother. Ana calls him *Dong* (the everyday way to address a boy / young man).
+- **Mama** — works at the market (introduced as "at work" in Tier 1, "merkado" arrives with Tier 2).
+- Later: a friend of Ana, a shopkeeper, a jeepney ride, a visit to the beach.
+
+| Stage | Texts | Words allowed | Length | Themes |
+|---|---|---|---|---|
+| A | 001–005 | Tier 1 only (65) | 25–30 lines, dialogue | morning at home, eating, where is who, going somewhere, simple wants |
+| B | 006–013 | Tier 1 + Tier 2 (57 entries, 6–8 new per text) | 30–40 lines, dialogue | market and money, family, feelings (tired/hungry/sick), time of day, weather |
+| C | 014– about 030 | + Tier 3 in batches of 8–10 per text (about 145 candidates) | 40–60 lines, dialogue and short narrative | friends, school/work, transport, the beach, longer stories |
+
+The whole course is roughly thirty texts for about 260 roots: five at Tier 1, eight for Tier 2, fifteen or so for Tier 3. The texts get longer as the known base grows: with more known words a longer text still keeps unknown words rare, and each reading then gives more encounters per word. Stage C is where narrative (a paragraph of story between the lines of dialogue) can come in, because by then the *ni- / nag- / gi-* forms are familiar. The printed pocket page is part of the length question: 001 and 002 fit one A4 page with the word-for-word footnote, which proved convenient; a text that spills by a few lines wastes a sheet, while trimming a text to fit costs content. Text 003 as drafted (28 lines) fills page 1 and spills about five footnote rows; it is the trial case for whether a two-page pocket version works or the footnote layout should absorb it (noted 2026-11-07, not decided).
 
 ## Stage A: Tier 1 only (65 entries), texts 001–005
 

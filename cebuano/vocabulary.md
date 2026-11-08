@@ -4,6 +4,14 @@ Curated by category for *listening comprehension*. Each entry gives the standard
 
 Counts are approximate; an "entry" is one word or a tight cluster (e.g. the three greetings, or numbers 1–10).
 
+## Conventions
+
+- **Spelling:** standard modern Cebuano orthography, with the spoken/texting form given alongside where it differs: *gyud* (also *jud*), *dili* / *di*, *wala* / *wa*, *kini* / *ni*, *kana* / *na*, *kahibalo* / *kabalo*.
+- **Hyphen = glottal stop** (a small catch in the throat): *bag-o* (new), *kan-on* (rice), *tan-aw* (look), *kanus-a* (when).
+- **Verbs are listed by root**, with the forms you will actually hear: *kaon* → *mokaon* (will eat), *nikaon* (ate), *nagkaon* (is eating), *gikaon* (was eaten).
+- **Vowels** are pure: a, e, i, o, u as in Spanish or Finnish. In speech *o/u* and *e/i* swap freely (*babaye* ~ *babayi*, *tulo* ~ *tulu*).
+- **Pronouns**: the short forms (*ko, ka, ta, mi, mo*) are what you hear; full forms (*ako, ikaw, kita, kami, kamo*) appear at the start of a sentence or for emphasis.
+
 ---
 
 ## Tier 1 — Survival core (65 entries)

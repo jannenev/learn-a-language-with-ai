@@ -4,7 +4,7 @@ How a new text is made for any language in this repository, from its row in the 
 
 ## The steps
 
-1. **Start from the row.** `<language>/texts.md` has one row per text, planned or written: the scene, the words it must bring in or introduce, the patterns to exercise. If the row is missing, write it first, looking at the words still under-exposed (`python3 tools/wordcheck.py --counts <language>/texts/src/*.txt`) and at the stage and storyline in the language's plan. Two writers working from the same row produce the same words in different sentences; without the row they would also pick different words.
+1. **Start from the row.** `<language>/texts.md` has one row per text, planned or written: the scene, the words it must bring in or introduce, the patterns to exercise. If the row is missing, write it first, looking at the words still under-exposed (`python3 tools/wordcheck.py --counts <language>/texts/src/*.txt`) and at the characters and the stage table at the top of `texts.md`. Two writers working from the same row produce the same words in different sentences; without the row they would also pick different words.
 2. **Write the source**, `<language>/texts/src/NNN.txt`, in the format documented in `tools/render.py`: header lines (title, intro, tier, speakers), scene markers, one line per turn as `Speaker | text | close English`, an indented gloss line with one token per word, `!` notes, and after `===` the tail sections described below.
 3. **Check it** before anyone reads it:
    - `python3 tools/wordcheck.py <language>/texts/src/NNN.txt`: nothing unmatched except names; the coverage count goes into the Word check section.
@@ -20,7 +20,7 @@ How a new text is made for any language in this repository, from its row in the 
 ### Words
 
 - Only the tiers the text is allowed, plus the names of the characters. The row says which entries the text brings in; from the second tier on, five to eight per text. Where the scene allows, a new entry occurs more than once in the text that brings it in.
-- Keep re-using the earlier words. The count that matters is occurrences across all texts (`--counts`): the entries at one or two occurrences are the next text's job. The goal per stage is set in the language's plan (Cebuano Stage A: every Tier 1 entry at five or more after text 005).
+- Keep re-using the earlier words. The count that matters is occurrences across all texts (`--counts`): the entries at one or two occurrences are the next text's job. The goal per stage is set in the language's `texts.md` (Cebuano Stage A: every Tier 1 entry at five or more after text 005).
 
 ### Scene
 
@@ -28,7 +28,7 @@ Same characters, same setting, one continuing story, so the words come back on t
 
 ### Length
 
-Set by stage in the language's plan: short dialogues first (25 to 30 lines), longer as the known base grows, narrative paragraphs only once the verb forms are familiar. About 27 lines of dialogue fit one printed A4 page with the word-for-word footnote. Whether a longer text should take two pages or be trimmed is open; Cebuano 003 is the trial case (2026-11-07).
+Set by stage in the table at the top of the language's `texts.md`: short dialogues first (25 to 30 lines), longer as the known base grows, narrative paragraphs only once the verb forms are familiar. About 27 lines of dialogue fit one printed A4 page with the word-for-word footnote. Whether a longer text should take two pages or be trimmed is open; Cebuano 003 is the trial case (2026-11-07).
 
 ### Small words one at a time (rule from 2026-11-08)
 
@@ -80,6 +80,6 @@ No layout has been shown better than another in studies. What the studies suppor
 ## What is specific to a language
 
 - Which words are small, how affixes are stripped, the names of the characters: the tables at the top of `tools/wordcheck.py`.
-- The characters, the storyline, the stages and the goal per stage: the language's plan.
-- Spelling conventions and the spoken forms: the language's plan and vocabulary file.
+- The characters, the stages and the goal per stage: the top of the language's `texts.md`.
+- Spelling conventions and the spoken forms: the top of the language's vocabulary file.
 - Pronunciation: `tools/pron.py` and the language's `pronunciation/` folder, if any.

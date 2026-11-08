@@ -91,9 +91,9 @@ tools/wordcheck.py         counts which Tier 1 entries a text uses; flags words 
 tools/pron.py              generates the pronunciation files for a text
 tools/print.py             makes one-page A4 PDFs of the texts (Cebuano left, English right) through Chrome
 cebuano/PLAN.md            this file: goals, method, decisions, progress log for Cebuano
-cebuano/texts.md           the texts: index, plan and record, one row per text
+cebuano/texts.md           the texts: characters and stages, then one row per text, planned or written
 cebuano/audio.md           the listening side: pronunciation data, voices surveyed, tests, what a native speaker said
-cebuano/vocabulary.md      Tier 1, Tier 2 (full entries) and Tier 3 backlog
+cebuano/vocabulary.md      spelling conventions; Tier 1, Tier 2 (full entries) and Tier 3 backlog
 cebuano/grammar-notes.md   listening grammar: what to recognise, not what to produce
 cebuano/texts/src/         the texts as written: NNN.txt, one line per sentence with English and gloss
 cebuano/texts/             the rendered texts, NNN-title.md (generated, do not edit by hand)
@@ -104,34 +104,11 @@ cebuano/print/             generated PDFs for printing; not committed until the 
 
 ## 5. Storyline for the texts
 
-Recurring characters so words recur naturally:
-
-- **Ana** — young woman, lives in Cebu with her family.
-- **Jun** — her younger brother. Ana calls him *Dong* (the everyday way to address a boy / young man).
-- **Mama** — works at the market (introduced as "at work" in Tier 1, "merkado" arrives with Tier 2).
-- Later: a friend of Ana, a shopkeeper, a jeepney ride, a visit to the beach.
-
-Planned sequence:
-
-| Stage | Texts | Words allowed | Length | Themes |
-|---|---|---|---|---|
-| A | 001–005 | Tier 1 only (65) | 25–30 lines, dialogue | morning at home, eating, where is who, going somewhere, simple wants |
-| B | 006–013 | Tier 1 + Tier 2 (57 entries, 6–8 new per text) | 30–40 lines, dialogue | market and money, family, feelings (tired/hungry/sick), time of day, weather |
-| C | 014– about 030 | + Tier 3 in batches of 8–10 per text (about 145 candidates) | 40–60 lines, dialogue and short narrative | friends, school/work, transport, the beach, longer stories |
-
-So the whole course is roughly thirty texts for about 260 roots: five at Tier 1, eight for Tier 2, fifteen or so for Tier 3. The texts get longer as the known base grows: with more known words a longer text still keeps unknown words rare, and each reading then gives more encounters per word. Stage C is where narrative (a paragraph of story between the lines of dialogue) can come in, because by then the *ni- / nag- / gi-* forms are familiar. The printed pocket page is part of the question: 001 and 002 fit one A4 page with the word-for-word footnote, which proved convenient, and a text that spills by a few lines wastes a sheet, while trimming a text to fit costs content. Text 003 as drafted (28 lines) fills page 1 with the dialogue and spills about five footnote rows, a few percent of a page; it is the trial case for whether a two-page pocket version works or the footnote layout should absorb it (noted 2026-11-07, not decided).
-
-### Text plan
-
-The text-by-text plan and record is `texts.md`: one row per text, written or planned, with the scene, the words it brings in or introduces, and the patterns it exercises. A row is filled before the text is written and dated when it is done, so the plan and the record are one table. The word columns are checked against the texts with `python3 tools/wordcheck.py --new` (first appearances) and `--counts` (occurrences). Measurable goal for Stage A: after 005, no Tier 1 entry below five occurrences (after 002 there were 20 entries at zero or one; after the 003 draft, none below two).
+The characters, the stage table (texts, words allowed, length, themes) and the text-by-text plan and record are in `texts.md` (moved there 2026-11-08). Before Stage B: decide whether *merkado* moves from Tier 3 to Tier 2; the storyline assumes it does.
 
 ## 6. Conventions
 
-- **Spelling:** standard modern Cebuano orthography, with the spoken/texting form given alongside where it differs: *gyud* (also *jud*), *dili* / *di*, *wala* / *wa*, *kini* / *ni*, *kana* / *na*, *kahibalo* / *kabalo*.
-- **Hyphen = glottal stop** (a small catch in the throat): *bag-o* (new), *kan-on* (rice), *tan-aw* (look), *kanus-a* (when).
-- **Verbs are listed by root**, with the forms you will actually hear: *kaon* → *mokaon* (will eat), *nikaon* (ate), *nagkaon* (is eating), *gikaon* (was eaten).
-- **Vowels** are pure: a, e, i, o, u as in Spanish or Finnish. In speech *o/u* and *e/i* swap freely (*babaye* ~ *babayi*, *tulo* ~ *tulu*).
-- **Pronouns**: the short forms (*ko, ka, ta, mi, mo*) are what you hear; full forms (*ako, ikaw, kita, kami, kamo*) appear at the start of a sentence or for emphasis.
+Spelling, the spoken forms, verbs by root, vowels and the pronoun forms are at the top of `vocabulary.md` (moved there 2026-11-08).
 
 ## 6a. Pronunciation and audio (2026-10-07, 2026-11-08)
 
@@ -145,6 +122,7 @@ Pronunciation data lives in `cebuano/pronunciation/`, separate from the texts, s
 - **Frequency cross-check.** The lists are curated from knowledge of the language, not derived from a corpus. Worth checking Tier 1–2 against a real frequency list (e.g. from OPUS subtitles or a Cebuano Wikipedia dump), keeping in mind that written corpora under-represent spoken particles. The coverage estimate in section 2 is a reasoned guess and would be the first thing such a check would correct.
 - **Tier sizes.** 65 / ~50 are starting guesses. Prune Tier 1 if the first texts feel crowded.
 - **Cebu vs Mindanao.** Decide whether to note Davao-style variants at all, or stick to Cebu only.
+- **Text length and the printed page.** Whether a text that spills over one pocket page takes two pages or the footnote layout absorbs it; 003 is the trial case. The reasoning is with the stage table in `texts.md` and under Length in `CREATING-TEXTS.md`. Noted 2026-11-07.
 
 ## 8. Progress log
 
@@ -160,14 +138,15 @@ Pronunciation data lives in `cebuano/pronunciation/`, separate from the texts, s
 - **2026-11-07** — Print footer overlap fixed. The footer is a fixed-position element, which Chrome repeats on every page but which reserves no room, so on the first full page (003 with the footnote) the last line printed under it. Chrome clips fixed elements to the page area, so the footer cannot be moved into the margin; instead the page content is wrapped in a table whose empty footer row Chrome repeats at every page break, keeping 14 pt clear at the foot of each page. The alternative, a CSS `@page` margin box, would fit two more footnote rows but cannot hold the clickable link.
 - **2026-11-07** — Publishing files added at the top level: README.md (the idea, how it works, the Cebuano material, status), METHOD.md (the method in six steps, the reasons, files and tools), and AGENTS.md with CLAUDE.md importing it, telling an assistant how to help a learner with the existing material, extend it, or do the same for another language.
 - **2026-11-08** — Audio sources surveyed, written up as `cebuano/audio.md`, the record of the listening side beside `texts.md`; PLAN.md keeps the decision (section 6a) and the pointers. The Azure SSML target of `pron.py` turned out dead: Azure's Filipino voices accept no phoneme tags. Two engines take our IPA directly, ElevenLabs v4 (Cebuano listed, IPA inline in slashes, free tier enough for tests) and the open-source IMS Toucan (Cebuano in its list, zero-shot, quality unknown); Google Gemini-TTS has Cebuano in preview without pronunciation control; Meta MMS stays the free local baseline, its CC-BY-NC licence allowing the audio in this repository with attribution. Verification idea: a native speaker listens to generated clips and marks the wrong words, a smaller ask than recording. Nothing generated yet.
+- **2026-11-08** — Reading 002, the learner found the chains of small words hard (*pa ko og*, *na mo sa*, *ba ka sa*: three in a row, new or nearly new, the English not showing which is which). Rule "small words one at a time" written into the new top-level `CREATING-TEXTS.md`, which now holds how a text is made (steps, rules, the observations behind them, the layout alternatives considered); `tools/wordcheck.py --chains` lists such lines with each member's exposure. This file slimmed to goal, method parameters, open questions, log and next steps: text format to `CREATING-TEXTS.md`, audio to `audio.md`, characters and stages to `texts.md`, spelling conventions to `vocabulary.md`. 002 to be revised to the rule; the 003 draft to be reviewed against it.
 
 ## 9. Next steps
 
 1. Verify the entries marked `check` in `cebuano/pronunciation/lexicon.tsv` with a native speaker or Wolff's dictionary (dali, sige, palihug, kuan, the suffixed verb forms).
-2. Review the draft of text 003 (`cebuano/texts/src/003.txt`), then render it, generate its pronunciation files and PDF, and write 004 and 005 from their rows in `texts.md`. After 005, check with `wordcheck.py --counts` that no Tier 1 entry is below five occurrences.
+2. Revise 002 to the small-words rule in `CREATING-TEXTS.md` (seven lines, see `wordcheck.py --chains`) and re-render it; decide the "New in this text" line before block 1. Then review the draft of text 003 (`cebuano/texts/src/003.txt`) against the same rule, render it, generate its pronunciation files and PDF, and write 004 and 005 from their rows in `texts.md`. After 005, check with `wordcheck.py --counts` that no Tier 1 entry is below five occurrences.
 3. Decide the audio source: run the tests in `audio.md`, section 4, on text 001 (ElevenLabs v4 plain and with IPA, Meta MMS locally, Toucan if needed), send the clips to a native speaker, then retarget `tools/pron.py` from the Azure SSML to the chosen engine's input and add a `tools/speak.py` that writes `cebuano/audio/NNN.mp3`.
 4. Follow the reading schedule in section 2 for 001 and 002 while 003 to 005 are written.
-5. Before Stage B: decide whether *merkado* moves from Tier 3 to Tier 2 (section 5 assumes it does), and extend `tools/wordcheck.py` and the lexicon with Tier 2.
+5. Before Stage B: decide whether *merkado* moves from Tier 3 to Tier 2 (the storyline in `texts.md` assumes it does), and extend `tools/wordcheck.py` and the lexicon with Tier 2.
 
 ## 10. Outside resources (checked 2026-10-07)
 
