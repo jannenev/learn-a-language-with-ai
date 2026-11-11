@@ -26,9 +26,19 @@ How a new text is made for any language in this repository, from its row in the 
 
 Same characters, same setting, one continuing story, so the words come back on their own. A scene marker (`@ ...`) says where and when and is shown in blocks 1 and 2. Speakers are shown by indentation, in the order of the `speakers:` header; with four or more, render with `--names`.
 
+The scene must be picturable (rule from 2026-11-10): something seen and something that happens, not a description. Objects and events go into the Cebuano where the tier allows, and into the English intro and scene markers where it does not; the English costs nothing from the tier. Events over states: water poured into two cups, a plate pointed at, money refused.
+
+Where it comes from: the first Cebuano 002 was written to exercise words, walk, many people, eat, drink, go home. Reading it on 2026-11-10, the learner could picture nothing and afterwards not say what it had been about; the one line that stayed was the money refused, *Ayaw na, Day. Imoha na.* Their observation: they remember in pictures, and the common core words are mostly abstract, so the text has to supply the pictures around them. Concrete, imageable words are learned faster and kept longer than abstract ones (dual coding; de Groot and Keijzer 2000), for everyone and more so for a visual thinker; the core of a language is made of the abstract ones, which is the price of choosing words by frequency. 002 now has the hot streets, the stall with fish under a tin roof, Mama pouring water, and *merkado* to name the place.
+
 ### Length
 
 Set by stage in the table at the top of the language's `texts.md`: short dialogues first (25 to 30 lines), longer as the known base grows, narrative paragraphs only once the verb forms are familiar. About 27 lines of dialogue fit one printed A4 page with the word-for-word footnote. Whether a longer text should take two pages or be trimmed is open; Cebuano 003 is the trial case (2026-11-07).
+
+### One new thing per sentence (rule from 2026-11-10)
+
+A sentence brings in one new thing: a new word, a new form of a known word (*akong*, *gikaon*), a new pattern, or a chain of known small words, never two of them. Everything else in the sentence is known, so the reader can hold it steady and look at the one thing that moved. Stage A sentences average under three words; that is the rule at work, not thinness. The small-words rule below is the special case for pronouns, markers and particles.
+
+Where it comes from: Cebuano 002, read on 2026-11-10 after the small-words revision, was still hard, and the hardest line was *Dili na, Ma. Daghan na kaayo ang akong gikaon*: *na*, *kaayo* stacked on it, the new form *akong* and the *gi-* verb used as a noun, in one sentence of five words, with the English "What I ate is already very much" unable to show which word did what. The learner asked whether separate sentences would be easier. The line is now *Dili na, Ma. Daghan na. Nikaon na ko.*, three sentences of a known word plus *na*, and *akong* and *gikaon* wait for 005. The rule serves the way the learner actually reads: pick a sentence, work out what it meant, memorise it or a part of it, one at a time.
 
 ### Small words one at a time (rule from 2026-11-08)
 
