@@ -56,14 +56,14 @@ You will hear these in almost every sentence, clustered right after the first wo
 | Word | Also | Meaning | Example |
 |---|---|---|---|
 | ba | — | yes/no question marker | *Lami ba?* — Is it tasty? |
-| na | — | already / now | *Kaon na!* — Eat now! · *Nikaon na ko.* — I've already eaten. |
+| na | — | already / now / anymore | *Nikaon na ko.* — I've already eaten. · *Kaon na!* — Eat now! · *Dili na.* — Not anymore. |
 | pa | — | still / yet / more | *Wala pa.* — Not yet. · *Naa pa?* — Is there still some? |
 | lang | ra, lamang | only / just | *Ako lang.* — Just me. · *Gamay lang.* — Just a little. |
 | gyud | jud, gyod, gayod | really / definitely | *Lami gyud!* — It's really good! |
 | kaayo | — | very (comes *after* the adjective) | *Dako kaayo.* — Very big. |
 | pud | sad, usab | also / too | *Ako pud.* — Me too. |
 
-*na* is also short for *kana* "that" (*Unsa na?* — What's that?). Context decides.
+*na* is one word: the situation has changed, the new state is here. English picks "already" after a finished action, "now" with a command or plan, "anymore" after a no. *na* is also short for *kana* "that" (*Unsa na?* — What's that?). Context decides.
 
 ### 1.4 Yes / no / there is (4)
 

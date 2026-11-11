@@ -97,7 +97,8 @@ Sige, Dong.                             OK, Dong.
 
  4  Maayo  pud.  Nikaon  na       ka?
     good   also  ate     already  you
-    · ni- = did, na = already. "Nikaon na ka?" is the everyday greeting right after hello.
+    · ni- = did. na = already: the situation has changed. The same na is "now" in a command or plan (Kaon na! = eat now) and "anymore" after a no (Dili na). One word, three English faces; text 002 has all three.
+    · "Nikaon na ka?" is the everyday greeting right after hello.
 
  5  Wala  pa.  Gusto  ko  mokaon    karon.
     not   yet  want   I   will-eat  now
