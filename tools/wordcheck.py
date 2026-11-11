@@ -277,16 +277,20 @@ def new_in_text(path):
     path = Path(path)
     num = path.stem[:3]
     earlier = sorted(q for q in path.parent.glob("*.txt") if q.stem[:3].isdigit() and q.stem[:3] < num)
-    seen = set(analyse(earlier)[0]) if earlier else set()
+    seen = set()
+    if earlier:
+        covered, unmatched, _ = analyse(earlier)
+        seen = set(covered) | set(unmatched)      # a word outside the tiers counts as seen once a text used it
     out, found, side = [], set(), {}
     for text, gl in cebuano_entries(path):
         for w, entry, extras, _, g in resolve(text, gl):
-            if not entry or entry == NAME:
+            if entry == NAME:
                 continue
-            if entry not in seen and entry not in found:
-                found.add(entry)
-                root = root_of(w, entry)
-                out.append((w, f"{g} ({root})".strip() if root else g, entry))
+            key = entry or w.lower()               # a word outside the tiers is new to the reader too (002: merkado)
+            if key not in seen and key not in found:
+                found.add(key)
+                root = root_of(w, entry) if entry else None
+                out.append((w, f"{g} ({root})".strip() if root else g, key))
             for e, form in extras:
                 if e not in seen and e not in found:
                     side.setdefault(e, form)
