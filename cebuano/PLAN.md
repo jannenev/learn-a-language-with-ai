@@ -105,7 +105,7 @@ cebuano/print/             generated PDFs for printing; not committed until the 
 
 ## 5. Storyline for the texts
 
-The characters, the stage table (texts, words allowed, length, themes) and the text-by-text plan and record are in `texts.md` (moved there 2026-11-08). Before Stage B: decide whether *merkado* moves from Tier 3 to Tier 2; the storyline assumes it does.
+The characters, the stage table (texts, words allowed, length, themes) and the text-by-text plan and record are in `texts.md` (moved there 2026-11-08). *merkado* moved to Tier 2 on 2026-11-11 and is used once in 002.
 
 ## 6. Conventions
 
@@ -135,7 +135,7 @@ In `LOG.md`, dated entries oldest first (moved there 2026-11-08).
 2. Review the draft of text 003 (`cebuano/texts/src/003.txt`) against the small-words rule (two three-word chains; it now introduces *na* = that and *ra*, each needing its note), render it, generate its pronunciation files and PDF, and write 004 and 005 from their rows in `texts.md`. After 005, check with `wordcheck.py --counts` that no Tier 1 entry is below five occurrences.
 3. Decide the audio source: run the tests in `audio.md`, section 4, on text 001 (ElevenLabs v4 plain and with IPA, Meta MMS locally, Toucan if needed), send the clips to a native speaker, then retarget `tools/pron.py` from the Azure SSML to the chosen engine's input and add a `tools/speak.py` that writes `cebuano/audio/NNN.mp3`.
 4. Follow the reading schedule in section 2 for 001 and 002 while 003 to 005 are written.
-5. Before Stage B: decide whether *merkado* moves from Tier 3 to Tier 2 (the storyline in `texts.md` assumes it does), and extend `tools/wordcheck.py` and the lexicon with Tier 2.
+5. Before Stage B: extend `tools/wordcheck.py` and the lexicon with Tier 2. (*merkado* was moved from Tier 3 to Tier 2 on 2026-11-11 for text 002 and is in the lexicon already.)
 
 ## 10. Outside resources (checked 2026-10-07)
 

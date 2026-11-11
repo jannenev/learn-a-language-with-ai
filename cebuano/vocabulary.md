@@ -156,7 +156,7 @@ Prefix reminder: **mo-** = will / going to; **ni-** (also **mi-**) = did; **nag-
 
 ---
 
-## Tier 2 — Everyday (≈ 58 entries, total ≈ 123)
+## Tier 2 — Everyday (≈ 59 entries, total ≈ 124)
 
 Goal: market, money, family, feelings, time. Introduced 5–8 per text from text 006 onward.
 
@@ -207,7 +207,7 @@ Goal: market, money, family, feelings, time. Introduced 5–8 per text from text
 | anhi | moanhi, nianhi, ari | come (here) | *Moanhi siya ugma.* — She'll come tomorrow. |
 | pwede | mahimo | can / may / possible | *Pwede ba?* — May I? / Is it OK? · *Dili pwede.* — Not allowed. |
 
-### 2.5 Nouns (10)
+### 2.5 Nouns (11)
 
 | Word | Also | Meaning | Example |
 |---|---|---|---|
@@ -221,6 +221,7 @@ Goal: market, money, family, feelings, time. Introduced 5–8 per text from text
 | kape | — | coffee | *Kape ta!* — Let's have coffee! |
 | adlaw | — | day; sun | *matag adlaw* — every day · *Init ang adlaw.* — The sun is hot. |
 | oras | — | time; hour; o'clock | *Unsang orasa?* — What time? · *Wala ko'y oras.* — I have no time. |
+| merkado | — | market (Spanish loan) | *sa merkado* — at the market. Moved up from Tier 3 on 2026-11-11; used once in text 002, the one Tier 2 word in Stage A |
 
 ### 2.6 Time (3)
 
@@ -290,7 +291,7 @@ Compact form: word — meaning. Promote to full entries when introduced.
 
 **People:** lalaki — man / male · babaye — woman / female · Lola / Lolo — grandma / grandpa · bana — husband · asawa — wife · uyab — boyfriend / girlfriend · silingan — neighbour · maestra / maestro — teacher · tindera — shopkeeper (f.) · driver — driver
 
-**Places:** eskwelahan — school · tindahan — store (small shop) · merkado — market · dalan — road / street · syudad — city · baryo / barangay — village / district · simbahan — church · kwarto — room · dagat — sea / beach · bukid — mountain · ospital — hospital · sakyanan — vehicle · jeep — jeepney
+**Places:** eskwelahan — school · tindahan — store (small shop) · dalan — road / street · syudad — city · baryo / barangay — village / district · simbahan — church · kwarto — room · dagat — sea / beach · bukid — mountain · ospital — hospital · sakyanan — vehicle · jeep — jeepney
 
 **Food:** manok — chicken · baboy — pork / pig · karne — meat · saging — banana · gulay — vegetables · prutas — fruit · itlog — egg · pan — bread · asin — salt · asukar — sugar · tam-is — sweet · parat — salty · aslom — sour · kaon → pamahaw (breakfast), paniudto (lunch), panihapon (dinner)
 

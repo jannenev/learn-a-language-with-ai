@@ -6,12 +6,12 @@ Read the Cebuano (Bisaya) text below aloud. You do not need to know the language
 - An acute accent marks the stressed syllable: salámat, kumustá, maáyo, túbig, baláy. A grave accent on a final vowel means the word ends in a glottal stop: lamì, dílì. A circumflex means a stressed final syllable that ends in a glottal stop: dakô, walâ. Words without a mark are unstressed little words.
 - Read each line at a calm natural speed, pause briefly between lines, and do not translate.
 
-Jun! Dalî dirí! Ádto na ta.
+Jun! Dalî dirí! Ádto ta.
 Hulát lang, Ána. Gústo ko og túbig. Moínom pa ko.
 Síge. Dalî lang.
 Óo. … Síge, ádto na ta!
 Ása ang trabáho ni Máma?
-Didtó. Náa didtó si Máma.
+Didtó, sa merkádo. Náa didtó si Máma.
 Dághan kaáyo ang táwo didtó!
 Óo. Dághan gyud. Dalî, Dong.
 Ána! Jun! Kumustá mo?
@@ -23,13 +23,13 @@ Maáyo. Náa'y túbig. Gústo ba mo?
 Akó pud.
 Ma, únsa ni?
 Pagkáon ni Ána. Gústo ka?
-Dílì na, Ma. Dághan na kaáyo ang ákong gikáon.
+Dílì na, Ma. Dághan na. Nikáon na ko.
 Ma, náa ko'y kwárta. Pilá ni?
 Ayáw na, Day. Imúha na.
 Salámat kaáyo, Ma!
 Síge. Ádto na mo. Gabíi na únya.
 Ikáw, Ma? Moádto ba ka únya?
 Óo, únya. Náa pa ko'y trabáho.
-Síge, Ma. Maghulát mi sa baláy.
+Síge, Ma. Mohulát mi sa baláy.
 Síge. Salámat, Day. Salámat, Dong.
 Síge, Ma!

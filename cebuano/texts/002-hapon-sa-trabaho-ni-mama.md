@@ -1,21 +1,21 @@
 # 002 — Hapon: sa trabaho ni Mama (Afternoon: at Mama's work)
 
-Same day as text 001, afternoon. Ana and Jun walk to the stall where Mama works. It turns out to be a small place with many people around.
+Same day as text 001, afternoon. Ana and Jun walk through the hot streets to the market where Mama works. Her stall is a small table of fish under a tin roof, with a crowd in front of it.
 
-Words: Tier 1 only. Seen in 001 but in a new role here: ni as "of" before a name (in 001 "this"); gikaon and maghulat, new prefixes on known roots.
+Words: Tier 1, plus one Tier 2 word, merkado (market), a Spanish loan that reads at sight. Seen in 001 but in a new role here: ni as "of" before a name (in 001 "this").
 
 How to use: read block 1 on its own first. Then block 2 to check what you understood. Block 3 only for the words you could not place. The English in block 2 stays close to the Cebuano words, so it is not always natural English; where the real meaning differs, block 3 says so.
 
-## New in this text (14)
+## New in this text (15)
 
 The words this text brings in, each with the meaning it has here. Read them once before block 1.
 
 ```
-dali  quick   diri   here     hulat   wait
-og    some    tubig  water    moinom  will-drink (inom)
-ni    of      tawo   people   mo      you(pl)
-mi    we      dili   no       pila    how-much
-ayaw  don't   gabii  night
+dali  quick      diri     here     hulat   wait
+og    some       tubig    water    moinom  will-drink (inom)
+ni    of         merkado  market   tawo    people
+mo    you(pl)    mi       we       dili    no
+pila  how-much   ayaw     don't    gabii   night
 ```
 
 ## 1 · Read (Cebuano only)
@@ -23,17 +23,17 @@ ayaw  don't   gabii  night
 Who speaks: Ana speaks from the left margin, Jun indented, Mama indented further. Names are not repeated.
 
 ```
-(At home, after eating.)
+(At home, after eating. Early afternoon, hot.)
 
-Jun! Dali diri! Adto na ta.
+Jun! Dali diri! Adto ta.
         Hulat lang, Ana. Gusto ko og tubig. Moinom pa ko.
 Sige. Dali lang.
         Oo. … Sige, adto na ta!
 
-(They walk. Later, at Mama's work.)
+(They walk through the streets to the market. Mama's stall: a small table with fish on ice under a tin roof, people pressing in front of it, noise.)
 
         Asa ang trabaho ni Mama?
-Didto. Naa didto si Mama.
+Didto, sa merkado. Naa didto si Mama.
         Daghan kaayo ang tawo didto!
 Oo. Daghan gyud. Dali, Dong.
                 Ana! Jun! Kumusta mo?
@@ -43,16 +43,19 @@ Maayo lang mi, Ma. Ikaw?
                 Maayo. Naa'y tubig. Gusto ba mo?
         Oo, gusto ko og tubig. Salamat, Ma.
 Ako pud.
+
+(Mama pours water from a jug into two cups. Jun points at a plate on the table.)
+
         Ma, unsa ni?
                 Pagkaon ni Ana. Gusto ka?
-        Dili na, Ma. Daghan na kaayo ang akong gikaon.
+        Dili na, Ma. Daghan na. Nikaon na ko.
 Ma, naa ko'y kwarta. Pila ni?
                 Ayaw na, Day. Imoha na.
 Salamat kaayo, Ma!
                 Sige. Adto na mo. Gabii na unya.
         Ikaw, Ma? Moadto ba ka unya?
                 Oo, unya. Naa pa ko'y trabaho.
-Sige, Ma. Maghulat mi sa balay.
+Sige, Ma. Mohulat mi sa balay.
                 Sige. Salamat, Day. Salamat, Dong.
 Both: Sige, Ma!
 ```
@@ -62,18 +65,18 @@ Both: Sige, Ma!
 Who speaks: Ana speaks from the left margin, Jun indented, Mama indented further. Names are not repeated.
 
 ```
-(At home, after eating.)
+(At home, after eating. Early afternoon, hot.)
 
-Jun! Dali diri! Adto na ta.                              Jun! Quick, here! Let's go now.
+Jun! Dali diri! Adto ta.                                 Jun! Quick, here! Let's go.
     Hulat lang, Ana. Gusto ko og tubig. Moinom pa ko.    Just wait, Ana. I want some water.
                                                          I'll drink first.
 Sige. Dali lang.                                         OK. Just quick.
     Oo. … Sige, adto na ta!                              Yes. … OK, let's go now!
 
-(They walk. Later, at Mama's work.)
+(They walk through the streets to the market. Mama's stall: a small table with fish on ice under a tin roof, people pressing in front of it, noise.)
 
     Asa ang trabaho ni Mama?                             Where is the work of Mama?
-Didto. Naa didto si Mama.                                There. Mama is there.
+Didto, sa merkado. Naa didto si Mama.                    There, at the market. Mama is there.
     Daghan kaayo ang tawo didto!                         Very many, the people there!
 Oo. Daghan gyud. Dali, Dong.                             Yes. Really many. Quick, Dong.
         Ana! Jun! Kumusta mo?                            Ana! Jun! How are you two?
@@ -84,10 +87,13 @@ Maayo lang mi, Ma. Ikaw?                                 We're just fine, Ma. Yo
         Maayo. Naa'y tubig. Gusto ba mo?                 Good. There is water. Do you two want?
     Oo, gusto ko og tubig. Salamat, Ma.                  Yes, I want some water. Thanks, Ma.
 Ako pud.                                                 I too.
+
+(Mama pours water from a jug into two cups. Jun points at a plate on the table.)
+
     Ma, unsa ni?                                         Ma, what's this?
         Pagkaon ni Ana. Gusto ka?                        Food of Ana. You want?
-    Dili na, Ma. Daghan na kaayo ang akong gikaon.       Not anymore, Ma. What I ate is already
-                                                         very much.
+    Dili na, Ma. Daghan na. Nikaon na ko.                Not anymore, Ma. Much already. I ate
+                                                         already.
 Ma, naa ko'y kwarta. Pila ni?                            Ma, I have money. How much, this?
         Ayaw na, Day. Imoha na.                          Don't anymore, Day. It's yours now.
 Salamat kaayo, Ma!                                       Thanks very much, Ma!
@@ -95,7 +101,7 @@ Salamat kaayo, Ma!                                       Thanks very much, Ma!
                                                          already be night.
     Ikaw, Ma? Moadto ba ka unya?                         You, Ma? Will you go later?
         Oo, unya. Naa pa ko'y trabaho.                   Yes, later. I still have work.
-Sige, Ma. Maghulat mi sa balay.                          OK, Ma. We'll wait at the house.
+Sige, Ma. Mohulat mi sa balay.                           OK, Ma. We'll wait at the house.
         Sige. Salamat, Day. Salamat, Dong.               OK. Thanks, Day. Thanks, Dong.
 Both: Sige, Ma!                                          OK, Ma!
 ```
@@ -103,10 +109,10 @@ Both: Sige, Ma!                                          OK, Ma!
 ## 3 · Word by word
 
 ```
- 1  Jun!  Dali   diri!  Adto  na   ta.
-          quick  here   go    now  we(let's)
+ 1  Jun!  Dali   diri!  Adto  ta.
+          quick  here   go    we(let's)
     · Dali diri! is literally "quick, here!" and is how you say "come here!"
-    · root verb + ta = "let's": Adto ta! Kaon ta!
+    · root verb + ta = "let's": Adto ta! like Kaon ta! in text 001
 
  2  Hulat  lang,  Ana.  Gusto  ko  og    tubig.  Moinom      pa     ko.
     wait   just         want   I   some  water   will-drink  still  I
@@ -117,13 +123,15 @@ Both: Sige, Ma!                                          OK, Ma!
 
  4  Oo.  …  Sige,  adto  na   ta!
     yes     okay   go    now  we(let's)
+    · adto na ta = let's go now: adto ta (line 1) with na slipped in after the first word. Take it as one piece.
 
  5  Asa    ang        trabaho  ni  Mama?
     where  the(subj)  work     of
     · ni before a name = "of": trabaho ni Mama = Mama's work
 
- 6  Didto.  Naa       didto  si      Mama.
-    there   there-is  there  [name]
+ 6  Didto,  sa  merkado.  Naa       didto  si      Mama.
+    there   at  market    there-is  there  [name]
+    · merkado = market, from Spanish mercado; the one word in this text outside Tier 1
     · si marks a person's name as the subject; it has no English equivalent
 
  7  Daghan  kaayo  ang        tawo    didto!
@@ -166,9 +174,9 @@ Both: Sige, Ma!                                          OK, Ma!
     food     of        want   you
     · ni at the end of unsa ni = this; ni before a name = of. Compare line 5, trabaho ni Mama.
 
-18  Dili  na,      Ma.  Daghan  na       kaayo  ang        akong  gikaon.
-    no    anymore  Ma   much    already  very   the(subj)  my     eaten
-    · ang akong gikaon = "what I ate" (literally: the my eaten). gi- = done to it.
+18  Dili  na,      Ma.  Daghan  na.      Nikaon  na       ko.
+    no    anymore  Ma   much    already  ate     already  I
+    · three na in a row, one word with three English faces: dili na = not anymore, daghan na = much already (I've had enough), nikaon na ko = I ate already. na says the situation has changed.
 
 19  Ma,  naa       ko'y  kwarta.  Pila      ni?
     Ma   there-is  I     money    how-much  this
@@ -191,9 +199,8 @@ Both: Sige, Ma!                                          OK, Ma!
 24  Oo,  unya.  Naa       pa     ko'y  trabaho.
     yes  later  there-is  still  I     work
 
-25  Sige,  Ma.  Maghulat   mi  sa  balay.
+25  Sige,  Ma.  Mohulat    mi  sa  balay.
     okay   Ma   will-wait  we  at  house
-    · mag- = future, same job as mo-; some verbs prefer it
 
 26  Sige.  Salamat,  Day.       Salamat,  Dong.
     okay   thanks    to-a-girl  thanks    to-a-boy
@@ -208,8 +215,8 @@ Both: Sige, Ma!                                          OK, Ma!
 - **Plural you and we.** *Kumusta mo?* (how are you two?), *Maayo lang mi* (we're just fine), *Nikaon na mo?*, *Adto na mo*. Short *mo* = you (plural), short *mi* = we (without you). Contrast *ka* (you, one person) and *ta* (we, with you).
 - **Same sound, two jobs.** *ni* = "this" in *unsa ni* (line 16), as in text 001, but "of" in *trabaho ni Mama* (line 5) and *pagkaon ni Ana* (line 17). The position tells you: *ni* right before a person's name is "of"; *ni* on its own is "this".
 - **"No more" and "still".** *Dili na* (no more / not anymore), *Ayaw na* (don't bother), versus *Naa pa ko'y trabaho* (I *still* have work).
-- **gi- form.** *Ang akong gikaon* = "what I ate" (the eaten thing, with me as the eater). The first glimpse of object-focus; recognise it, don't produce it yet.
-- **mag- as future.** *Maghulat mi* = we will wait. Same job as *mo-*; some verbs just prefer *mag-*.
+- **One na, three faces.** *na* says the situation has changed; English picks a word by the verb: *nikaon na* (already), *adto na ta* (now), *dili na* (anymore). Line 18 has all three in a row.
+- **Where the little words go.** Cebuano puts the particles and the short pronouns right after the first word of the sentence, in that order: *Adto na ta. Nikaon na mo? Gusto ba mo? Naa pa ko'y trabaho.* First word, then *na / ba / pa*, then *ta / mo / ko*. Every chain in these texts has this shape; take the set phrases (*adto na ta*, *dali diri*) as one piece.
 - **sige** closes conversations: lines 26–27 are a normal Bisaya goodbye.
 
 ## Self-check
@@ -218,7 +225,7 @@ Read block 1 only. Count the lines you understood fully. 24 of 27 → ready for 
 
 ## Word check
 
-All words are Tier 1. Proper names: Ana, Jun, Mama / Ma. Prefix *mag-* (line 25) is explained in `grammar-notes.md` section 4.
+All words are Tier 1 except *merkado* (market), a Spanish loan from Tier 2, used once to name the place. Proper names: Ana, Jun, Mama / Ma.
 
-**Coverage:** 50 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/002.txt`).
+**Coverage:** 49 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/002.txt`).
 **Cumulative after texts 001 + 002:** 54 of 65. Still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay, and *na* = that (kana).
