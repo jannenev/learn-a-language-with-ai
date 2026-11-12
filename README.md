@@ -17,6 +17,7 @@ Free material for beginners. Everything for Cebuano is in [`cebuano/`](cebuano/)
 
 - the word list in tiers: [vocabulary.md](cebuano/vocabulary.md)
 - a short grammar sheet for listeners: [grammar-notes.md](cebuano/grammar-notes.md)
+- the small words in their sets, one page to glance at: [word-sets.md](cebuano/word-sets.md)
 - the texts, to be read in order: [001 Buntag sa balay](cebuano/texts/001-buntag-sa-balay.md), [002 Hapon: sa trabaho ni Mama](cebuano/texts/002-hapon-sa-trabaho-ni-mama.md)
 - pronunciation files for software and AI voices, in [`cebuano/pronunciation/`](cebuano/pronunciation/): paste `NNN.paste.txt` into a chat voice that reads aloud to hear a text
 - the listening side, the voices that could speak the texts and what has been tried: [audio.md](cebuano/audio.md)

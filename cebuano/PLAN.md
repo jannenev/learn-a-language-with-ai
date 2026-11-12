@@ -97,6 +97,7 @@ cebuano/texts.md           the texts: characters and stages, then one row per te
 cebuano/audio.md           the listening side: pronunciation data, voices surveyed, tests, what a native speaker said
 cebuano/vocabulary.md      spelling conventions; Tier 1, Tier 2 (full entries) and Tier 3 backlog
 cebuano/grammar-notes.md   listening grammar: what to recognise, not what to produce
+cebuano/word-sets.md       one page: the small words of Stage A in their sets (persons, pointing words, verb shapes...)
 cebuano/texts/src/         the texts as written: NNN.txt, one line per sentence with English and gloss
 cebuano/texts/             the rendered texts, NNN-title.md (generated, do not edit by hand)
 cebuano/pronunciation/     for software, not for reading: lexicon.tsv (stress and glottal marks per word),
