@@ -32,7 +32,7 @@ Where it comes from: the first Cebuano 002 was written to exercise words, walk, 
 
 ### Length
 
-Set by stage in the table at the top of the language's `texts.md`: short dialogues first (25 to 30 lines), longer as the known base grows, narrative paragraphs only once the verb forms are familiar. About 27 lines of dialogue fit one printed A4 page with the word-for-word footnote. Whether a longer text should take two pages or be trimmed is open; Cebuano 003 is the trial case (2026-11-07).
+Set by stage in the table at the top of the language's `texts.md`: short dialogues first (25 to 30 lines), longer as the known base grows, narrative paragraphs only once the verb forms are familiar. About 27 lines of dialogue fit one printed A4 page with the word-for-word footnote. Whether a longer text should take two pages or be trimmed is open; Cebuano 003 was trimmed to fit (2026-11-11), so no text has needed two pages yet.
 
 ### One new thing per sentence (rule from 2026-11-10)
 
