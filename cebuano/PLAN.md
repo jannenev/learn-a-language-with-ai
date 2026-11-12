@@ -90,6 +90,7 @@ tools/render.py            renders <language>/texts/src/NNN.txt into the three-b
 tools/wordcheck.py         counts which Tier 1 entries a text uses; flags words outside the list
 tools/pron.py              generates the pronunciation files for a text
 tools/print.py             makes one-page A4 PDFs of the texts (Cebuano left, English right) through Chrome
+tools/sheet.py             prints a markdown reference sheet (such as word-sets.md) to a PDF in the same style
 cebuano/PLAN.md            this file: goal, method parameters, open questions, next steps for Cebuano
 cebuano/LOG.md             dated log of the work on the Cebuano material, oldest first
 cebuano/texts.md           the texts: characters and stages, then one row per text, planned or written
