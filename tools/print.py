@@ -3,7 +3,8 @@
 English on the right, meant to be folded or covered for a cold read. One PDF per text, written to
 <language>/print/<language>-NNN-pocket.pdf; with --all also a booklet holding every text given,
 <language>/print/<language>-pocket-NNN-MMM.pdf, with an intro page made from <language>/booklet-intro.md
-(if present) followed by the generated facts: variant, a table of the texts with their dates and word counts
+(if present; {texts} and {known} in it are replaced by the number of texts and of core entries they bring in)
+followed by the generated facts: variant, a table of the texts with their dates and word counts
 (core entries used, new in the text, known after it; counted by tools/wordcheck.py), the content date.
 
 Usage:
@@ -316,9 +317,11 @@ def full_section(header, entries, tail, path=None):
 def intro_section(lang, paths, variant, dates):
     """The booklet's first page: the hand-written intro (booklet-intro.md), then the generated facts."""
     md_path = lang / "booklet-intro.md"
-    body = tail_html(md_path.read_text(encoding="utf-8").splitlines()) if md_path.exists() else ""
-    kind = {"pocket": "This is the pocket version: one page per text, with the word-for-word notes below the dialogue.",
-            "full": "This is the full version: for each text, the Cebuano alone, the Cebuano beside the English, and the word-by-word block with notes."}[variant]
+    md = md_path.read_text(encoding="utf-8") if md_path.exists() else ""
+    kind = {"pocket": "This is the pocket version: one page per text, the text on the left and the English on the right, with the "
+                      "word-for-word notes below the dialogue. Cover the right column and read the left; uncover to check.",
+            "full": "This is the full version: each text three times, first on its own, then beside the English, then word by word "
+                    "with notes. Read the first on its own, check with the second, and use the third for the words you could not place."}[variant]
     counting = analyse is not None
     rows = ["<tr><th>Text</th><th>Date</th>" + ("<th class='n'>Words used</th><th class='n'>New here</th><th class='n'>Known after</th>" if counting else "") + "</tr>"]
     seen = set()
@@ -331,6 +334,12 @@ def intro_section(lang, paths, variant, dates):
             seen |= used
             cells += f"<td class='n'>{len(used)}</td><td class='n'>{len(new)}</td><td class='n'>{len(seen)}</td>"
         rows.append(f"<tr>{cells}</tr>")
+    # the intro may name the number of texts and of core entries they bring in: {texts} and {known}
+    if counting:
+        md = md.replace("{texts}", str(len(paths))).replace("{known}", str(len(seen)))
+    else:
+        md = "\n\n".join(par for par in md.split("\n\n") if "{known}" not in par).replace("{texts}", str(len(paths)))
+    body = tail_html(md.splitlines()) if md else ""
     words_note = ""
     if counting:
         words_note = (f"<p class='words'>Words are counted as entries of the core list, {len(TIER1)} in Tier 1; an entry is a word with "
