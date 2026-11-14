@@ -6,6 +6,7 @@ English on the right, meant to be folded or covered for a cold read. One PDF per
 (if present; {texts} and {known} in it are replaced by the number of texts and of core entries they bring in)
 followed by the generated facts: variant, a table of the texts with their dates and word counts
 (core entries used, new in the text, known after it; counted by tools/wordcheck.py), the content date.
+The full booklet's intro page also carries the drawing <language>/graphics/booklet-cover.svg, if present.
 
 Usage:
   python3 tools/print.py cebuano/texts/src/002.txt
@@ -88,6 +89,12 @@ section.intro table.facts td, section.intro table.facts th { padding: 1pt 12pt 1
 section.intro table.facts th { font-weight: 600; border-bottom: 0.6pt solid #000; }
 section.intro table.facts td.n, section.intro table.facts th.n { text-align: right; }
 section.intro p.words { font-size: 9pt; margin-top: 4pt; }
+section.cover { display: flex; flex-direction: column; height: 262mm; }
+section.cover::after { content: ''; flex: 2 0 0; }
+section.cover div.gap { flex: 1 0 8mm; }
+section.cover div.art { flex: 0 1 69mm; min-height: 0; position: relative; }
+section.cover div.art svg { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+section.cover div.art svg * { vector-effect: non-scaling-stroke; stroke-width: 0.7pt; }
 div.tail { font-size: 9.5pt; }
 div.tail h2 { font-size: 10pt; margin: 9pt 0 2pt 0; }
 div.tail p, div.tail li { margin: 0 0 2pt 0; }
@@ -95,6 +102,8 @@ div.tail ul { margin: 0; padding-left: 14pt; }
 p.g { font-size: 9pt; line-height: 1.25; margin: 0 0 1pt 0; break-inside: avoid; }
 p.g b { font-weight: 600; }
 """
+
+COVER_MAX_TEXTS = 16      # the most texts in a booklet whose first page still has room for the cover drawing
 
 HOWTO = "Cover the right column and read the left; uncover to check. The English is word for word, not natural English."
 
@@ -347,6 +356,14 @@ def intro_section(lang, paths, variant, dates):
                       "appear in it for the first time, and how many have appeared by the end of it.</p>")
     facts = (f"<p>{kind}</p><table class='facts'>" + "".join(rows) + "</table>" + words_note
              + f"<p style='font-size:9pt'>Version: content dated {max(dates)}.</p>")
+    # The full booklet's first page also carries a drawing, <language>/graphics/booklet-cover.svg, when there
+    # is one. It sits below the text with a third of the free space above it and two thirds below, so it moves
+    # down as the table of texts grows, and shrinks when the page runs short. With more than COVER_MAX_TEXTS
+    # rows in the table the page is full without it, and it is left out.
+    svg_path = lang / "graphics" / "booklet-cover.svg"
+    if variant == "full" and svg_path.exists() and len(paths) <= COVER_MAX_TEXTS:
+        svg = re.sub(r"<!--.*?-->", "", svg_path.read_text(encoding="utf-8"), flags=re.S).strip()
+        return f"<section class='intro cover'>{body}{facts}<div class='gap'></div><div class='art'>{svg}</div></section>"
     return f"<section class='intro'>{body}{facts}</section>"
 
 

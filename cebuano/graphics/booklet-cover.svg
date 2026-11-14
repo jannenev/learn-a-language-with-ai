@@ -1,0 +1,42 @@
+<!-- The drawing on the first page of the full booklet: a bangka (outrigger boat), the Chocolate Hills of Bohol, a palm, the sun.
+     Outlines only, so it costs little ink and prints the same in black and white. White fills only hide the lines behind. -->
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 220' fill='none' stroke='#000' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'>
+<path d='M0 150 H600'/>
+<path d='M450 150 A30 30 0 0 1 510 150'/>
+<path d='M516.3 142.8 L529.0 140.2'/>
+<path d='M510.8 129.4 L521.6 122.2'/>
+<path d='M500.6 119.2 L507.8 108.4'/>
+<path d='M487.2 113.7 L489.8 101.0'/>
+<path d='M472.8 113.7 L470.2 101.0'/>
+<path d='M459.4 119.2 L452.2 108.4'/>
+<path d='M449.2 129.4 L438.4 122.2'/>
+<path d='M443.7 142.8 L431.0 140.2'/>
+<path fill='#fff' d='M150 150 Q190 96 230 150'/>
+<path fill='#fff' d='M205 150 Q250 82 295 150'/>
+<path fill='#fff' d='M270 150 Q305 104 340 150'/>
+<path fill='#fff' d='M120 150 Q140 122 165 150'/>
+<path d='M100 150 H360'/>
+<path fill='#fff' d='M372 122 L372 182 L326 182 Z'/>
+<path fill='#fff' d='M378 132 L378 182 L412 182 Z'/>
+<path d='M375 112 V186'/>
+<path fill='#fff' d='M312 186 Q370 204 440 184 L426 196 Q372 208 324 197 Z'/>
+<path d='M300 212 H452 M340 199 L334 212 M410 197 L418 212'/>
+<path d='M210 178 q7 -5 14 0 q7 5 14 0'/>
+<path d='M520 176 q7 -5 14 0 q7 5 14 0'/>
+<path d='M478 200 q7 -5 14 0 q7 5 14 0'/>
+<path d='M160 204 q7 -5 14 0 q7 5 14 0'/>
+<path d='M250 208 q7 -5 14 0 q7 5 14 0'/>
+<path d='M44.2 216.0 Q52.3 152.8 81.0 91.8'/>
+<path d='M55.8 216.0 Q63.8 152.8 87.9 91.8'/>
+<path d='M84.5 89.5 Q52.3 60.8 15.5 80.3'/>
+<path d='M84.5 89.5 Q55.8 43.5 27.0 32.0'/>
+<path d='M84.5 89.5 Q84.5 43.5 70.7 18.2'/>
+<path d='M84.5 89.5 Q109.8 45.8 139.7 45.8'/>
+<path d='M84.5 89.5 Q121.3 68.8 155.8 87.2'/>
+<path d='M84.5 89.5 Q113.2 91.8 130.5 121.7'/>
+<path d='M84.5 89.5 Q59.2 91.8 40.8 119.4'/>
+<circle fill='#fff' cx='78.8' cy='96.4' r='3.7'/>
+<circle fill='#fff' cx='87.9' cy='98.7' r='3.7'/>
+<circle fill='#fff' cx='84.5' cy='104.5' r='3.7'/>
+<path d='M390 60 q7 -8 14 0 q7 -8 14 0 M430 44 q5 -6 10 0 q5 -6 10 0'/>
+</svg>
