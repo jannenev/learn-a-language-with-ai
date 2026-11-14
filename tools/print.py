@@ -4,7 +4,7 @@ English on the right, meant to be folded or covered for a cold read. One PDF per
 <language>/print/<language>-NNN-pocket.pdf; with --all also a booklet holding every text given,
 <language>/print/<language>-pocket-NNN-MMM.pdf, with an intro page made from <language>/booklet-intro.md
 (if present) followed by the generated facts: variant, a table of the texts with their dates and word counts
-(core entries used, new in the text, known after it; counted by tools/wordcheck.py), commit.
+(core entries used, new in the text, known after it; counted by tools/wordcheck.py), the content date.
 
 Usage:
   python3 tools/print.py cebuano/texts/src/002.txt
@@ -336,9 +336,8 @@ def intro_section(lang, paths, variant, dates):
         words_note = (f"<p class='words'>Words are counted as entries of the core list, {len(TIER1)} in Tier 1; an entry is a word with "
                       "its spoken forms (kaon, mokaon, nikaon count as one). The columns give how many entries the text uses, how many "
                       "appear in it for the first time, and how many have appeared by the end of it.</p>")
-    commit = git("log", "-1", "--format=%h", "--", *[str(p) for p in paths])
     facts = (f"<p>{kind}</p><table class='facts'>" + "".join(rows) + "</table>" + words_note
-             + (f"<p style='font-size:9pt'>Version: content dated {max(dates)}, commit {commit}.</p>" if commit else ""))
+             + f"<p style='font-size:9pt'>Version: content dated {max(dates)}.</p>")
     return f"<section class='intro'>{body}{facts}</section>"
 
 
