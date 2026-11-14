@@ -21,7 +21,7 @@ Free material for beginners. Everything for Cebuano is in [`cebuano/`](cebuano/)
 - the word list in tiers: [vocabulary.md](cebuano/vocabulary.md)
 - a short grammar sheet for listeners: [grammar-notes.md](cebuano/grammar-notes.md)
 - the small words in their sets, one page to glance at: [word-sets.md](cebuano/word-sets.md)
-- the texts, to be read in order: [001 Maayong buntag](cebuano/texts/001-maayong-buntag.md), [002 Asa si Mama?](cebuano/texts/002-asa-si-mama.md), [003 Hapon: sa trabaho ni Mama](cebuano/texts/003-hapon-sa-trabaho-ni-mama.md), [004 Gabii sa balay](cebuano/texts/004-gabii-sa-balay.md), [005 Buntag: asa si Jun?](cebuano/texts/005-buntag-asa-si-jun.md) (new, not yet read through by the learner)
+- the texts, to be read in order: [001 Maayong buntag](cebuano/texts/001-maayong-buntag.md), [002 Asa si Mama?](cebuano/texts/002-asa-si-mama.md), [003 Hapon: sa trabaho ni Mama](cebuano/texts/003-hapon-sa-trabaho-ni-mama.md), [004 Gabii sa balay](cebuano/texts/004-gabii-sa-balay.md), [005 Buntag: asa si Jun?](cebuano/texts/005-buntag-asa-si-jun.md)
 - pronunciation files for software and AI voices, in [`cebuano/pronunciation/`](cebuano/pronunciation/): paste `NNN.paste.txt` into a chat voice that reads aloud to hear a text
 - the listening side, the voices that could speak the texts and what has been tried: [audio.md](cebuano/audio.md)
 - the plan: [PLAN.md](cebuano/PLAN.md); the dated log of the work: [LOG.md](cebuano/LOG.md)
