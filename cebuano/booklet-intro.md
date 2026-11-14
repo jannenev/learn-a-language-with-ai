@@ -8,4 +8,6 @@ Short dialogues in Cebuano, the language of Cebu in the Philippines, called Bisa
 
 **Status.** These texts were written with the help of an AI assistant and have not yet been checked by a native speaker. Meanings are probably right; stress and naturalness are where errors would hide. Corrections are welcome at the address below, where the current version, the word list and a short grammar sheet also live.
 
+Free to use, change and share under CC BY-SA 4.0, with credit to Janne Nevalainen.
+
 https://github.com/jannenev/learn-a-language-with-ai
