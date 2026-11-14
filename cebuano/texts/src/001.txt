@@ -1,9 +1,9 @@
-title: 001 — Buntag sa balay (Morning at home)
-intro: Ana and her younger brother Jun, at home in Cebu, early morning. Mama has already left for work.
+title: 001 — Maayong buntag (Good morning)
+intro: Ana and her younger brother Jun, at home in Cebu, early morning. Ana sits at the table; on it a plate of rice and fish. Jun comes in, just out of bed.
 tier: Words: Tier 1 only. First text: every word in it is new; the list follows.
 speakers: Ana | Jun
 
-@ Morning at home.
+@ Morning. Ana at the table, a plate of rice and fish in front of her. Jun comes in.
 Jun | Maayong buntag, Ana! | Good morning, Ana!
     Maayong=good buntag,=morning Ana!
     ! maayong = maayo + the linker -ng, which glues a describing word to its noun
@@ -14,61 +14,53 @@ Jun | Maayo, salamat. Ikaw? | Good, thanks. You?
     ! ikaw = the full form of "you", used on its own; inside a sentence it is ka
 Ana | Maayo pud. Nikaon na ka? | Good too. Have you eaten already?
     Maayo=good pud.=also Nikaon=ate na=already ka?=you
-    ! ni- = did. na = already: the situation has changed. The same na is "now" in a command or plan (Kaon na! = eat now) and "anymore" after a no (Dili na). One word, three English faces; text 002 has all three.
-    ! "Nikaon na ka?" is the everyday greeting right after hello.
-Jun | Wala pa. Gusto ko mokaon karon. | Not yet. I want to eat now.
-    Wala=not pa.=yet Gusto=want ko=I mokaon=will-eat karon.=now
-    ! wala = not / none, for things that did not happen; mo- = will
-Ana | Naa'y pagkaon sa balay. Kaon ta! | There is food in the house. Let's eat!
-    Naa'y=there-is pagkaon=food sa=in balay.=house Kaon=eat ta!=we(let's)
-    ! naa'y = naa + 'y (a squeezed ang): "there is a ...". Root verb + ta = "let's".
-Jun | Sige! Lami ba? | OK! Tasty?
-    Sige!=okay Lami=tasty ba?=[?]
+    ! kaon = eat; ni- in front = did: nikaon = ate.
+    ! na = already: the situation has changed. The same na is "now" in a command or plan (Kaon na! = eat now) and "anymore" after a no (Dili na). One word, three English faces; text 003 has all three.
+    ! "Nikaon na ka?" is the everyday greeting right after hello. Take it as one piece.
+Jun | Wala pa. | Not yet.
+    Wala=not pa.=yet
+    ! wala pa = not yet, the usual answer; wala = not, for things that did not happen
+@ Ana pushes the plate to the middle of the table.
+Ana | Naa'y pagkaon. Lami! | There is food. Tasty!
+    Naa'y=there-is pagkaon.=food Lami!=tasty
+    ! naa'y = "there is a ...". pagkaon = food: the root kaon again, with pag- in front
+Jun | Lami ba? | Tasty?
+    Lami=tasty ba?=[?]
     ! ba turns the sentence into a yes/no question
-Ana | Oo, lami kaayo. | Yes, very tasty.
-    Oo,=yes lami=tasty kaayo.=very
-Jun | Daghan kaayo ang pagkaon! | Very much, the food!
-    Daghan=much kaayo=very ang=the(subj) pagkaon!=food
-    ! ang marks the subject, what the sentence is about; "the food is very much" = there's a lot of food
-Jun | Unsa ni? | What's this?
-    Unsa=what ni?=this
-Ana | Wala ko kabalo. Kaon lang. | I don't know. Just eat.
-    Wala=not ko=I kabalo.=know Kaon=eat lang.=just
-    ! wala ko kabalo, literally "not I know", is the everyday "I don't know"
-Jun | Lami gyud ni! | Really tasty, this!
-    Lami=tasty gyud=really ni!=this
-Jun | Asa si Mama? | Where is Mama?
-    Asa=where si=[name] Mama?
-    ! si marks a person's name as the subject; it has no English equivalent
-Ana | Naa sa trabaho. Moadto ko didto unya. | Is at work. I'll go there later.
-    Naa=is-there sa=at trabaho.=work Moadto=will-go ko=I didto=there unya.=later
-    ! no "she": the subject is left out when it is obvious from the question
-Jun | Moadto pud ko. Naa ko'y kwarta. | I'll go too. I have money.
-    Moadto=will-go pud=also ko.=I Naa=there-is ko'y=I kwarta.=money
-    ! naa ko'y kwarta = literally "there is, I, money" = I have money (naa + ko + 'y)
-Ana | Sige. Kaon ta karon, adto ta unya. | OK. Let's eat now, let's go later.
-    Sige.=okay Kaon=eat ta=we(let's) karon,=now adto=go ta=we(let's) unya.=later
-Jun | Salamat, Ana! | Thanks, Ana!
-    Salamat,=thanks Ana!
-Ana | Sige, Dong. | OK, Dong.
-    Sige,=okay Dong.=to-a-boy
-    ! Dong = how you address a boy or a younger brother (short for Dodong); sige here = "sure, alright"
+Ana | Oo, lami kaayo. Gusto ka? | Yes, very tasty. Do you want?
+    Oo,=yes lami=tasty kaayo.=very Gusto=want ka?=you
+    ! kaayo = very; it comes after the word it strengthens
+Jun | Oo! Gusto ko. | Yes! I want.
+    Oo!=yes Gusto=want ko.=I
+    ! ko = I, ka = you: gusto ko, gusto ka
+Ana | Sige. Kaon ta! | OK. Let's eat!
+    Sige.=okay Kaon=eat ta!=we(let's)
+    ! ta = we, you and I. Root verb + ta = "let's": Kaon ta!
+@ Jun takes a first mouthful.
+Jun | Lami kaayo! Salamat, Ana. | Very tasty! Thanks, Ana.
+    Lami=tasty kaayo!=very Salamat,=thanks Ana.
+Jun | Ikaw? Nikaon na ka? | You? Have you eaten already?
+    Ikaw?=you Nikaon=ate na=already ka?=you
+Ana | Wala pa. Gusto pud ko mokaon. | Not yet. I want to eat too.
+    Wala=not pa.=yet Gusto=want pud=also ko=I mokaon.=will-eat
+    ! mo- in front = will: mokaon = will eat. gusto + mo- verb = want to: gusto ko mokaon = I want to eat
+Jun | Sige! Naa'y pagkaon. | OK! There is food.
+    Sige!=okay Naa'y=there-is pagkaon.=food
 ===
 ## Listen for
 
-- **Have you … ? / Not yet.** *Nikaon na ka?* — *Wala pa.* The pair *na* (already) and *pa* (yet) does the work.
-- **There is / I have.** *Naa'y pagkaon* (there is food), *Naa ko'y kwarta* (I have money). Both are *naa* = there-is.
-- **Let's …** → root + *ta*: *Kaon ta! Adto ta!*
-- **Future vs past prefix.** *mo-kaon* (will eat) vs *ni-kaon* (ate); *mo-adto* (will go).
-- **very** → adjective + *kaayo*: *lami kaayo, daghan kaayo*.
+- **Have you eaten? / Not yet.** *Nikaon na ka?* — *Wala pa.* Lines 4–5 and again 12–13. The pair *na* (already) and *pa* (yet) does the work.
+- **One root, four shapes.** *kaon* (eat), *ni-kaon* (ate), *mo-kaon* (will eat), *pag-kaon* (food).
+- **I and you.** *Gusto ka?* — *Gusto ko.* Short *ka* = you, short *ko* = I, both right after the first word.
+- **Let's …** → root + *ta*: *Kaon ta!*
+- **very** → describing word + *kaayo*: *lami kaayo*.
 
 ## Self-check
 
-Read block 1 only. Count the lines you understood fully. 16 of 18 → ready for text 002. Fewer → re-read tomorrow, then try 002 anyway; the words repeat.
+Read block 1 only. Count the lines you understood fully. 12 of 14 → ready for text 002. Fewer → read it again tomorrow; the first text takes the most reads, because every word in it is new.
 
 ## Word check
 
-All words are Tier 1. Proper names: Ana, Jun, Mama.
+All words are Tier 1. Proper names: Ana, Jun.
 
-**Coverage:** 40 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/001.txt`).
-Not used here: siya, kami, kamo, sila, og, ug, mga, ni (of), dili, kinsa, pila, ayaw, inom, tulog, kasabot, dali, hulat, tubig, tawo, ugma, buntag/hapon/gabii (outside the greeting), dako, gamay, kana, diri.
+**Coverage:** 21 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/001.txt`).

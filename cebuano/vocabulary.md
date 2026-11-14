@@ -16,7 +16,7 @@ Counts are approximate; an "entry" is one word or a tight cluster (e.g. the thre
 
 ## Tier 1 — Survival core (65 entries)
 
-Goal: follow a simple dialogue at home or in a shop. Texts 001–005 use only these.
+Goal: follow a simple dialogue at home or in a shop. Texts 001–006 use only these.
 
 ### 1.1 Pronouns (7)
 
@@ -158,7 +158,7 @@ Prefix reminder: **mo-** = will / going to; **ni-** (also **mi-**) = did; **nag-
 
 ## Tier 2 — Everyday (≈ 59 entries, total ≈ 124)
 
-Goal: market, money, family, feelings, time. Introduced 5–8 per text from text 006 onward.
+Goal: market, money, family, feelings, time. Introduced 5–8 per text from text 007 onward.
 
 ### 2.1 Connectors (8)
 
@@ -221,7 +221,7 @@ Goal: market, money, family, feelings, time. Introduced 5–8 per text from text
 | kape | — | coffee | *Kape ta!* — Let's have coffee! |
 | adlaw | — | day; sun | *matag adlaw* — every day · *Init ang adlaw.* — The sun is hot. |
 | oras | — | time; hour; o'clock | *Unsang orasa?* — What time? · *Wala ko'y oras.* — I have no time. |
-| merkado | — | market (Spanish loan) | *sa merkado* — at the market. Moved up from Tier 3 on 2026-11-11; used once in text 002, the one Tier 2 word in Stage A |
+| merkado | — | market (Spanish loan) | *sa merkado* — at the market. Moved up from Tier 3 on 2026-11-11; used once in text 003, the one Tier 2 word in Stage A |
 
 ### 2.6 Time (3)
 

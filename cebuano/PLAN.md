@@ -47,9 +47,9 @@ The estimate also exposed a gap: eight very high-frequency conversational words 
 
 **What the research says.** Studies of learning words incidentally from reading put the threshold at roughly 6 to 10 encounters for a first grip on the meaning and 20 or more for solid, lasting knowledge (Horst, Cobb and Meara 1998: 8; Saragi, Nation and Meister 1978: 10; Webb 2007: 10 or more; Waring and Takaki 2003: 20 or more, and most of the gain was lost after three months when the words were not met again). A 2019 meta-analysis of 26 studies (Uchihara, Webb and Yanagisawa) found a medium overall effect of repetition (r = .34) and a stronger one when learners re-read the same text within a day (r = .46). Reading while listening retained more than reading alone. Deliberate study of a word list with spaced retrieval is faster per word than meeting words in texts, but gives weaker knowledge of how the word behaves in sentences; the two complement each other.
 
-**What the texts give.** `python3 tools/wordcheck.py --counts` shows occurrences per Tier 1 entry. After texts 001 and 002 (217 Tier 1 tokens in total):
+**What the texts give.** `python3 tools/wordcheck.py --counts` shows occurrences per Tier 1 entry. After the first two texts as they stood then, today's 001 to 003 (217 Tier 1 tokens in total):
 
-| Occurrences in 001+002 | Entries | Examples |
+| Occurrences in those texts | Entries | Examples |
 |---|---|---|
 | 10 or more | 3 | ako/ko, na, Mama |
 | 5 to 9 | 15 | ikaw/ka, sa, ang, naa, kaayo, maayo, salamat, sige, adto, kaon, balay, unya |
@@ -59,7 +59,7 @@ The estimate also exposed a gap: eight very high-frequency conversational words 
 
 So a single read of both texts gets only three words past the threshold. Repetition has to come from re-reading and from later texts re-using the same words, which is the design.
 
-**Reading schedule (decision).** Read each text about six times on an expanding schedule: day 0 (twice, the second time an hour or more later), day 1, day 3, day 7, day 14, and once more around day 30. Every pass starts with block 1 cold, which is retrieval practice, and only then block 2. Block 3 is for the first two passes. Once audio exists, the day 3 pass onward should be listening with the text in view, then listening alone. Six passes turn the table above into: words with 2 to 4 occurrences reach 12 to 24 encounters within a month, words with one occurrence reach 6 and depend on the next text to re-use them, and the zeros depend on text 003.
+**Reading schedule (decision).** Read each text about six times on an expanding schedule: day 0 (twice, the second time an hour or more later), day 1, day 3, day 7, day 14, and once more around day 30. Every pass starts with block 1 cold, which is retrieval practice, and only then block 2. Block 3 is for the first two passes. Once audio exists, the day 3 pass onward should be listening with the text in view, then listening alone. Six passes turn the table above into: words with 2 to 4 occurrences reach 12 to 24 encounters within a month, words with one occurrence reach 6 and depend on the next text to re-use them, and the zeros depend on text 004.
 
 **Time.** A 27-line text takes about 2 minutes to read cold, 5 minutes with the English check, and 10 to 15 minutes the first time with block 3. Six passes are roughly 40 minutes per text spread over a month. Starting one new text every 3 to 4 days gives 10 to 15 minutes a day and brings Tier 1 (texts 001 to 005) to the threshold in 6 to 8 weeks, Tier 2 in a further 2 to 3 months.
 
@@ -107,7 +107,7 @@ cebuano/print/             generated PDFs for printing; not committed until the 
 
 ## 5. Storyline for the texts
 
-The characters, the stage table (texts, words allowed, length, themes) and the text-by-text plan and record are in `texts.md` (moved there 2026-11-08). *merkado* moved to Tier 2 on 2026-11-11 and is used once in 002.
+The characters, the stage table (texts, words allowed, length, themes) and the text-by-text plan and record are in `texts.md` (moved there 2026-11-08). *merkado* moved to Tier 2 on 2026-11-11 and is used once in 003.
 
 ## 6. Conventions
 
@@ -125,7 +125,7 @@ Pronunciation data lives in `cebuano/pronunciation/`, separate from the texts, s
 - **Frequency cross-check.** The lists are curated from knowledge of the language, not derived from a corpus. Worth checking Tier 1–2 against a real frequency list (e.g. from OPUS subtitles or a Cebuano Wikipedia dump), keeping in mind that written corpora under-represent spoken particles. The coverage estimate in section 2 is a reasoned guess and would be the first thing such a check would correct.
 - **Tier sizes.** 65 / ~50 are starting guesses. Prune Tier 1 if the first texts feel crowded.
 - **Cebu vs Mindanao.** Decide whether to note Davao-style variants at all, or stick to Cebu only.
-- **Text length and the printed page.** Whether a text that spills over one pocket page takes two pages or the footnote layout absorbs it; 003 is the trial case. The reasoning is with the stage table in `texts.md` and under Length in `CREATING-TEXTS.md`. Noted 2026-11-07.
+- **Text length and the printed page.** Whether a text that spills over one pocket page takes two pages or the footnote layout absorbs it; 004 is the trial case. The reasoning is with the stage table in `texts.md` and under Length in `CREATING-TEXTS.md`. Noted 2026-11-07.
 
 ## 8. Progress log
 
@@ -134,10 +134,10 @@ In `LOG.md`, dated entries oldest first (moved there 2026-11-08).
 ## 9. Next steps
 
 1. Verify the entries marked `check` in `cebuano/pronunciation/lexicon.tsv` with a native speaker or Wolff's dictionary (dali, sige, palihug, kuan, the suffixed verb forms).
-2. Review the draft of text 003 (`cebuano/texts/src/003.txt`) against the small-words rule (two three-word chains; it now introduces *na* = that and *ra*, each needing its note), render it, generate its pronunciation files and PDF, and write 004 and 005 from their rows in `texts.md`. After 005, check with `wordcheck.py --counts` that no Tier 1 entry is below five occurrences.
+2. Review the draft of text 004 (`cebuano/texts/src/004.txt`) against the small-words rule (two three-word chains; it now introduces *na* = that and *ra*, each needing its note), render it, generate its pronunciation files and PDF, and write 005 and 006 from their rows in `texts.md`. After 006, check with `wordcheck.py --counts` that no Tier 1 entry is below five occurrences.
 3. Decide the audio source: run the tests in `audio.md`, section 4, on text 001 (ElevenLabs v4 plain and with IPA, Meta MMS locally, Toucan if needed), send the clips to a native speaker, then retarget `tools/pron.py` from the Azure SSML to the chosen engine's input and add a `tools/speak.py` that writes `cebuano/audio/NNN.mp3`.
-4. Follow the reading schedule in section 2 for 001 and 002 while 003 to 005 are written.
-5. Before Stage B: extend `tools/wordcheck.py` and the lexicon with Tier 2. (*merkado* was moved from Tier 3 to Tier 2 on 2026-11-11 for text 002 and is in the lexicon already.)
+4. Follow the reading schedule in section 2 for 001 to 003 while 004 to 006 are written.
+5. Before Stage B: extend `tools/wordcheck.py` and the lexicon with Tier 2. (*merkado* was moved from Tier 3 to Tier 2 on 2026-11-11 for text 003 and is in the lexicon already.)
 
 ## 10. Outside resources (checked 2026-10-07)
 

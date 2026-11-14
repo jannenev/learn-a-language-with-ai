@@ -1,6 +1,6 @@
-# 003 — Gabii sa balay (Evening at home)
+# 004 — Gabii sa balay (Evening at home)
 
-Same day as texts 001 and 002, evening. Ana and Jun are at home, the lamp on, waiting for Mama. It is dark when she knocks, back from the market with two bundles of food, one big and one small.
+Same day as texts 001 to 003, evening. Ana and Jun are at home, the lamp on, waiting for Mama. It is dark when she knocks, back from the market with two bundles of food, one big and one small.
 
 Words: Tier 1 only. Seven entries first appear: siya, mga, kinsa, tulog, ugma, dako, gamay. New shapes of known words: matulog and natulog (ma- and na- on tulog), wala'y, akoa, and ra, the Cebu form of lang.
 
@@ -159,7 +159,7 @@ Oo, natulog na. Ayaw na, Dong. Ugma na lang. Tulog na pud.   Yes, asleep already
 
  8  Si      Mama!  Dali   diri,  Ma!
     [name]         quick  here   Ma
-    · si Mama! = it's Mama: the name with its marker, nothing else. Dali diri! = come here, as in text 002; here it means come in.
+    · si Mama! = it's Mama: the name with its marker, nothing else. Dali diri! = come here, as in text 003; here it means come in.
 
  9  Naa       na   ko,  Day.       Nikaon  na       mo?
     is-there  now  I    to-a-girl  ate     already  you(pl)
@@ -167,7 +167,7 @@ Oo, natulog na. Ayaw na, Dong. Ugma na lang. Tulog na pud.   Yes, asleep already
 
 10  Wala  pa,  Ma.  Gusto  mi  mokaon.
     not   yet  Ma   want   we  will-eat
-    · gusto + mo- verb = want to: gusto mi mokaon = we want to eat, as gusto ko mokaon in text 001.
+    · gusto + mo- verb = want to: gusto mi mokaon = we want to eat, as gusto pud ko mokaon in text 001.
 
 11  Maayo.  Naa       ko'y  pagkaon.  Dako  ni.   Gamay  ni.
     good    there-is  I     food      big   this  small  this
@@ -175,7 +175,7 @@ Oo, natulog na. Ayaw na, Dong. Ugma na lang. Tulog na pud.   Yes, asleep already
 
 12  Dako  kaayo!  Akoa  ang        dako!
     big   very    mine  the(subj)  big
-    · akoa = mine, the pair of imoha = yours (text 002, Imoha na). ang dako = "the big (one)": ang makes a thing out of a describing word. Jun reaches for it.
+    · akoa = mine, the pair of imoha = yours (text 003, Imoha na). ang dako = "the big (one)": ang makes a thing out of a describing word. Jun reaches for it.
 
 13  Ayaw,  Dong.     Dili  karon.  Gamay  lang  karon.  Kaon  ta!
     don't  to-a-boy  not   now     small  just  now     eat   we(let's)
@@ -183,7 +183,7 @@ Oo, natulog na. Ayaw na, Dong. Ugma na lang. Tulog na pud.   Yes, asleep already
 
 14  Sige.  …  Gusto  ko  moinom.     Naa'y     tubig,  Ana?
     okay      want   I   will-drink  there-is  water
-    · gusto + mo- verb again: gusto ko moinom = I want to drink. naa'y tubig? = is there water?, as in text 002.
+    · gusto + mo- verb again: gusto ko moinom = I want to drink. naa'y tubig? = is there water?, as in text 003.
 
 15  Oo,  naa       pa.    Daghan  pa.
     yes  there-is  still  much    still
@@ -199,7 +199,7 @@ Oo, natulog na. Ayaw na, Dong. Ugma na lang. Tulog na pud.   Yes, asleep already
 
 18  Ma,  moadto   ka   sa  trabaho  ugma?
     Ma   will-go  you  to  work     tomorrow
-    · ugma = tomorrow. It sits at the end, where karon and unya also sit (text 002: Moadto ba ka unya?).
+    · ugma = tomorrow. It sits at the end, where karon and unya also sit (text 003: Moadto ba ka unya?).
 
 19  Dili.  Wala'y       trabaho  ugma.     Naa       ra    ko  diri.
     no     there-is-no  work     tomorrow  is-there  just  I   here
@@ -242,11 +242,11 @@ Oo, natulog na. Ayaw na, Dong. Ugma na lang. Tulog na pud.   Yes, asleep already
 
 ## Self-check
 
-Read block 1 only. Count the lines you understood fully. 23 of 25 → ready for text 004. Fewer → re-read 002 and 003 tomorrow; the same words repeat.
+Read block 1 only. Count the lines you understood fully. 23 of 25 → ready for text 005. Fewer → re-read 003 and 004 tomorrow; the same words repeat.
 
 ## Word check
 
 All words are Tier 1. Proper names: Ana, Jun, Mama / Ma.
 
-**Coverage:** 52 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/003.txt`). Not used here: ni (of), ba, unsa, kumusta, salamat, balay, kwarta, unya, lami, and the four entries kept for 004.
-**Cumulative after texts 001 to 003:** 61 of 65. Still unused: sila, ug, kasabot, and *na* = that (kana), all four planned for 004.
+**Coverage:** 52 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/004.txt`). Not used here: ni (of), ba, unsa, kumusta, salamat, balay, kwarta, unya, lami, and the four entries kept for 004.
+**Cumulative after texts 001 to 004:** 61 of 65. Still unused: sila, ug, kasabot, and *na* = that (kana), all four planned for 005.

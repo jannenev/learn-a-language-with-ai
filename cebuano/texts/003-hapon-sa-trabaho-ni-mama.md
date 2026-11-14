@@ -1,8 +1,8 @@
-# 002 — Hapon: sa trabaho ni Mama (Afternoon: at Mama's work)
+# 003 — Hapon: sa trabaho ni Mama (Afternoon: at Mama's work)
 
-Same day as text 001, afternoon. Ana and Jun walk through the hot streets to the market where Mama works. Her stall is a small table of fish under a tin roof, with a crowd in front of it.
+Same day as texts 001 and 002, afternoon. Ana and Jun walk through the hot streets to the market where Mama works. Her stall is a small table of fish under a tin roof, with a crowd in front of it.
 
-Words: Tier 1, plus one Tier 2 word, merkado (market), a Spanish loan that reads at sight. Seen in 001 but in a new role here: ni as "of" before a name (in 001 "this").
+Words: Tier 1, plus one Tier 2 word, merkado (market), a Spanish loan that reads at sight. Seen in 002 but in a new role here: ni as "of" before a name (in 002 "this").
 
 How to use: read block 1 on its own first. Then block 2 to check what you understood. Block 3 only for the words you could not place. The English in block 2 stays close to the Cebuano words, so it is not always natural English; where the real meaning differs, block 3 says so.
 
@@ -112,7 +112,7 @@ Both: Sige, Ma!                                          OK, Ma!
  1  Jun!  Dali   diri!  Adto  ta.
           quick  here   go    we(let's)
     · Dali diri! is literally "quick, here!" and is how you say "come here!"
-    · root verb + ta = "let's": Adto ta! like Kaon ta! in text 001
+    · root verb + ta = "let's": Adto ta!, as in text 002, like Kaon ta! in text 001
 
  2  Hulat  lang,  Ana.  Gusto  ko  og    tubig.  Moinom      pa     ko.
     wait   just         want   I   some  water   will-drink  still  I
@@ -148,7 +148,7 @@ Both: Sige, Ma!                                          OK, Ma!
 
 10  Maayo  lang  mi,  Ma.  Ikaw?
     fine   just  we   Ma   you
-    · mi = we, not including you (short for kami). maayo lang = just fine, as in text 001 kaon lang = just eat.
+    · mi = we, not including you (short for kami). maayo lang = just fine, as in text 002 kaon lang = just eat.
 
 11  Maayo  pud.  Nikaon  na       mo?
     fine   also  ate     already  you(pl)
@@ -168,7 +168,7 @@ Both: Sige, Ma!                                          OK, Ma!
 
 16  Ma,  unsa  ni?
     Ma   what  this
-    · ni = this (short for kini), as in text 001. The next line has the other ni.
+    · ni = this (short for kini), as in text 002. The next line has the other ni.
 
 17  Pagkaon  ni  Ana.  Gusto  ka?
     food     of        want   you
@@ -213,7 +213,7 @@ Both: Sige, Ma!                                          OK, Ma!
 ## Listen for
 
 - **Plural you and we.** *Kumusta mo?* (how are you two?), *Maayo lang mi* (we're just fine), *Nikaon na mo?*, *Adto na mo*. Short *mo* = you (plural), short *mi* = we (without you). Contrast *ka* (you, one person) and *ta* (we, with you).
-- **Same sound, two jobs.** *ni* = "this" in *unsa ni* (line 16), as in text 001, but "of" in *trabaho ni Mama* (line 5) and *pagkaon ni Ana* (line 17). The position tells you: *ni* right before a person's name is "of"; *ni* on its own is "this".
+- **Same sound, two jobs.** *ni* = "this" in *unsa ni* (line 16), as in text 002, but "of" in *trabaho ni Mama* (line 5) and *pagkaon ni Ana* (line 17). The position tells you: *ni* right before a person's name is "of"; *ni* on its own is "this".
 - **"No more" and "still".** *Dili na* (no more / not anymore), *Ayaw na* (don't bother), versus *Naa pa ko'y trabaho* (I *still* have work).
 - **One na, three faces.** *na* says the situation has changed; English picks a word by the verb: *nikaon na* (already), *adto na ta* (now), *dili na* (anymore). Line 18 has all three in a row.
 - **Where the little words go.** Cebuano puts the particles and the short pronouns right after the first word of the sentence, in that order: *Adto na ta. Nikaon na mo? Gusto ba mo? Naa pa ko'y trabaho.* First word, then *na / ba / pa*, then *ta / mo / ko*. Every chain in these texts has this shape; take the set phrases (*adto na ta*, *dali diri*) as one piece.
@@ -221,11 +221,11 @@ Both: Sige, Ma!                                          OK, Ma!
 
 ## Self-check
 
-Read block 1 only. Count the lines you understood fully. 24 of 27 → ready for text 003. Fewer → re-read 001 and 002 tomorrow; the same words repeat.
+Read block 1 only. Count the lines you understood fully. 24 of 27 → ready for text 004. Fewer → re-read 002 and 003 tomorrow; the same words repeat.
 
 ## Word check
 
 All words are Tier 1 except *merkado* (market), a Spanish loan from Tier 2, used once to name the place. Proper names: Ana, Jun, Mama / Ma.
 
-**Coverage:** 49 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/002.txt`).
-**Cumulative after texts 001 + 002:** 54 of 65. Still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay, and *na* = that (kana).
+**Coverage:** 49 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/003.txt`).
+**Cumulative after texts 001 to 003:** 54 of 65. Still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay, and *na* = that (kana).

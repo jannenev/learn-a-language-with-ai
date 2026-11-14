@@ -1,6 +1,6 @@
 # Word sets: the small words of Stage A, side by side
 
-The texts bring the words in one at a time. This sheet shows the sets they belong to, so that a word met alone can be seen next to its neighbours: I next to you, here next to there, will-eat next to ate. Glance at it when a small word will not stick; the texts remain where the words are learned. Each set ends with a row to say aloud. Words in parentheses have not appeared in texts 001 to 003 yet. Written with AI assistance; not checked by a native speaker, the forms in parentheses least of all.
+The texts bring the words in one at a time. This sheet shows the sets they belong to, so that a word met alone can be seen next to its neighbours: I next to you, here next to there, will-eat next to ate. Glance at it when a small word will not stick; the texts remain where the words are learned. Each set ends with a row to say aloud. Words in parentheses have not appeared in texts 001 to 004 yet. Written with AI assistance; not checked by a native speaker, the forms in parentheses least of all.
 
 ## 1. Persons
 

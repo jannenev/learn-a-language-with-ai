@@ -1,107 +1,101 @@
-title: 003 — Gabii sa balay (Evening at home)
-intro: Same day as texts 001 and 002, evening. Ana and Jun are at home, the lamp on, waiting for Mama. It is dark when she knocks, back from the market with two bundles of food, one big and one small.
-tier: Words: Tier 1 only. Seven entries first appear: siya, mga, kinsa, tulog, ugma, dako, gamay. New shapes of known words: matulog and natulog (ma- and na- on tulog), wala'y, akoa, and ra, the Cebu form of lang.
+title: 003 — Hapon: sa trabaho ni Mama (Afternoon: at Mama's work)
+intro: Same day as texts 001 and 002, afternoon. Ana and Jun walk through the hot streets to the market where Mama works. Her stall is a small table of fish under a tin roof, with a crowd in front of it.
+tier: Words: Tier 1, plus one Tier 2 word, merkado (market), a Spanish loan that reads at sight. Seen in 002 but in a new role here: ni as "of" before a name (in 002 "this").
 speakers: Ana | Jun | Mama
 
-@ Evening at home, the lamp on. Ana and Jun sit at the table, waiting for Mama.
-Jun | Gabii na, Ana. Asa si Mama? | Night already, Ana. Where is Mama?
-    Gabii=night na,=already Ana. Asa=where si=[name] Mama?
-    ! gabii na = (it is) night already. gabii, hapon and buntag are the nouns inside maayong gabii, maayong hapon, maayong buntag.
-Ana | Sa trabaho pa siya. Daghan ang mga tawo didto. | At work still, she. Many, the people there.
-    Sa=at trabaho=work pa=still siya.=she Daghan=many ang=the(subj) mga=[plural] tawo=person didto.=there
-    ! siya = he or she; Cebuano has one word for both. Sa trabaho pa siya = she is still at work: the place first, then pa, then siya.
-    ! mga (said "manga") makes a noun plural: tawo = person, mga tawo = people.
-@ Jun yawns.
-Jun | Tulog na ko, Ana. | I'll sleep now, Ana.
-    Tulog=sleep na=now ko,=I Ana.
-    ! tulog = sleep. Tulog na ko = I'm off to sleep: the bare root with na, as kaon na in text 001. The same ___ na ko frame says hungry now, tired now, here now (line 9).
-Ana | Ayaw pa, Dong. Hulat ta. | Don't yet, Dong. Let's wait.
-    Ayaw=don't pa,=yet Dong.=to-a-boy Hulat=wait ta.=we(let's)
-    ! root + ta = let's, as kaon ta and adto ta: hulat ta = let's wait (for Mama).
-@ A knock at the door.
-Jun | Ana! Naa'y tawo. Kinsa? | Ana! There is a person. Who?
-    Ana! Naa'y=there-is tawo.=person Kinsa?=who
-    ! kinsa = who. Naa'y tawo, "there is a person", is how you say someone is there, at the door.
-Ana | Wala ko kabalo. Hulat lang diri. | I don't know. Just wait here.
-    Wala=not ko=I kabalo.=know Hulat=wait lang=just diri.=here
-Mama | Ana! Jun! Naa mo diri? | Ana! Jun! Are you two here?
-    Ana! Jun! Naa=is-there mo=you(pl) diri?=here
-    ! naa + a place = is here / is there: naa mo diri? = are you (two) here? Mama's voice, from outside the door.
-Ana | Si Mama! Dali diri, Ma! | It's Mama! Quick, here, Ma!
-    Si=[name] Mama! Dali=quick diri,=here Ma!=Ma
-    ! si Mama! = it's Mama: the name with its marker, nothing else. Dali diri! = come here, as in text 002; here it means come in.
-@ Mama comes in with two bundles of food, one big, one small, and puts them on the table.
-Mama | Naa na ko, Day. Nikaon na mo? | I am here now, Day. Have you eaten already?
-    Naa=is-there na=now ko,=I Day.=to-a-girl Nikaon=ate na=already mo?=you(pl)
-    ! naa na ko = I'm here now, literally "is-there now I". The same na is "already" in nikaon na mo.
-Ana | Wala pa, Ma. Gusto mi mokaon. | Not yet, Ma. We want to eat.
-    Wala=not pa,=yet Ma.=Ma Gusto=want mi=we mokaon.=will-eat
-    ! gusto + mo- verb = want to: gusto mi mokaon = we want to eat, as gusto ko mokaon in text 001.
-Mama | Maayo. Naa ko'y pagkaon. Dako ni. Gamay ni. | Good. I have food. Big, this. Small, this.
-    Maayo.=good Naa=there-is ko'y=I pagkaon.=food Dako=big ni.=this Gamay=small ni.=this
-    ! dako = big, gamay = small (also "a little, few"). The describing word comes first: dako ni = this is big. ni = this (kini) twice, as Mama holds up one bundle, then the other.
-Jun | Dako kaayo! Akoa ang dako! | Very big! Mine, the big one!
-    Dako=big kaayo!=very Akoa=mine ang=the(subj) dako!=big
-    ! akoa = mine, the pair of imoha = yours (text 002, Imoha na). ang dako = "the big (one)": ang makes a thing out of a describing word. Jun reaches for it.
-Mama | Ayaw, Dong. Dili karon. Gamay lang karon. Kaon ta! | Don't, Dong. Not now. Just small now. Let's eat!
-    Ayaw,=don't Dong.=to-a-boy Dili=not karon.=now Gamay=small lang=just karon.=now Kaon=eat ta!=we(let's)
-    ! dili karon = not now. gamay lang = just a little, just the small one.
-Jun | Sige. … Gusto ko moinom. Naa'y tubig, Ana? | OK. … I want to drink. Is there water, Ana?
-    Sige.=okay … Gusto=want ko=I moinom.=will-drink Naa'y=there-is tubig,=water Ana?
-    ! gusto + mo- verb again: gusto ko moinom = I want to drink. naa'y tubig? = is there water?, as in text 002.
-Ana | Oo, naa pa. Daghan pa. | Yes, there-is still. Much still.
-    Oo,=yes naa=there-is pa.=still Daghan=much pa.=still
-    ! pa = still, and it comes after the word it belongs to: naa pa = there is still (some), daghan pa = much still, there is still a lot.
-@ They eat.
-Jun | Ma, pila ang mga tawo sa trabaho karon? | Ma, how many were the people at work today?
-    Ma,=Ma pila=how-many ang=the(subj) mga=[plural] tawo=person sa=at trabaho=work karon?=today
-    ! pila = how many / how much. karon = now, and also "today".
-Mama | Daghan gyud kaayo. Ang mga tawo, gusto og pagkaon. | Really very many. The people, want some food.
-    Daghan=many gyud=really kaayo.=very Ang=the(subj) mga=[plural] tawo,=person gusto=want og=some pagkaon.=food
-    ! Ang mga tawo, gusto og pagkaon: the people are named first, then what they want; the comma is the pause you hear.
-Ana | Ma, moadto ka sa trabaho ugma? | Ma, will you go to work tomorrow?
-    Ma,=Ma moadto=will-go ka=you sa=to trabaho=work ugma?=tomorrow
-    ! ugma = tomorrow. It sits at the end, where karon and unya also sit (text 002: Moadto ba ka unya?).
-Mama | Dili. Wala'y trabaho ugma. Naa ra ko diri. | No. There is no work tomorrow. I am just here.
-    Dili.=no Wala'y=there-is-no trabaho=work ugma.=tomorrow Naa=is-there ra=just ko=I diri.=here
-    ! dili = no / not, for things about now or the future; wala'y = there is no, the pair of naa'y = there is: the squeezed ang glued to wala. Two "no" words with different jobs (grammar-notes, section 5).
-    ! ra = lang, the Cebu way of saying "just": naa ra ko diri = I'm just here. Compare hulat lang diri, line 6.
-Jun | Maayo kaayo! Ugma, naa ta diri: ikaw, si Ana, ako! | Very good! Tomorrow, we are here: you, Ana, I!
-    Maayo=good kaayo!=very Ugma,=tomorrow naa=is-there ta=we diri:=here ikaw,=you si=[name] Ana, ako!=I
-    ! ta = we, including the person spoken to; Jun counts them off: you, Ana, me.
-Mama | Oo, Dong. … Sige. Matulog na ko. Maayong gabii. | Yes, Dong. … OK. I will sleep now. Good night.
-    Oo,=yes Dong.=to-a-boy … Sige.=okay Matulog=will-sleep na=now ko.=I Maayong=good gabii.=night
-    ! matulog = will sleep: tulog takes ma- where kaon and adto take mo-. Matulog na ko = I'm going to sleep now; compare tulog na ko, line 3. maayong gabii = good evening, and good night.
-Both | Maayong gabii, Ma! | Good night, Ma!
-    Maayong=good gabii,=night Ma!=Ma
-@ Later. Mama's door is shut. Jun looks at the big bundle.
-Jun | Natulog na siya? Gusto pa ko. Ang dako… | Asleep already, she? I want more. The big one…
-    Natulog=fell-asleep na=already siya?=she Gusto=want pa=more ko.=I Ang=the(subj) dako…=big
-    ! natulog = fell asleep, is asleep: na- is the "did" form of ma- (matulog = will sleep), as ni- is of mo-. gusto pa = want more.
-Ana | Oo, natulog na. Ayaw na, Dong. Ugma na lang. Tulog na pud. | Yes, asleep already. Don't anymore, Dong. Tomorrow instead. Sleep now too.
-    Oo,=yes natulog=fell-asleep na.=already Ayaw=don't na,=anymore Dong.=to-a-boy Ugma=tomorrow na=already lang.=just Tulog=sleep na=now pud.=also
-    ! ugma na lang, literally "tomorrow already just", is the set phrase for "tomorrow instead", "leave it for tomorrow". tulog na = sleep now, the bare root as a command, as kaon na. Four na in one line: already, anymore, instead, now.
-Jun | Sige. Maayong gabii, Ana. | OK. Good night, Ana.
-    Sige.=okay Maayong=good gabii,=night Ana.
+@ At home, after eating. Early afternoon, hot.
+Ana | Jun! Dali diri! Adto ta. | Jun! Quick, here! Let's go.
+    Jun! Dali=quick diri!=here Adto=go ta.=we(let's)
+    ! Dali diri! is literally "quick, here!" and is how you say "come here!"
+    ! root verb + ta = "let's": Adto ta!, as in text 002, like Kaon ta! in text 001
+Jun | Hulat lang, Ana. Gusto ko og tubig. Moinom pa ko. | Just wait, Ana. I want some water. I'll drink first.
+    Hulat=wait lang,=just Ana. Gusto=want ko=I og=some tubig.=water Moinom=will-drink pa=still ko.=I
+    ! pa = still / yet; here it means "first, before we go"
+Ana | Sige. Dali lang. | OK. Just quick.
+    Sige.=okay Dali=quick lang.=just
+Jun | Oo. … Sige, adto na ta! | Yes. … OK, let's go now!
+    Oo.=yes … Sige,=okay adto=go na=now ta!=we(let's)
+    ! adto na ta = let's go now: adto ta (line 1) with na slipped in after the first word. Take it as one piece.
+@ They walk through the streets to the market. Mama's stall: a small table with fish on ice under a tin roof, people pressing in front of it, noise.
+Jun | Asa ang trabaho ni Mama? | Where is the work of Mama?
+    Asa=where ang=the(subj) trabaho=work ni=of Mama?
+    ! ni before a name = "of": trabaho ni Mama = Mama's work
+Ana | Didto, sa merkado. Naa didto si Mama. | There, at the market. Mama is there.
+    Didto,=there sa=at merkado.=market Naa=there-is didto=there si=[name] Mama.
+    ! merkado = market, from Spanish mercado; the one word in this text outside Tier 1
+    ! si marks a person's name as the subject; it has no English equivalent
+Jun | Daghan kaayo ang tawo didto! | Very many, the people there!
+    Daghan=many kaayo=very ang=the(subj) tawo=people didto!=there
+Ana | Oo. Daghan gyud. Dali, Dong. | Yes. Really many. Quick, Dong.
+    Oo.=yes Daghan=many gyud.=really Dali,=quick Dong.=to-a-boy
+    ! Dali, Dong = "quick, Dong" = come on / hurry up
+    ! Dong = how you address a boy or a younger brother (short for Dodong)
+Mama | Ana! Jun! Kumusta mo? | Ana! Jun! How are you two?
+    Ana! Jun! Kumusta=how-are mo?=you(pl)
+    ! mo = you, several people (short for kamo). One person would be ka.
+Ana | Maayo lang mi, Ma. Ikaw? | We're just fine, Ma. You?
+    Maayo=fine lang=just mi,=we Ma.=Ma Ikaw?=you
+    ! mi = we, not including you (short for kami). maayo lang = just fine, as in text 002 kaon lang = just eat.
+Mama | Maayo pud. Nikaon na mo? | Fine too. Have you eaten already?
+    Maayo=fine pud.=also Nikaon=ate na=already mo?=you(pl)
+Jun | Oo, nikaon na mi. Lami kaayo ang pagkaon sa balay! | Yes, we ate already. Very tasty, the food at the house!
+    Oo,=yes nikaon=ate na=already mi.=we Lami=tasty kaayo=very ang=the(subj) pagkaon=food sa=at balay!=house
+Mama | Maayo. Naa'y tubig. Gusto ba mo? | Good. There is water. Do you two want?
+    Maayo.=good Naa'y=there-is tubig.=water Gusto=want ba=[?] mo?=you(pl)
+    ! ba turns the sentence into a yes/no question
+Jun | Oo, gusto ko og tubig. Salamat, Ma. | Yes, I want some water. Thanks, Ma.
+    Oo,=yes gusto=want ko=I og=some tubig.=water Salamat,=thanks Ma.=Ma
+Ana | Ako pud. | I too.
+    Ako=I pud.=also
+@ Mama pours water from a jug into two cups. Jun points at a plate on the table.
+Jun | Ma, unsa ni? | Ma, what's this?
+    Ma,=Ma unsa=what ni?=this
+    ! ni = this (short for kini), as in text 002. The next line has the other ni.
+Mama | Pagkaon ni Ana. Gusto ka? | Food of Ana. You want?
+    Pagkaon=food ni=of Ana. Gusto=want ka?=you
+    ! ni at the end of unsa ni = this; ni before a name = of. Compare line 5, trabaho ni Mama.
+Jun | Dili na, Ma. Daghan na. Nikaon na ko. | Not anymore, Ma. Much already. I ate already.
+    Dili=no na,=anymore Ma.=Ma Daghan=much na.=already Nikaon=ate na=already ko.=I
+    ! three na in a row, one word with three English faces: dili na = not anymore, daghan na = much already (I've had enough), nikaon na ko = I ate already. na says the situation has changed.
+Ana | Ma, naa ko'y kwarta. Pila ni? | Ma, I have money. How much, this?
+    Ma,=Ma naa=there-is ko'y=I kwarta.=money Pila=how-much ni?=this
+    ! naa ko'y kwarta = literally "there is, I, money" = I have money (naa + ko + 'y)
+Mama | Ayaw na, Day. Imoha na. | Don't anymore, Day. It's yours now.
+    Ayaw=don't na,=anymore Day.=to-a-girl Imoha=yours na.=now
+    ! Day = how you address a girl or a daughter (short for Inday)
+Ana | Salamat kaayo, Ma! | Thanks very much, Ma!
+    Salamat=thanks kaayo,=very Ma!=Ma
+Mama | Sige. Adto na mo. Gabii na unya. | OK. Go now, you two. Later it will already be night.
+    Sige.=okay Adto=go na=now mo.=you(pl) Gabii=night na=already unya.=later
+    ! Gabii na unya, literally "later (it is) already night"
+Jun | Ikaw, Ma? Moadto ba ka unya? | You, Ma? Will you go later?
+    Ikaw,=you Ma?=Ma Moadto=will-go ba=[?] ka=you unya?=later
+Mama | Oo, unya. Naa pa ko'y trabaho. | Yes, later. I still have work.
+    Oo,=yes unya.=later Naa=there-is pa=still ko'y=I trabaho.=work
+Ana | Sige, Ma. Mohulat mi sa balay. | OK, Ma. We'll wait at the house.
+    Sige,=okay Ma.=Ma Mohulat=will-wait mi=we sa=at balay.=house
+Mama | Sige. Salamat, Day. Salamat, Dong. | OK. Thanks, Day. Thanks, Dong.
+    Sige.=okay Salamat,=thanks Day.=to-a-girl Salamat,=thanks Dong.=to-a-boy
+Both | Sige, Ma! | OK, Ma!
+    Sige,=okay Ma!=Ma
+    ! sige closes a conversation: the normal Bisaya goodbye
 ===
 ## Listen for
 
-- **He, she.** *siya* is he and she at once: *Sa trabaho pa siya. Natulog na siya.* No gender, and no "it" either.
-- **Plural with mga.** *mga tawo* = people, said "manga": *Daghan ang mga tawo. Pila ang mga tawo?*
-- **One root, three shapes.** *tulog* (sleep): *Tulog na ko* (the bare root: I'm off to sleep), *matulog na ko* (ma- = will), *natulog na siya* (na- = did, is asleep). Verbs of state take *ma-* / *na-* where *kaon* and *adto* take *mo-* / *ni-*.
-- **Two "no" words.** *Dili* for now and the future and as the plain answer (*Dili. Dili karon.*); *wala* for what is not there and what did not happen (*Wala ko kabalo. Wala pa. Wala'y trabaho ugma.*).
-- **The 'y family.** *naa'y, wala'y, ko'y*: the squeezed *ang* glued to the word before it.
-- **lang and ra.** The same word: *hulat lang diri* (line 6), *naa ra ko diri* (line 19). Cebu says *ra* as often as *lang*.
-- **The describing word first.** *Dako ni. Gamay ni. Dako kaayo. Daghan pa. Natulog na siya.* The quality or the verb first, then the thing or the particle.
-- **ni and na, again.** *dako ni, gamay ni* (this); *gabii na* (already), *ayaw na* (anymore), *tulog na* (now), *ugma na lang* (instead).
+- **Plural you and we.** *Kumusta mo?* (how are you two?), *Maayo lang mi* (we're just fine), *Nikaon na mo?*, *Adto na mo*. Short *mo* = you (plural), short *mi* = we (without you). Contrast *ka* (you, one person) and *ta* (we, with you).
+- **Same sound, two jobs.** *ni* = "this" in *unsa ni* (line 16), as in text 002, but "of" in *trabaho ni Mama* (line 5) and *pagkaon ni Ana* (line 17). The position tells you: *ni* right before a person's name is "of"; *ni* on its own is "this".
+- **"No more" and "still".** *Dili na* (no more / not anymore), *Ayaw na* (don't bother), versus *Naa pa ko'y trabaho* (I *still* have work).
+- **One na, three faces.** *na* says the situation has changed; English picks a word by the verb: *nikaon na* (already), *adto na ta* (now), *dili na* (anymore). Line 18 has all three in a row.
+- **Where the little words go.** Cebuano puts the particles and the short pronouns right after the first word of the sentence, in that order: *Adto na ta. Nikaon na mo? Gusto ba mo? Naa pa ko'y trabaho.* First word, then *na / ba / pa*, then *ta / mo / ko*. Every chain in these texts has this shape; take the set phrases (*adto na ta*, *dali diri*) as one piece.
+- **sige** closes conversations: lines 26–27 are a normal Bisaya goodbye.
 
 ## Self-check
 
-Read block 1 only. Count the lines you understood fully. 23 of 25 → ready for text 004. Fewer → re-read 002 and 003 tomorrow; the same words repeat.
+Read block 1 only. Count the lines you understood fully. 24 of 27 → ready for text 004. Fewer → re-read 002 and 003 tomorrow; the same words repeat.
 
 ## Word check
 
-All words are Tier 1. Proper names: Ana, Jun, Mama / Ma.
+All words are Tier 1 except *merkado* (market), a Spanish loan from Tier 2, used once to name the place. Proper names: Ana, Jun, Mama / Ma.
 
-**Coverage:** 52 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/003.txt`). Not used here: ni (of), ba, unsa, kumusta, salamat, balay, kwarta, unya, lami, and the four entries kept for 004.
-**Cumulative after texts 001 to 003:** 61 of 65. Still unused: sila, ug, kasabot, and *na* = that (kana), all four planned for 004.
+**Coverage:** 49 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/003.txt`).
+**Cumulative after texts 001 to 003:** 54 of 65. Still unused: siya, sila, ug, mga, kinsa, tulog, kasabot, ugma, dako, gamay, and *na* = that (kana).
