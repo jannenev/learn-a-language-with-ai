@@ -134,7 +134,7 @@ In `LOG.md`, dated entries oldest first (moved there 2026-11-08).
 ## 9. Next steps
 
 1. Verify the entries marked `check` in `cebuano/pronunciation/lexicon.tsv` with a native speaker or Wolff's dictionary (dali, sige, palihug, kuan, the suffixed verb forms).
-2. Review the draft of text 004 (`cebuano/texts/src/004.txt`) against the small-words rule (two three-word chains; it now introduces *na* = that and *ra*, each needing its note), render it, generate its pronunciation files and PDF, and write 005 and 006 from their rows in `texts.md`. After 006, check with `wordcheck.py --counts` that no Tier 1 entry is below five occurrences.
+2. Text 005 is written (2026-11-14) and waits for the learner's read; revise it from that reading, then write 006 from its row in `texts.md`. After 006, check with `wordcheck.py --counts` that no Tier 1 entry is below five occurrences.
 3. Decide the audio source: run the tests in `audio.md`, section 4, on text 001 (ElevenLabs v4 plain and with IPA, Meta MMS locally, Toucan if needed), send the clips to a native speaker, then retarget `tools/pron.py` from the Azure SSML to the chosen engine's input and add a `tools/speak.py` that writes `cebuano/audio/NNN.mp3`.
 4. Follow the reading schedule in section 2 for 001 to 003 while 004 to 006 are written.
 5. Before Stage B: extend `tools/wordcheck.py` and the lexicon with Tier 2. (*merkado* was moved from Tier 3 to Tier 2 on 2026-11-11 for text 003 and is in the lexicon already.)

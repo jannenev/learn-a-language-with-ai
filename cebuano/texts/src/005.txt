@@ -1,0 +1,98 @@
+title: 005 — Buntag: asa si Jun? (Morning: where is Jun?)
+intro: The next morning. Mama has no work today and is at home. Ana gets up; Jun's sleeping mat is empty. Out in the yard, people stand at the water tap with buckets.
+tier: Words: Tier 1 only. The last four Tier 1 entries first appear: sila, ug, kasabot, and na as "that" (short for kana; until now na was "already / now"). New shapes of known words: kini and kana, the full forms of ni and na; ta'y, ba'y and kinsa'y, more of the 'y family.
+speakers: Ana | Jun | Mama
+
+@ Morning. Mama sits at the table with a cup. Ana comes out of her room.
+Ana | Maayong buntag, Ma. Kumusta ka? | Good morning, Ma. How are you?
+    Maayong=good buntag,=morning Ma.=Ma Kumusta=how-are ka?=you
+Mama | Maayo kaayo, Day. Wala'y trabaho karon! | Very good, Day. There is no work today!
+    Maayo=good kaayo,=very Day.=to-a-girl Wala'y=there-is-no trabaho=work karon!=today
+    ! karon = now, and also today
+Ana | Asa si Jun? Tulog pa siya? | Where is Jun? Asleep still, he?
+    Asa=where si=[name] Jun? Tulog=sleep pa=still siya?=he
+    ! tulog pa siya = he is still asleep: the bare root as a state, with pa = still
+Mama | Wala ko kabalo. Wala siya diri. | I don't know. He is not here.
+    Wala=not ko=I kabalo.=know Wala=not-there siya=he diri.=here
+    ! wala siya diri = he is not here; the opposite is naa siya diri
+@ Ana looks out of the window. In the yard, people stand at the water tap with buckets.
+Ana | Ma, naa'y mga tawo didto. Kinsa sila? | Ma, there are people there. Who are they?
+    Ma,=Ma naa'y=there-is mga=[plural] tawo=person didto.=there Kinsa=who sila?=they
+    ! sila = they. The persons are now complete: ko, ka, siya; ta, mi, mo, sila.
+Mama | Mga tawo lang. Gusto sila og tubig. | Just people. They want some water.
+    Mga=[plural] tawo=person lang.=just Gusto=want sila=they og=some tubig.=water
+Ana | Ug si Jun? Naa siya didto? | And Jun? Is he there?
+    Ug=and si=[name] Jun? Naa=is-there siya=he didto?=there
+    ! ug = and. It sounds the same as og (some) in the line before; the place tells them apart: ug joins two things, og comes before the thing wanted.
+Mama | Wala. Wala siya didto. | No. He is not there.
+    Wala.=not-there Wala=not-there siya=he didto.=there
+    ! diri = here (line 4), didto = there
+Ana | Dili ni maayo, Ma. Asa siya? | Not good, this, Ma. Where is he?
+    Dili=not ni=this maayo,=good Ma.=Ma Asa=where siya?=he
+    ! dili, diri, didto: not, here, there. Three words that look alike; this text has all three.
+@ The door opens. Jun comes in, bent sideways under a big bucket. Water spills on the floor.
+Jun | Maayong buntag! Dali, Ana! Dako kaayo ni! | Good morning! Quick, Ana! Very big, this!
+    Maayong=good buntag!=morning Dali,=quick Ana! Dako=big kaayo=very ni!=this
+Mama | Dong! Unsa na? | Dong! What's that?
+    Dong!=to-a-boy Unsa=what na?=that
+    ! na here = that, the thing near you (short for kana). Mama points at what Jun is holding. It is not the na of nikaon na.
+Jun | Tubig ni, Ma. Daghan! | Water, this, Ma. Much!
+    Tubig=water ni,=this Ma.=Ma Daghan!=much
+    ! ni = this, near me; na = that, near you. Mama says unsa na, Jun answers tubig ni: the same bucket.
+Mama | Tubig? Dili ko kasabot. Naa ta'y tubig diri. | Water? I don't understand. We have water here.
+    Tubig?=water Dili=not ko=I kasabot.=understand Naa=there-is ta'y=we tubig=water diri.=here
+    ! dili ko kasabot = I don't understand. naa ta'y tubig = we have water, built like naa ko'y kwarta
+Jun | Gamay lang ang tubig diri. Imoha kini, Ma. | Just little, the water here. Yours, this, Ma.
+    Gamay=small lang=just ang=the(subj) tubig=water diri.=here Imoha=yours kini,=this Ma.=Ma
+    ! kini = the full form of ni (this). imoha = yours, as in text 003
+Mama | Akoa kana? Kasabot na ko. Salamat, Dong! | Mine, that? I understand now. Thanks, Dong!
+    Akoa=mine kana?=that Kasabot=understand na=now ko.=I Salamat,=thanks Dong!=to-a-boy
+    ! kana = the full form of na (that). The na in kasabot na ko is the other one: now.
+@ Mama takes some coins from her pocket.
+Mama | Naa ko'y kwarta, Dong. Imoha ni. | I have money, Dong. Yours, this.
+    Naa=there-is ko'y=I kwarta,=money Dong.=to-a-boy Imoha=yours ni.=this
+Jun | Ayaw na, Ma. Dili ko gusto og kwarta. | Don't, Ma. I don't want money.
+    Ayaw=don't na,=anymore Ma.=Ma Dili=not ko=I gusto=want og=some kwarta.=money
+    ! ayaw na = don't bother, as Mama said to Ana in text 003
+Jun | Naa ba'y pagkaon? Ang dako… | Is there food? The big one…
+    Naa=there-is ba'y=[?] pagkaon?=food Ang=the(subj) dako…=big
+    ! naa ba'y = naa'y with the question word ba inside: is there ...?
+Mama | Oo, naa pa ang dako. Hulat lang. | Yes, there-is still, the big one. Just wait.
+    Oo,=yes naa=there-is pa=still ang=the(subj) dako.=big Hulat=wait lang.=just
+@ Mama puts the big bundle on the table and opens it. Ana brings three cups.
+Ana | Kinsa'y gusto moinom? | Who wants to drink?
+    Kinsa'y=who gusto=want moinom?=will-drink
+    ! kinsa'y = kinsa + 'y: who is the one that ...?
+Jun | Ako! Ug si Mama. | I! And Mama.
+    Ako!=I Ug=and si=[name] Mama.
+Mama | Oo. Tubig ug pagkaon. Kaon ta! | Yes. Water and food. Let's eat!
+    Oo.=yes Tubig=water ug=and pagkaon.=food Kaon=eat ta!=we(let's)
+Ana | Pila ang mga tawo didto, Dong? | How many, the people there, Dong?
+    Pila=how-many ang=the(subj) mga=[plural] tawo=person didto,=there Dong?=to-a-boy
+Jun | Daghan pa. Naa pa sila didto. | Many still. They are still there.
+    Daghan=many pa.=still Naa=is-there pa=still sila=they didto.=there
+Jun | Lami gyud ni! Unya, matulog ko. | Really tasty, this! Later, I will sleep.
+    Lami=tasty gyud=really ni!=this Unya,=later matulog=will-sleep ko.=I
+Mama | Salamat, Dong. Maayo kaayo ka. | Thanks, Dong. You are very good.
+    Salamat,=thanks Dong.=to-a-boy Maayo=good kaayo=very ka.=you
+===
+## Listen for
+
+- **They.** *sila*: *Kinsa sila? Gusto sila og tubig. Naa pa sila didto.* With it the persons are complete.
+- **And.** *ug*: *Ug si Jun? Tubig ug pagkaon.* It sounds like *og* (some): *gusto sila og tubig* (line 6), *ug si Jun* (line 7).
+- **Where is he? / Not here.** *Asa siya?* — *Wala siya diri. Wala siya didto.* The opposite is *naa*: *Naa pa sila didto.*
+- **This and that.** *Unsa na?* — *Tubig ni.* (lines 11–12): *na* is that, near you; *ni* is this, near me. The full forms are *kana* and *kini* (lines 14–15).
+- **I don't understand.** *Dili ko kasabot.* And when it clears: *Kasabot na ko.*
+- **The 'y family grows.** *naa ta'y tubig* (we have water), *naa ba'y pagkaon?* (is there food?), *kinsa'y gusto moinom?* (who wants to drink?).
+- **dili, diri, didto.** Not, here, there: lines 4, 8 and 9.
+
+## Self-check
+
+Read block 1 only. Count the lines you understood fully. 24 of 26 → ready for text 006. Fewer → re-read 004 and 005 tomorrow; the same words repeat.
+
+## Word check
+
+All words are Tier 1. Proper names: Ana, Jun, Mama / Ma.
+
+**Coverage:** 55 of the 65 Tier 1 entries are used in this text (`python3 tools/wordcheck.py cebuano/texts/src/005.txt`). Not used here: kami, kamo, sa, ni (of), pud, sige, adto, balay, ugma, and buntag / hapon / gabii outside the greeting.
+**Cumulative after texts 001 to 005:** 65 of 65. Every Tier 1 entry has now appeared.
