@@ -2,6 +2,8 @@
 
 Use an AI assistant to build the core of a language fast, and learn it by reading, and by listening once there is a voice for it. The assistant picks the words everyday speech is made of, writes short connected texts that use only those words, graded readers in the usual term, though here they are dialogues with the meaning of every word shown. You read the texts a few times each on a schedule, and the words stick because they keep coming back in context. The method is written up so that it can be repeated for another language; the first language it has been used for is Cebuano, called Bisaya by its speakers, the language of Cebu in the Philippines.
 
+**Learning Cebuano (Bisaya)?** Start with the [full booklet (PDF)](cebuano/pdf/cebuano-texts-full.pdf): the first four dialogues, each with the English beside it and word-by-word notes. For re-reading there is a [pocket version](cebuano/pdf/cebuano-texts-pocket.pdf), and a [one-page sheet of the small words](cebuano/pdf/cebuano-word-sets.pdf).
+
 ## How it works
 
 1. **The core words.** The assistant builds a list of about 120 word roots in tiers, chosen by category (greetings, the small grammatical words, food, family, money, time) rather than by raw frequency, so that the situations that actually happen are covered. Our estimate is that this covers roughly two thirds of everyday conversation and more in simple exchanges such as greetings and shopping. That is an estimate, not a measurement.
@@ -15,6 +17,7 @@ The full instructions, with the prompts used, are in [METHOD.md](METHOD.md).
 
 Free material for beginners. Everything for Cebuano is in [`cebuano/`](cebuano/):
 
+- ready-made PDFs for screen or paper, the full booklet, the pocket booklet and the word-sets sheet: [`cebuano/pdf/`](cebuano/pdf/)
 - the word list in tiers: [vocabulary.md](cebuano/vocabulary.md)
 - a short grammar sheet for listeners: [grammar-notes.md](cebuano/grammar-notes.md)
 - the small words in their sets, one page to glance at: [word-sets.md](cebuano/word-sets.md)
@@ -23,7 +26,7 @@ Free material for beginners. Everything for Cebuano is in [`cebuano/`](cebuano/)
 - the listening side, the voices that could speak the texts and what has been tried: [audio.md](cebuano/audio.md)
 - the plan: [PLAN.md](cebuano/PLAN.md); the dated log of the work: [LOG.md](cebuano/LOG.md)
 
-To use it: skim Tier 1 of the word list once without memorising it, then read text 001, cold first, and follow the schedule above. The texts open in the browser on GitHub, so nothing needs to be installed. For paper, `tools/print.py` makes a one-page A4 version of a text, Cebuano left and English right with a word-for-word footnote; ready-made PDFs will be added once the layout is settled.
+To use it: skim Tier 1 of the word list once without memorising it, then read text 001, cold first, and follow the schedule above. The texts open in the browser on GitHub, so nothing needs to be installed. For paper, the PDFs in [`cebuano/pdf/`](cebuano/pdf/) are ready to print; `tools/print.py` makes them, and a one-page A4 version of any single text, Cebuano left and English right with a word-for-word footnote.
 
 ## Another language
 

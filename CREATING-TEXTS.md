@@ -12,7 +12,7 @@ How a new text is made for any language in this repository, from its row in the 
    - `python3 tools/wordcheck.py --chains <language>/texts/src/*.txt`: no chain against the small-words rule below.
    - `python3 tools/render.py` refuses a gloss line that does not line up with the words; `wordcheck.py --list` shows the "New in this text" list the readers will see.
 4. **Show the source** to whoever reviews before rendering. A change is cheaper in the source than after three generated files exist.
-5. **Generate**: the rendered text `<language>/texts/NNN-title.md` with `tools/render.py`; the pronunciation files with `tools/pron.py` if the language has them; the pocket PDF with `tools/print.py --glosses`, the booklet with `--all`.
+5. **Generate**: the rendered text `<language>/texts/NNN-title.md` with `tools/render.py`; the pronunciation files with `tools/pron.py` if the language has them; the pocket PDF with `tools/print.py --glosses`, the booklet with `--all`. The tools write into `<language>/print/`, a local workbench that is not in the repository. The published PDFs are in `<language>/pdf/` under fixed names, copied there by hand at a milestone, with a README that says which texts each one holds.
 6. **Record**: date the row in `texts.md` and add a dated line to the language's log. Nothing is committed until the reviewer agrees.
 
 ## The rules
