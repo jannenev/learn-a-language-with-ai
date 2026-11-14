@@ -32,3 +32,9 @@ To use it: skim Tier 1 of the word list once without memorising it, then read te
 ## Status
 
 Early, and not yet verified. The Cebuano texts, word lists, grammar notes and pronunciation marks were written with AI assistance (Claude) and have not been checked by a native speaker. Meanings are probably right; stress marks and naturalness are where errors would hide, and the lexicon's `status` column says which entries most need checking. Corrections from Cebuano speakers are very welcome: open an issue or a pull request.
+
+## Licence
+
+The texts and documents in this repository (the method, the Cebuano material and the PDFs made from it) are under the [Creative Commons Attribution-ShareAlike 4.0 International](LICENSE) licence (CC BY-SA 4.0). You may use, change and share them, also commercially, as long as you credit the source and release what you make from them under the same licence. The scripts in [`tools/`](tools/) are under the [MIT licence](tools/LICENSE).
+
+To credit: "Learn a language with AI" by Janne Nevalainen, github.com/jannenev/learn-a-language-with-ai, CC BY-SA 4.0.
