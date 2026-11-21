@@ -1,6 +1,6 @@
 # Original texts for weaving
 
-English texts that are free to use, kept untouched, as the starting point for woven versions. How an original is added: "Adding a story to this repository" in [`../README.md`](../README.md).
+English texts that are free to use, kept untouched, as the starting point for woven versions. How an original is added: "Adding a story to this repository" in [`../README.md`](../README.md). Texts that could be added next: [`CANDIDATES.md`](CANDIDATES.md).
 
 ## `grimm-wolf-and-seven-kids.txt`
 
