@@ -1,6 +1,6 @@
 # The Wolf ug the Seven Gamay Kids
 
-A woven story: the English tale with twenty-one Cebuano words put in place of their English ones. The second reading of this story: it keeps the twelve words of [the 12-word version](wolf-and-seven-kids.12-words.md) and adds nine. How to read a woven story: [`weaving/README.md`](../../weaving/README.md).
+A woven story: the English tale with twenty-one Cebuano words put in place of their English ones. The second reading of this story: it keeps the twelve words of [the 12-word version](wolf-and-seven-kids.12-words.md) and adds nine; the third is [the 31-word version](wolf-and-seven-kids.31-words.md). How to read a woven story: [`weaving/README.md`](../../weaving/README.md).
 
 **Status.** The story is the Grimm tale in Margaret Hunt's translation of 1884, out of copyright; the original is [`weaving/originals/grimm-wolf-and-seven-kids.txt`](../../weaving/originals/grimm-wolf-and-seven-kids.txt). The weaving was done with AI assistance and has not been checked by a native speaker. It is a reading device, not a sample of how anyone speaks.
 

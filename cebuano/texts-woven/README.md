@@ -9,8 +9,9 @@ The weaving was done with AI assistance and has not been checked by a native spe
 Read the versions of a story in order, some days apart.
 
 | Story                                                                         | Reading | File                                                                 | Cebuano words | Share of the story |
-| ----------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------- | ------------- | -------------------------- |
+| ----------------------------------------------------------------------------- | ------- | -------------------------------------------------------------------- | ------------- | ----------------------------------- |
 | The Wolf and the Seven Little Kids (Grimm, translated by Margaret Hunt, 1884) | first   | [`wolf-and-seven-kids.12-words.md`](wolf-and-seven-kids.12-words.md) | 12            | about one word in eight |
 |                                                                               | second  | [`wolf-and-seven-kids.21-words.md`](wolf-and-seven-kids.21-words.md) | 21            | a little under one in five |
+|                                                                               | third   | [`wolf-and-seven-kids.31-words.md`](wolf-and-seven-kids.31-words.md) | 31            | between one in five and one in four |
 
-The words woven in are from Tier 1 of [`../vocabulary.md`](../vocabulary.md), with *pero* and *tanan* from Tier 2. They were chosen by how often they occur in the story, so they do not follow the order of the numbered texts; a reader who has not started the numbered texts can read these as well.
+The words woven in are from Tier 1 of [`../vocabulary.md`](../vocabulary.md), with *pero, tanan, niingon* and *usa* from Tier 2. They were chosen by how often they occur in the story, so they do not follow the order of the numbered texts; a reader who has not started the numbered texts can read these as well.

@@ -40,12 +40,13 @@ Decided with AI assistance; not checked by a native speaker.
 
 ## The order they came in
 
-| Version  | Words | Share of the story         | Added |
-| -------- | ----- | -------------------------- | -------------------------------------------------------------------------- |
-| 12 words | 12    | about one word in eight    | ug, siya, mama, unya, sila, gamay, dili, balay, gusto, dako, kabalo, didto |
-| 21 words | 21    | a little under one in five | pero, tanan, nga, ikaw, ako, kami, wala, naa, diri |
+| Version  | Words | Share of the story                  | Added |
+| -------- | ----- | ----------------------------------- | --------------------------------------------------------------------------------- |
+| 12 words | 12    | about one word in eight             | ug, siya, mama, unya, sila, gamay, dili, balay, gusto, dako, kabalo, didto |
+| 21 words | 21    | a little under one in five          | pero, tanan, nga, ikaw, ako, kami, wala, naa, diri |
+| 31 words | 31    | between one in five and one in four | iyang, niingon, adto with its forms, usa, kamo, kita, tubig, inom, tulog, pagkaon |
 
-Decided as well, and not yet in a published version: *iyang, niingon, adto* with its forms, *usa, kamo, kita, tubig, inom, tulog, pagkaon* and *sa*.
+Decided as well, and not yet in a published version: *sa*.
 
 A first 12-word version that spent four of its words on *tubig, inom, tulog* and *pagkaon*, once or twice each, was the weaker one: the words to weave first are the ones common in any story.
 
