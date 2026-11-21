@@ -125,6 +125,7 @@ Pronunciation data lives in `cebuano/pronunciation/`, separate from the texts, s
 - **Frequency cross-check.** The lists are curated from knowledge of the language, not derived from a corpus. Worth checking Tier 1–2 against a real frequency list (e.g. from OPUS subtitles or a Cebuano Wikipedia dump), keeping in mind that written corpora under-represent spoken particles. The coverage estimate in section 2 is a reasoned guess and would be the first thing such a check would correct.
 - **Tier sizes.** 65 / ~50 are starting guesses. Prune Tier 1 if the first texts feel crowded.
 - **Cebu vs Mindanao.** Decide whether to note Davao-style variants at all, or stick to Cebu only.
+- **Two layouts in the repository.** The numbered texts have their descriptions as single files at the top level (`METHOD.md`, `CREATING-TEXTS.md`), their index beside the folder (`texts.md`) and their sources inside it (`texts/src/`). The woven stories have their descriptions and originals in a top-level folder (`weaving/`), what is decided for Cebuano in `cebuano/weaving/`, and their index inside the output folder (`texts-woven/README.md`). Left as it is; to settle when weaving has grown or a second language is added. Noted 2026-11-21.
 - **Text length and the printed page.** Whether a text that spills over one pocket page takes two pages or the footnote layout absorbs it; 004 is the trial case. The reasoning is with the stage table in `texts.md` and under Length in `CREATING-TEXTS.md`. Noted 2026-11-07.
 
 ## 8. Progress log
@@ -138,6 +139,7 @@ In `LOG.md`, dated entries oldest first (moved there 2026-11-08).
 3. Decide the audio source: run the tests in `audio.md`, section 4, on text 001 (ElevenLabs v4 plain and with IPA, Meta MMS locally, Toucan if needed), send the clips to a native speaker, then retarget `tools/pron.py` from the Azure SSML to the chosen engine's input and add a `tools/speak.py` that writes `cebuano/audio/NNN.mp3`.
 4. Follow the reading schedule in section 2 for 001 to 003 while 004 to 006 are written.
 5. Before Stage B: extend `tools/wordcheck.py` and the lexicon with Tier 2. (*merkado* was moved from Tier 3 to Tier 2 on 2026-11-11 for text 003 and is in the lexicon already.)
+6. Woven stories (`texts-woven/`, with `weaving/` at the top level): further versions of the first tale with more words; a second story woven with the same words, to see how they carry over and to give the rarer ones more encounters; whole lines of dialogue in Cebuano once all their words are known, which is where the Cebuano sentence would come in; a checking script, `tools/weavecheck.py`, taking the original, the woven file and the word list; a printed version.
 
 ## 10. Outside resources (checked 2026-10-07)
 
