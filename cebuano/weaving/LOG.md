@@ -2,7 +2,7 @@
 
 A log of the weaving of Cebuano stories, oldest first: what was tried, what happened, and what was changed. It is kept so that a later round, here or for another language, starts with what this one learned. The rules that came out of it are in `weaving/HOW-TO-WEAVE.md`; this file keeps the reasons and the dead ends.
 
-So far: two Grimm tales and one reader. Each entry says whether its lesson looks general or belongs to Cebuano. The Cebuano in the examples has not been checked by a native speaker.
+So far: two Grimm tales and one reader. Each entry says whether its lesson looks general or belongs to Cebuano.
 
 ## 2026-11-21
 

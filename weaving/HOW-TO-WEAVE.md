@@ -1,6 +1,6 @@
 # How to weave a story
 
-Given an English text and a list of words in the language being learned, how to weave the one into the other well. For a person or an AI assistant; the same for a story meant for this repository and for a book woven for one's own reading. The rules come from weaving the first tale for Cebuano, and are to be corrected as more are made; the examples are Cebuano.
+Given an English text and a list of words in the language being learned, how to weave the one into the other well. The same for a story meant for this repository and for a book woven for one's own reading. The rules come from weaving the first tale for Cebuano, and are to be corrected as more are made; the examples are Cebuano.
 
 What weaving is and why it is done this way: [`WHAT-IS-WEAVING.md`](WHAT-IS-WEAVING.md). Where the files of a story go in this repository: [`README.md`](README.md).
 

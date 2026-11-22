@@ -1,6 +1,6 @@
 # Cebuano: the order of the words to weave
 
-The commonest English words matched to the Cebuano core words, and from that an order in which to weave them. Made with AI assistance; not checked by a native speaker. *Little Redcap* was woven by this order; *The Wolf and the Seven Little Kids* was woven before it and follows it only in part.
+The commonest English words matched to the Cebuano core words, and from that an order in which to weave them. *Little Redcap* was woven by this order; *The Wolf and the Seven Little Kids* was woven before it and follows it only in part.
 
 The frequencies are from the New General Service List 1.2 (Browne, Culligan and Phillips, CC BY-SA 4.0); see [`weaving/WORD-LISTS.md`](../../weaving/WORD-LISTS.md). The Cebuano words and their tiers are from [`../vocabulary.md`](../vocabulary.md). The decisions already taken for single words are in [`SWAPS.md`](SWAPS.md).
 

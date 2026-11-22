@@ -7,7 +7,7 @@ A woven story is a story in English with words of the language being learned put
 | File or folder                             | What it is |
 | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | [`WHAT-IS-WEAVING.md`](WHAT-IS-WEAVING.md) | What weaving is, what it is called elsewhere, what it can and cannot teach, and which kind is used here |
-| [`HOW-TO-WEAVE.md`](HOW-TO-WEAVE.md)       | How to weave a text: choosing the words, the levels, the rules for swapping, the checks; for a person or an AI assistant |
+| [`HOW-TO-WEAVE.md`](HOW-TO-WEAVE.md)       | How to weave a text: choosing the words, the levels, the rules for swapping, the checks |
 | [`WORD-LISTS.md`](WORD-LISTS.md)           | Published word frequency lists that are free to use, and what each is good for |
 | [`originals/`](originals/)                 | The English stories as they were before weaving, each with its source and copyright status; and a list of candidates for more |
 

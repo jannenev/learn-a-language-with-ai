@@ -1,8 +1,6 @@
 # Cebuano: the swaps decided so far
 
-For whoever weaves the next story into Cebuano: which English words each Cebuano word has stood for, and where the English was left. From the two tales woven so far, *The Wolf and the Seven Little Kids* and *Little Redcap*. The rules behind the decisions are in [`weaving/HOW-TO-WEAVE.md`](../../weaving/HOW-TO-WEAVE.md); the woven stories are in [`../texts-woven/`](../texts-woven/).
-
-Decided with AI assistance; not checked by a native speaker.
+Which English words each Cebuano word has stood for, and where the English was left. From the two tales woven so far, *The Wolf and the Seven Little Kids* and *Little Redcap*. The rules behind the decisions are in [`weaving/HOW-TO-WEAVE.md`](../../weaving/HOW-TO-WEAVE.md); the woven stories are in [`../texts-woven/`](../texts-woven/).
 
 | Word                       | Stands for                                                                                                                                                                                                    | Left in English |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
