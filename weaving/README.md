@@ -2,22 +2,21 @@
 
 A woven story is a story in English with words of the language being learned put in place of their English ones: a few at first, more at each reading. You read the story as you would in English, and the new words come along with it.
 
-It is extra reading beside the numbered texts.
-
 ## What is in this folder
 
 | File or folder                             | What it is |
 | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
 | [`WHAT-IS-WEAVING.md`](WHAT-IS-WEAVING.md) | What weaving is, what it is called elsewhere, what it can and cannot teach, and which kind is used here |
 | [`HOW-TO-WEAVE.md`](HOW-TO-WEAVE.md)       | How to weave a text: choosing the words, the levels, the rules for swapping, the checks; for a person or an AI assistant |
+| [`WORD-LISTS.md`](WORD-LISTS.md)           | Published word frequency lists that are free to use, and what each is good for |
 | [`originals/`](originals/)                 | The English stories as they were before weaving, each with its source and copyright status; and a list of candidates for more |
 
 What belongs to one language is with that language. For Cebuano:
 
 | Folder                                            | What it is |
-| ------------------------------------------------- | ----------------------------------------------------- |
+| ------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
 | [`cebuano/texts-woven/`](../cebuano/texts-woven/) | The woven stories, to read |
-| [`cebuano/weaving/`](../cebuano/weaving/)         | For making more: the swaps decided so far for Cebuano |
+| [`cebuano/weaving/`](../cebuano/weaving/)         | For making more: the swaps decided so far for Cebuano, the order of the words to weave, and a log of what was tried and what did not work |
 
 ## How to read a woven story
 
