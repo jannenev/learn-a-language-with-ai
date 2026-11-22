@@ -1,6 +1,6 @@
 # Woven stories for Cebuano
 
-English stories with Cebuano core words woven in, as extra reading beside the numbered texts in [`../texts/`](../texts/). What a woven story is and how to read one: [`weaving/README.md`](../../weaving/README.md).
+English stories with Cebuano core words woven in: a second way of reading, beside the numbered texts in [`../texts/`](../texts/). What a woven story is and how to read one: [`weaving/README.md`](../../weaving/README.md).
 
 The weaving was done with AI assistance and has not been checked by a native speaker.
 

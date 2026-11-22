@@ -33,7 +33,7 @@ An English story, out of copyright, with the core words of the course woven in.
 - **The words are the course's core words,** chosen by how often their English counterparts occur in the story, not by what the story is about. The aim is words that carry over to every text and to speech.
 - **The same story is read several times, each time with more words.** Found when the first tale was read: the first version, with twelve words, took some looking up; the second, with twenty-one, read easily enough, because the story and the first twelve were already familiar; a third and a fourth were still readable with about a quarter of the words in Cebuano. This matches the repeated reading of the numbered texts.
 - **A word is swapped only where the other language's word is right in that sense.** The rest stays English, and each woven story says in its notes what was left and why.
-- **The numbered texts stay the main line.** They teach the sentence. A woven story is extra reading that costs little.
+- **The two kinds of text do different work.** A woven story teaches words; the numbered texts teach the Cebuano sentence.
 
 The other direction, a Cebuano sentence with English words dropped in, is how people in Cebu actually mix, and keeps the Cebuano grammar working. It has not been tried here.
 
