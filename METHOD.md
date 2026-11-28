@@ -5,7 +5,7 @@ How the Cebuano material in this repository was made, so that the same can be do
 ## In short
 
 1. **Decide what the course is for.** For Cebuano: understanding everyday speech, in the Cebu variety, with English as the pivot language. The material then serves everyone with that goal.
-2. **Pick the core words.** About 60 that everyday speech is made of, chosen by category (greetings, the small grammatical words, food, family, money, time), then about 50 more, then a backlog. Add the fillers and exclamations that word lists tend to miss.
+2. **Pick the core words.** About 60 that everyday speech is made of, chosen by category (greetings, the small grammatical words, food, family, money, time), then about 50 more, then a backlog. Add the fillers and exclamations that word lists tend to miss. Then check the list against ordinary text and with a native speaker before texts are built on it; how is in `docs/vocabulary/`.
 3. **Write short dialogues using only those words.** Same characters, same setting, so the words keep coming back. Later texts add five to eight new words each. The number in the file name is the reading order. Plan the texts a few ahead in an index of the texts, one row per text: the scene, the words it must bring in or introduce, and the patterns it exercises. The row is the brief while the text is unwritten and the record afterwards; a text written to such a row drifts less between writers.
 4. **Show every word's meaning.** Beside each line, an English that follows the words rather than reading naturally; under each word, its literal meaning; idioms explained in a note, never substituted.
 5. **Lay it out so the text can be read alone first.** The words it brings in, listed; then the target language on its own, then with the English beside it, then word by word with notes.
@@ -52,6 +52,7 @@ The scripts in `tools/` document their own formats and usage; run any of them wi
 
 - `render.py` turns a text source into the three-block layout. Language-neutral.
 - `wordcheck.py` reports which core words a text uses, which are still unused, anything outside the list, and occurrences per word. Its word table and affix list are Cebuano and must be replaced for another language.
+- `wordfreq.py` counts how often the entries of the word list occur in ordinary text of the language, which is how the list is checked. Its tables are Cebuano too.
 - `pron.py` generates the pronunciation files. Its spelling-to-sound rules are Cebuano; a language with good text-to-speech may not need it.
 - `print.py` makes the one-page PDFs for paper, through Chrome. Language-neutral.
 

@@ -11,7 +11,9 @@ This repository holds a method for learning the core of a language from short te
 ## Extending the Cebuano material
 
 - Follow `CREATING-TEXTS.md`: start from the text's row in `cebuano/texts.md` (write the row first if it is missing), write `cebuano/texts/src/NNN.txt` to the rules there, run the checks, show the source before rendering, then render, generate the pronunciation files and the PDF, date the row and log the work with the date in `cebuano/LOG.md`.
+- To check or change the word list (`cebuano/vocabulary.md`): follow `docs/vocabulary/`, and first read what was checked and decided for Cebuano in `cebuano/docs/vocabulary/`. A new version of the list stays a draft there until the learner approves it.
 
 ## Doing the same for another language
 
 - Follow `METHOD.md` and produce the same kinds of files as in `cebuano/`, in a folder named after the language. The scripts in `tools/` document their own formats; `wordcheck.py` and `pron.py` contain Cebuano specifics to replace.
+- For the core words, follow `docs/vocabulary/`: how to choose them, and how to check the list before texts are built on it.

@@ -1,0 +1,295 @@
+tier	entry	tatoeba	news	bible	commonest forms (in the first source that has any)
+1	ako	534.4	62.5	232.4	ko:302 akong:111 nako:82 ako:22 kong:19
+1	ikaw	341.9	35.2	197.1	ka:196 imong:80 nimo:66 imo:10 ikaw:4
+1	siya	238.3	175.7	344.1	siya:120 iyang:58 niya:34 siyag:16 niyang:7
+1	kita (we)	66.0	40.2	24.1	ta:33 nato:14 atong:9 kita:5 ato:3
+1	kami	63.3	12.0	30.5	mi:30 among:13 namo:12 ming:3 kami:3
+1	kamo	42.2	4.5	141.5	mo:23 inyong:7 inyo:4 ninyo:3 mong:2
+1	sila	88.9	97.6	207.5	sila:66 ilang:15 nila:7 silang:3 ila:2
+1	ang	485.8	431.4	493.1	ang:530
+1	si	175.1	104.7	121.6	si:191
+1	sa	694.8	1215.6	1172.0	sa:758
+1	og	103.6	109.9	0.3	og:113
+1	ug	123.8	156.6	647.4	ug:135
+1	nga	182.4	456.7	491.5	nga:199
+1	mga	147.6	222.7	401.7	mga:161
+1	ni (of)	107.3	81.1	118.6	ni:117
+1	ba	83.4	7.3	22.3	ba:88 bang:3
+1	na	181.5	102.8	35.2	na:163 nang:29 nay:6
+1	pa	58.7	51.5	29.3	pa:57 pay:4 pang:3
+1	lang	97.2	45.4	15.2	lang:63 ra:37 rang:3 lamang:3
+1	gyud	25.7	24.6	15.0	jud:18 gyud:6 gayud:2 gayod:1 gyod:1
+1	kaayo	37.6	16.7	3.1	kaayo:39 kaayong:2
+1	pud	13.8	44.0	21.6	pud:10 pod:3 usab:1 sad:1
+1	oo	0.9	0.1	4.6	oo:1
+1	dili	146.7	55.7	55.0	dili:144 di:16
+1	wala	125.6	63.5	64.0	wala:95 walay:24 wa:13 way:5
+1	naa	60.5	45.9	21.0	naa:28 naay:23 adunay:6 duna:4 dunay:3
+1	unsa	63.3	11.9	15.6	unsa:39 unsay:26 unsang:4
+1	kinsa	40.3	13.9	14.5	kinsa:24 kinsay:20
+1	asa	32.1	12.1	9.3	asa:15 hain:12 diin:6 haing:1 asang:1
+1	pila	14.7	0.7	0.4	pila:10 pilay:5 tagpila:1
+1	maayo	22.9	12.1	12.7	maayo:18 maayong:7
+1	maayong buntag/hapon/gabii	0.0	0.0	0.0	
+1	kumusta	3.7	0.1	0.0	kumusta:4
+1	salamat	6.4	0.2	0.1	salamat:7
+1	sige	1.8	1.0	0.0	sigeng:1 sige:1
+1	Dong/Day	1.8	2.7	0.0	dodong:1 inday:1
+1	ayaw	42.2	1.1	9.3	ayaw:38 ayawg:8
+1	adto	28.4	2.9	17.7	moadto:18 miadto:4 adto:2 nakaadto:2 maadto:1
+1	kaon	14.7	1.3	6.7	kaon:5 mokaon:3 mikaon:3 gikaon:2 pagkaona:1
+1	inom	7.3	1.5	0.6	giinom:2 naginom:2 moinom:2 inom:1 maginom:1
+1	tulog	8.3	0.8	1.1	natulog:5 makatulog:1 magtulog:1 matulog:1 nakatulog:1
+1	trabaho	26.6	6.4	0.0	trabaho:17 nagtrabaho:5 magtrabaho:3 motrabaho:1 trabahoa:1
+1	gusto	24.8	4.6	0.4	gusto:21 gustog:2 nakagusto:2 gustong:2
+1	kahibalo	26.6	1.6	9.0	kabalo:13 nakahibalo:5 kahibalo:5 gipahibalo:1 kabalong:1
+1	kasabot	17.4	4.9	2.7	kasabot:8 pasabot:5 makasabot:3 magkasabot:1 sabot:1
+1	dali	9.2	3.8	1.9	dali:4 pagdali:3 kadali:2 dalion:1
+1	hulat	5.5	0.6	0.8	naghulat:3 hulat:1 mohulat:1 hulata:1
+1	balay	42.2	10.4	25.3	balay:43 balaya:3
+1	tubig	9.2	2.3	8.2	tubig:8 tubigi:1 tubiga:1
+1	pagkaon	1.8	1.2	1.4	pagkaon:2
+1	kwarta	14.7	3.9	0.3	kwarta:14 kwartang:2
+1	tawo	29.3	16.6	71.2	tawo:31 tawong:1
+1	Mama/Papa	25.7	18.4	22.1	amahan:13 inahan:6 tatay:3 papa:3 mama:2
+1	karon	46.8	39.2	29.4	karon:30 karong:16 ron:5
+1	ugma	11.0	2.0	0.6	ugma:12
+1	unya	5.5	9.3	21.9	unya:4 unyag:1 unyay:1
+1	buntag/hapon/gabii	23.8	37.8	6.7	hapon:8 gabii:7 buntag:5 kabuntagon:1 pagkabuntag:1
+1	dako	9.2	14.2	10.5	dako:5 dagkong:3 nagdako:1 dakong:1
+1	gamay	11.9	2.6	1.9	gamay:6 gamaya:2 gamayng:1 migamay:1 nagamay:1
+1	daghan	21.1	18.5	11.5	daghang:12 daghan:8 kadaghan:2 kadaghanan:1
+1	lami	10.1	0.3	0.3	lami:9 laming:1 malami:1
+1	kana/na (that)	11.9	3.9	23.3	kana:9 niana:3 nianang:1
+1	diri	25.7	13.8	5.1	diri:14 dinhi:12 ari:2
+1	didto	21.1	21.9	26.3	didto:23
+1	kini (this)	55.0	125.5	122.9	ning:25 kini:12 niini:11 kining:10 niining:2
+2	man	74.3	25.1	27.3	man:79 mang:2
+2	kay	66.9	40.7	63.8	kay:73
+2	pero	24.8	37.3	39.6	pero:14 apan:13
+2	kung	54.1	37.0	18.0	kon:30 kun:15 kung:14
+2	gikan	11.0	17.2	51.8	gikan:12
+2	para	22.9	20.1	37.9	para:16 alang:9
+2	tanan	27.5	8.2	55.6	tanan:26 tanang:4
+2	una	7.3	12.9	2.7	una:5 unang:3
+2	ambot	5.5	1.1	0.0	ambot:6
+2	lagi	0.9	1.1	0.3	lagi:1
+2	hala/ay	6.4	1.1	0.1	hala:3 uy:2 halang:1 ay:1
+2	kanus-a	11.0	0.2	0.9	kanus-a:11 anus-a:1
+2	ngano	20.2	5.8	5.2	nganong:12 ngano:10
+2	unsaon	8.3	1.8	2.8	giunsa:5 unsaon:4
+2	palit	16.5	2.7	1.1	napalit:3 magpalit:2 nagpalit:2 pagpalit:1 mipalit:1
+2	bayad	6.4	2.6	1.2	bayad:3 magbayad:2 ibayad:1 gibayad:1
+2	hatag	9.2	13.9	21.1	gihatag:3 ihatag:3 hatagi:1 makahatag:1 maghatag:1
+2	kuha	1.8	7.3	14.9	kuha:1 makakuha:1
+2	buhat	27.5	8.8	36.8	buhaton:8 gibuhat:5 buhat:4 pagbuhat:4 nabuhat:3
+2	ingon	19.3	15.2	117.7	ingon:11 giingon:3 nag-ingon:2 paingon:1 pag-ingon:1
+2	tan-aw	6.4	3.5	9.0	gitan-aw:2 tan-awon:1 motan-aw:1 nagpatanaw:1 nagatan-aw:1
+2	kita (see)	17.4	9.7	14.3	nakita:6 makita:6 nakakita:3 makit-an:1 nakit-an:1
+2	paminaw	1.8	1.2	0.2	paminawa:2
+2	lakaw	11.0	1.0	7.4	lakaw:5 molakaw:2 naglakaw:2 milakaw:1 maglakaw:1
+2	balik	7.3	6.4	4.3	mobalik:2 mibalik:2 balik:2 makabalik:1 pagbalik:1
+2	anhi	2.8	1.5	4.2	moanhi:3
+2	pwede	8.3	7.3	8.9	mahimo:4 mahimong:3 puwede:1 pwede:1
+2	amigo/amiga	13.8	3.7	1.0	higala:7 amigo:6 amiga:1 higalang:1
+2	pamilya	3.7	5.0	0.0	pamilya:4
+2	anak	13.8	14.7	71.3	anak:13 manganak:1 nanganak:1
+2	igsoon	5.5	3.3	9.5	igsuon:4 igsuong:1 igsoong:1
+2	bata	20.2	12.4	4.1	bata:18 bataa:2 batang:1 pagkabata:1
+2	kan-on	1.8	0.4	0.3	bugas:1 kan-on:1
+2	isda	4.6	0.7	0.8	isda:5
+2	kape	1.8	0.0	0.0	kape:2
+2	adlaw	18.3	22.0	32.6	adlaw:13 adlawa:6 kaadlawon:1
+2	oras	10.1	2.3	0.0	oras:6 orasa:5
+2	merkado	0.9	1.0	0.0	merkado:1
+2	gahapon	7.3	0.3	0.0	gahapon:8
+2	ganina	0.9	0.0	0.0	ganina:1
+2	kanunay	1.8	3.4	2.1	kanunay:2
+2	mahal	0.9	1.6	0.6	kamahal:1
+2	barato	0.9	0.0	0.0	barato:1
+2	init	3.7	1.8	1.0	init:4
+2	tugnaw	4.6	0.6	0.2	bugnaw:2 tugnaw:2 pabugnaw:1
+2	kapoy	6.4	0.1	0.1	gikapoy:5 kapoyon:1 kakapoy:1
+2	gutom	10.1	0.3	2.7	gigutom:5 gutom:2 busog:2 nabusog:1 kabusog:1
+2	sakit	19.3	4.8	5.4	sakit:6 masakiton:3 kasakit:3 nasakit:3 pasakiti:1
+2	nindot	6.4	1.7	0.0	nindot:6 nakanindot:1
+2	numbers 1-10	64.2	131.5	120.4	usa:25 duha:14 duhay:5 tulo:4 upat:3
+2	mao	29.3	87.2	65.7	mao:17 maoy:9 maong:6
+2	kuan	0.0	0.8	0.0	kuwang:14
+2	kanang	3.7	0.9	0.9	kanang:4
+2	murag	11.9	0.9	0.0	murag:11 mura:2
+2	siguro	0.0	1.1	0.1	siguro:18 sigurong:2
+2	basta	0.9	1.1	0.0	basta:1
+2	gani	4.6	7.2	1.9	gani:5
+2	sus	0.9	0.2	0.0	sus:1
+3	abot	18.3	9.3	0.0	miabot:5 pag-abot:3 abot:3 pagabot:3 moabot:2
+3	puyo	12.8	8.1	9.0	nagpuyo:10 magpuyo:1 pagpuyo:1 napuyo:1 nagapuyo:1
+3	pangutana	3.7	3.1	1.1	pangutana:3 gipangutana:1
+3	tubag	7.3	3.1	9.6	nitubag:4 tubaga:2 tubag:1 tubagon:1
+3	ganahan	18.3	0.4	0.0	ganahan:15 giganahan:3 ganahang:2
+3	kinahanglan	22.9	5.5	6.2	kinahanglan:14 kinahanglang:8 nagkinahanglan:2 gikinahanglan:1
+3	hinumdom	0.9	1.3	0.2	mahinumdom:1
+3	kalimot	3.7	0.2	0.0	makalimot:2 kalimot:1 nakalimot:1
+3	lingkod	5.5	0.9	3.8	lingkod:3 naglingkod:2 kalingkod:1
+3	tindog	0.9	0.3	9.0	nagtindog:1
+3	dula	0.9	0.8	0.1	dula:1
+3	basa	11.9	1.7	2.8	magbasa:3 nagbasa:2 basa:2 nagabasa:2 nabasa:1
+3	sulat	10.1	1.5	4.0	sulat:5 misulat:2 gisulat:1 mosulat:1 magsulat:1
+3	tuon	10.1	0.9	0.0	nagtuon:3 magtuon:3 tuon:2 pagtuon:1 mag-tuon:1
+3	hunahuna	11.9	1.4	3.1	hunahuna:4 gihunahuna:2 hunahunaon:2 maghunahuna:2 panghunahuna:1
+3	pangita	4.6	1.7	3.6	pangitaan:2 gipangita:2 pagpangita:1
+3	tawag	14.7	5.1	4.8	motawag:3 gitawag:3 tawag:2 mitawag:2 nagtawag:2
+3	ligo	3.7	0.8	0.2	maligo:4
+3	sakay	3.7	3.0	2.0	pagsakay:2 nagsakay:1 mosakay:1
+3	sulod	1.8	14.1	17.4	misulod:2
+3	gawas	14.7	11.1	7.6	gawas:11 gawasan:1 pagawasa:1 igawas:1 nigawas:1
+3	dawat	0.0	6.5	5.0	nadawat:28 nakadawat:24 pagdawat:16 makadawat:13 madawat:7
+3	sugod	8.3	6.8	2.3	sugod:3 nagsugod:3 magasugod:2 magsugod:1
+3	human	11.9	47.1	2.0	human:8 mahuman:4 humana:1
+3	uli	1.8	0.3	0.0	uli:2
+3	dagan	54.1	5.5	0.1	modagan:55 nagdagan:2 pagdagan:1 dagan:1
+3	tabang	11.9	6.8	2.1	katabang:3 tabangan:2 matabang:2 tabang:2 pagtabang:1
+3	bantay	8.3	2.4	7.0	pagbantay:3 bantay:1 ibantay:1 bantayan:1 nagbantay:1
+3	pahulay	2.8	0.4	2.0	mipahulay:1 mopahulay:1 pahulay:1
+3	sulti	22.0	2.7	15.0	sulti:5 isulti:4 pagsulti:3 gisulti:3 misulti:2
+3	storya	0.9	0.9	0.0	istorya:1
+3	katawa / tawa	4.6	0.8	0.3	mokatawa:3 katawa:2
+3	hilak	10.1	0.9	1.7	naghilak:3 kahilakon:2 makahilak:2 mihilak:1 mohilak:1
+3	hadlok	12.8	2.0	6.1	hadlok:4 kahadlok:4 mahadlok:2 hadlokan:2 nahadlok:2
+3	lipay	6.4	1.9	6.0	malipayon:5 kalipay:1 nalipay:1
+3	guol	2.8	0.8	0.8	kaguol:2 naguol:1
+3	sayang	0.9	0.2	0.0	masayang:1
+3	lalaki	9.2	15.7	38.0	lalaki:9 lalaking:1
+3	babaye	17.4	11.6	17.3	babaye:14 babae:5
+3	lola / lolo	2.8	1.1	0.0	lolo:3
+3	bana	3.7	5.8	5.8	bana:4
+3	asawa	20.2	8.0	6.0	asawa:21 asawag:1
+3	uyab	9.2	2.9	0.0	uyab:7 mauyab:2 manguyab:1
+3	silingan	0.9	3.3	0.6	silingan:1
+3	maestra / maestro	5.5	0.6	0.0	maestra:4 maestro:2
+3	tindera	0.9	0.2	0.0	tindera:1
+3	driver	0.0	4.0	0.0	driver:72
+3	eskwelahan	1.8	0.4	0.0	eskwelahan:2
+3	tindahan	5.5	1.0	0.0	tindahan:6
+3	dalan	4.6	4.8	8.7	dalan:4 dalana:1
+3	syudad	2.8	58.8	11.1	siyudad:2 dakbayan:1
+3	barangay / baryo	4.6	36.4	0.0	baryo:5
+3	simbahan	2.8	2.7	0.0	simbahan:3
+3	kwarto	1.8	0.3	0.0	kwarto:2
+3	dagat	8.3	2.5	4.3	dagat:9
+3	bukid	6.4	0.6	4.6	bukid:7
+3	ospital	3.7	2.0	0.0	ospital:3 na-ospital:1
+3	sakyanan	5.5	5.4	0.1	sakyanan:5 sakyanana:1
+3	jeep	0.0	0.2	0.0	jeep:3
+3	manok	3.7	0.5	0.2	manok:4
+3	baboy	0.9	0.3	0.3	baboy:1
+3	karne	2.8	0.2	0.0	karne:3
+3	saging	1.8	0.9	0.0	saging:2
+3	gulay	2.8	0.1	0.0	gulay:3
+3	prutas	2.8	0.6	0.0	prutas:3
+3	itlog	3.7	0.3	0.1	itlog:4
+3	pan	3.7	0.2	0.1	pan:4
+3	asin	3.7	0.2	0.5	asin:4
+3	asukar	0.0	0.0	0.0	
+3	tam-is	0.9	0.4	0.5	matam-is:1
+3	parat	0.0	0.2	0.1	nakaparat:2 maparat:1
+3	aslom	0.0	0.1	0.0	pag-aslom:1 aslom:1
+3	udto	0.0	1.6	0.4	udto:28 pagkaudto:1
+3	semana	10.1	5.5	0.3	semana:11
+3	bulan	4.6	3.9	4.3	bulan:5
+3	tuig	16.5	17.3	10.3	tuig:16 motuig:1 tuiga:1
+3	usahay	4.6	0.8	0.1	usahay:5
+3	dayon	12.8	4.9	1.6	dayon:13 dayong:1
+3	hangtod	3.7	6.7	12.0	hangtud:2 hangtod:2
+3	sunod	11.9	6.7	5.4	sunod:11 mosunod:2
+3	niadto	1.8	3.0	1.8	niadto:2
+3	ulahi	1.8	1.0	1.5	naulahi:1 ulahi:1
+3	sayo	4.6	2.6	0.8	sayo:3 sayong:2
+3	dugay	11.0	3.7	1.0	dugay:7 kadugaya:1 kadugayon:1 kadugayan:1 dugaya:1
+3	puhon	0.9	0.2	0.0	puhon:1
+3	taas	4.6	2.8	2.0	taas:5
+3	mubo	0.9	0.4	0.0	mubo:1
+3	bag-o	18.3	9.0	2.3	bag-ong:11 bag-o:8 nabag-o:1
+3	daan	2.8	0.6	0.9	daang:2 daan:1
+3	tigulang	11.0	0.2	1.5	tigulang:8 katigulangon:3 mitigulang:1
+3	gwapa / gwapo	4.6	0.5	0.0	gwapa:4 pagwapa:1
+3	husto / sakto	2.8	2.1	0.2	sakto:1 husto:1 hustong:1
+3	tinuod	7.3	4.4	4.4	tinuod:8
+3	sayop	3.7	1.0	0.0	sayop:4
+3	layo	7.3	1.5	6.4	layo:6 kalayo:2
+3	duol	3.7	3.1	4.2	duol:4
+3	lisod	6.4	2.7	0.0	lisod:5 maglisod:2
+3	sayon	6.4	1.2	0.3	sayon:7
+3	hinay	3.7	1.3	0.3	hinay:3 paghinay:1
+3	paspas	3.7	0.7	0.0	paspas:2 paspasa:1 pagpaspas:1
+3	limpyo	1.8	0.6	0.0	limpyohan:1 paglimpyo:1
+3	hugaw	1.8	0.4	3.8	hugaw:2
+3	busog	0.0	0.0	0.0	
+3	uhaw	2.8	0.1	0.7	giuhaw:2 uhaw:1
+3	hayahay	0.0	0.2	0.0	mahayahay:3
+3	lain	7.3	12.3	6.3	lain:5 laing:3
+3	pareho	0.0	0.4	0.0	pareho:6 parehong:1 parehog:1
+3	uban	8.3	21.0	35.4	uban:5 mouban:2 kauban:1 nag-uban:1
+3	diay	11.0	7.6	2.4	diay:12
+3	kaha	6.4	3.0	0.8	kaha:7
+3	unta	6.4	9.2	6.7	unta:6 untang:1
+3	daw / kuno	4.6	7.1	2.1	daw:4 kuno:1
+3	bitaw	3.7	0.7	0.1	bitaw:4
+3	sato	0.0	0.0	0.0	
+3	taga	11.0	10.9	0.2	taga:8 tagai:2 tagay:1 tagaan:1
+3	matag	4.6	5.2	0.0	matag:5
+3	kada	5.5	0.6	0.0	kada:6
+3	bisan	12.8	13.5	30.8	bisan:14
+3	aron	16.5	21.7	36.2	aron:18
+3	samtang	4.6	16.7	3.4	samtang:5
+3	sorry	0.0	0.2	0.0	sorry:3
+3	ulo	7.3	3.1	5.0	ulo:8
+3	kamot	1.8	1.7	20.2	kamot:2
+3	tiil	1.8	1.3	4.1	tiil:2
+3	mata	10.1	2.1	9.7	mata:6 matang:2 matay:1 nagmata:1 nakamata:1
+3	tiyan	2.8	0.7	0.5	tiyan:3
+3	sinina	2.8	0.1	0.4	sinina:3
+3	sapatos	0.9	0.2	0.0	sapatos:1
+3	selpon	0.0	0.0	0.0	
+3	ulan	9.2	0.6	1.4	ulan:6 moulan:2 miulan:1 paulani:1
+3	hangin	1.8	1.2	1.9	hangin:1 naga-hangin:1
+none	ka (after a number)	38.5	122.5	99.4	ka:42
+none	o (or)	11.0	11.2	5.8	o:12
+none	may (there is)	28.4	13.5	21.8	may:31
+none	kang (to / of a person)	16.5	12.1	60.4	kang:18
+none	tungod (because of)	8.3	26.0	31.0	tungod:9
+none	ngadto (to, toward)	2.8	15.9	44.7	ngadto:3
+none	diha (there; when)	11.0	25.7	46.9	diha:6 dihay:5 dihang:1
+none	kadto (that, far)	5.5	3.4	10.4	kadto:3 kadtong:3
+none	niadtong (last ..., back when)	1.8	49.6	12.1	niadtong:2
+none	gihapon (still)	3.7	6.3	1.2	gihapon:4
+none	mas (more)	6.4	4.8	0.0	mas:7
+none	sama (like, same as)	8.3	13.1	9.2	sama:8 samang:1
+none	ana / ani (like that / this)	22.9	3.2	0.4	ana:11 anang:6 aning:4 ani:3 anay:1
+none	tibuok (whole)	15.6	3.5	14.1	tibuok:17
+none	kinabuhi (life)	15.6	8.0	6.1	kinabuhi:17
+none	palihug (please)	17.4	0.1	0.0	palihog:16 palihug:3
+none	panahon (time, weather)	6.4	5.1	6.9	panahon:7
+none	ngalan (name)	6.4	2.7	11.5	ngalan:7
+none	bahin (about; part)	4.6	12.3	15.1	bahin:5
+none	dapit / lugar (place)	4.6	15.9	13.5	dapit:4 lugar:1
+none	pipila (some)	3.7	8.4	1.3	pipila:4
+none	hapit (almost)	4.6	1.6	0.4	hapit:5
+none	kaugalingon (self, own)	4.6	4.1	17.9	kaugalingon:5
+none	patay (dead, die)	11.0	27.4	11.7	kamatayon:6 patay:5 namatay:1
+none	himo (make, do)	6.4	13.7	13.2	naghimo:2 gihimo:2 paghimo:2 himoon:1
+none	dala (bring)	1.8	6.4	10.7	gidala:1 dala:1
+none	hitabo (happen)	8.3	17.9	7.9	mahitabo:7 nahitabo:1 hitabo:1
+none	butang (thing; put)	3.7	3.2	21.5	ibutang:2 butang:2
+none	gud (particle)	9.2	1.2	0.0	gud:10
+none	ha (tag)	3.7	0.6	0.0	ha:4
+none	buot (want, formal)	15.6	3.6	2.6	buot:17
+none	busa (so, therefore)	0.0	3.3	19.1	busa:56 busay:3
+none	pinaagi (by means of)	0.9	7.1	18.1	pinaagi:1
+none	batok (against)	0.0	8.5	18.7	batok:151
+none	labi / labing (most)	0.9	6.9	7.0	pinaka:1
+none	nasod / nasud (country)	6.4	9.7	6.9	nasod:5 nasud:2
+none	libro (book)	11.9	0.5	0.0	libro:12 librong:1
+none	iro (dog)	11.0	0.4	0.6	iro:11 iroy:1
+none	problema	1.8	4.8	0.0	problema:2
+none	hinuon (instead, however)	2.8	5.9	3.3	hinuon:3

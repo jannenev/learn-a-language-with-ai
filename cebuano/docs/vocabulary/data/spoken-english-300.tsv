@@ -1,0 +1,306 @@
+# The 300 commonest words of spoken English matched to cebuano/vocabulary.md as it stood on 2026-11-28.
+# The words, ranks and frequencies are from the New General Service List-Spoken 1.2 by C. Browne and B. Culligan,
+# newgeneralservicelist.com, CC BY-SA 4.0. The matching is a first pass by an AI and is not checked by a native speaker.
+# tier: 1, 2, 3 = a core word of that tier | none = Cebuano has an everyday word, in no tier |
+#       no word = Cebuano has no separate word | transcript = a mark of the transcript, not a word
+rank	english	per million words	tier	cebuano	note
+1	be	62378	no word		no verb "to be"
+2	the	50499	no word		
+3	you	23350	1	ikaw, kamo	
+4	and	31027	1	ug	
+5	it	20436	no word		
+6	to	28337	1	sa	to a place only
+7	a	26520	no word		
+8	have	18118	1	naa	
+9	of	23918	1	ni, sa	
+10	do	13494	2	buhat	as a helper no word
+11	not	13701	1	dili, wala	
+12	that	15146	1	nga, kana	
+13	they	13785	1	sila	
+14	we	14058	1	kita, kami	
+15	in	18174	1	sa	
+16	he	10738	1	siya	
+17	know	6683	1	kahibalo	
+18	get	5853	2	kuha	
+19	go	6548	1	adto	
+20	so	6113	2	mao	mao nga; in speech also the English "so"
+21	this	9016	1	kini	
+22	but	6930	2	pero	
+23	on	7813	1	sa	
+24	pause	1278	transcript		
+25	I	5528	1	ako	
+26	unclear	1224	transcript		
+27	for	8470	2	para	
+28	think	5591	3	hunahuna	
+29	like	4191	1	gusto	as "similar" or a filler: murag, Tier 2
+30	there	5235	1	didto	"there is": naa
+31	will	5081	no word		shown on the verb
+32	say	6024	2	ingon	
+33	she	4244	1	siya	
+34	what	4873	1	unsa	
+35	just	4038	1	lang	
+36	well	3848	1	maayo	
+37	one	4002	2	usa	
+38	with	6053	3	uban	
+39	if	3904	2	kung	
+40	at	4994	1	sa	
+41	all	3770	2	tanan	
+42	about	4830	none	bahin	
+43	or	3887	none	o	
+44	as	4966	no word		
+45	would	3186	no word		
+46	then	2266	1	unya	
+47	because	2915	2	kay	
+48	right	2627	3	sakto, husto	
+49	can	3031	2	pwede	
+50	no	2345	1	dili, wala	
+51	up	2876	no word		
+52	mean	2179	none	pasabot	from sabot, Tier 1
+53	out	2983	3	gawas	
+54	see	2625	2	kita, tan-aw	
+55	thing	2509	none	butang	
+56	yes	1522	1	oo	
+57	when	2833	2	kanus-a	in questions; joining clauses: kung, inig
+58	really	2309	1	gyud	
+59	want	2375	1	gusto	
+60	come	2542	2	anhi	
+61	now	2752	1	karon	
+62	some	2666	none	pipila	
+63	good	2181	1	maayo	
+64	from	3759	2	gikan	
+65	time	2391	2	oras	also panahon, in no tier
+66	people	3415	1	tawo	
+67	very	2625	1	kaayo	
+68	yeah	714	1	oo	
+69	make	2442	2	buhat	also himo, in no tier
+70	look	1883	2	tan-aw	
+71	two	1584	2	duha	
+72	take	2111	2	kuha	
+73	here	1962	1	diri	
+74	which	1896	1	nga	
+75	could	1692	2	pwede	
+76	work	1702	1	trabaho	
+77	more	2463	none	mas	"one more": pa, Tier 1
+78	who	2829	1	kinsa	
+79	other	1928	3	lain, uban	
+80	laugh	430	transcript		
+81	where	1600	1	asa	
+82	use	1349	none	gamit	
+83	something	1315	none	butang	
+84	how	1669	2	unsaon	
+85	back	1562	2	balik	
+86	year	2184	3	tuig	
+87	by	2351	no word		
+88	any	1266	3	bisan	bisan unsa
+89	lot	1607	1	daghan	
+90	way	1680	none	paagi	
+91	put	1109	none	butang	
+92	down	1171	none	ubos	
+93	give	1283	2	hatag	
+94	sort	976	none	klase	"sort of": murag, Tier 2
+95	three	989	2	tulo	
+96	much	1551	1	daghan	
+97	actually	1036	3	tinuod	sa tinuod
+98	need	1158	3	kinahanglan	
+99	talk	1648	3	sulti	
+100	kind	1253	none	klase	"kind of": murag, Tier 2
+101	tell	1174	2	ingon	
+102	only	1071	1	lang	
+103	should	1006	3	kinahanglan	also dapat, in no tier
+104	over	1304	no word		
+105	little	979	1	gamay	
+106	day	1254	2	adlaw	
+107	into	1337	1	sa	
+108	bit	656	1	gamay	
+109	try	1144	none	sulay	
+110	why	963	2	ngano	
+111	okay	442	1	sige	
+112	off	832	no word		
+113	first	1230	2	una	
+114	than	1266	none	kaysa	
+115	too	795	1	pud	
+116	five	562	2	lima	
+117	let	987	no word		"let's": ta
+118	call	1277	3	tawag	
+119	four	607	2	upat	
+120	last	1004	none	katapusan	
+121	start	863	3	sugod	
+122	quite	510	none	medyo	
+123	still	892	1	pa	also gihapon, in no tier
+124	find	982	3	pangita	
+125	probably	572	2	siguro	
+126	even	997	2	gani	
+127	might	685	none	basin	
+128	through	872	none	agi	
+129	point	862	none	punto	
+130	anything	534	3	bisan	bisan unsa
+131	laughter	161	transcript		
+132	week	794	3	semana	
+133	before	812	2	una	
+134	again	701	2	balik	
+135	problem	779	none	problema	
+136	never	660	1	dili, wala	
+137	same	698	3	pareho	
+138	big	828	1	dako	
+139	feel	829	none	bati	
+140	ask	754	3	pangutana	
+141	question	861	3	pangutana	
+142	also	1152	1	pud	
+143	different	713	3	lain	
+144	sure	605	none	sigurado	
+145	long	740	3	taas, dugay	
+146	always	601	2	kanunay	
+147	school	653	3	eskwelahan	
+148	happen	842	none	hitabo	
+149	course	588	none	siyempre	"of course"; also lagi, Tier 2
+150	keep	617	none	tipig	
+151	another	694	3	lain	
+152	nice	329	2	nindot	
+153	read	510	3	basa	
+154	hundred	335	2	gatos	
+155	leave	602	2	lakaw	
+156	many	932	1	daghan	
+157	after	883	3	human	
+158	thank	876	1	salamat	
+159	meet	558	2	kita	magkita
+160	stuff	343	none	butang	
+161	end	646	3	human	
+162	number	679	none	numero	
+163	hear	777	none	dungog	
+164	next	653	3	sunod	
+165	six	376	2	unom	
+166	pay	526	2	bayad	
+167	money	647	1	kwarta	
+168	place	653	none	lugar, dapit	
+169	remember	418	3	hinumdom	
+170	maybe	511	2	siguro	also basin, in no tier
+171	old	518	3	daan, tigulang	
+172	test	381	none	test	
+173	home	607	1	balay	
+174	change	711	none	usab, ilis	
+175	though	451	no word		
+176	house	507	1	balay	
+177	new	944	3	bag-o	
+178	live	612	3	puyo	
+179	part	768	none	bahin	
+180	kid	496	2	bata	
+181	interest	636	none	interes	
+182	around	659	none	libot	
+183	write	593	3	sulat	
+184	most	858	none	pinaka-	
+185	move	547	none	lihok, balhin	
+186	every	582	3	matag, kada	
+187	today	943	1	karon	
+188	twenty	98	2	baynte	
+189	else	365	3	lain	
+190	anyway	211	none	bisan pa	
+191	child	590	2	bata	
+192	buy	386	2	palit	
+193	fact	617	3	tinuod	
+194	play	637	3	dula	
+195	great	693	1	dako	
+196	job	520	1	trabaho	
+197	seem	520	2	murag	
+198	man	670	3	lalaki	
+199	night	430	1	gabii	
+200	away	452	3	layo	
+201	pound	163	no word		a word of the British corpus
+202	issue	722	none	isyu	
+203	own	568	none	kaugalingon	
+204	area	432	none	lugar, dapit	
+205	half	344	none	tunga	
+206	bad	465	none	daotan	also dili maayo, both Tier 1
+207	round	195	none	lingin	
+208	eight	261	2	walo	
+209	help	634	3	tabang	
+210	ten	224	2	napulo	
+211	whole	411	none	tibuok	
+212	everything	355	2	tanan	
+213	minute	367	none	minuto	
+214	may	620	2	pwede	
+215	whether	491	2	kung	
+216	student	367	none	estudyante	
+217	guess	301	2	siguro	
+218	whatever	285	3	bisan	bisan unsa
+219	car	346	3	sakyanan	
+220	sit	338	3	lingkod	
+221	bring	519	none	dala	
+222	book	546	none	libro	
+223	name	428	none	ngalan	
+224	run	539	3	dagan	
+225	show	662	none	pakita	from kita, Tier 2
+226	word	390	none	pulong	
+227	suppose	236	none	abi	
+228	morning	319	1	buntag	
+229	must	295	3	kinahanglan	
+230	understand	448	1	kasabot	
+231	month	485	3	bulan	
+232	both	518	2	duha	
+233	idea	423	3	hunahuna	
+234	seven	239	2	pito	
+235	pretty	361	3	gwapa	
+236	somebody	318	1	tawo	naa'y tawo
+237	able	437	2	pwede	
+238	item	134	none	butang	
+239	hour	420	2	oras	
+240	side	393	none	kilid	
+241	enough	390	3	husto, sakto	
+242	ever	383	no word		
+243	important	462	none	importante	
+244	late	512	3	ulahi	
+245	turn	452	none	liko	
+246	between	472	none	tunga	
+247	thousand	274	none	libo	
+248	few	458	1	gamay	also pipila, in no tier
+249	term	420	no word		
+250	life	623	none	kinabuhi	
+251	nine	178	2	siyam	
+252	believe	514	none	tuo	
+253	far	391	3	layo	
+254	sorry	180	3	pasayloa, sorry	
+255	set	384	no word		
+256	thirty	74	none	traynta	
+257	nothing	306	1	wala	
+258	case	549	none	kaso	
+259	real	381	3	tinuod	
+260	second	356	2	duha	ikaduha
+261	mind	276	3	hunahuna	
+262	woman	572	3	babaye	
+263	guy	379	3	lalaki	
+264	each	341	3	matag, kada	
+265	hard	402	3	lisod	
+266	couple	315	2	duha	
+267	love	400	2	mahal	
+268	speak	477	3	sulti	
+269	group	457	none	grupo	
+270	together	340	3	uban	
+271	high	488	3	taas	
+272	friend	321	2	amigo, higala	
+273	build	382	none	tukod	
+274	family	479	2	pamilya	
+275	watch	320	2	tan-aw	
+276	country	745	none	nasod	
+277	plan	391	none	plano	
+278	fifty	69	2	singkwenta	
+279	send	320	none	padala	
+280	obviously	243	no word		
+281	reason	356	none	rason	
+282	yet	301	1	pa	
+283	walk	265	2	lakaw	
+284	either	258	no word		
+285	wait	267	1	hulat	
+286	already	320	1	na	
+287	person	360	1	tawo	
+288	open	349	none	abli	
+289	once	319	2	usa	kausa
+290	deal	416	no word		
+291	report	586	none	report	
+292	stop	318	none	hunong	
+293	hand	322	3	kamot	
+294	alright	57	1	sige	
+295	example	319	none	pananglitan	
+296	cause	278	2	kay	
+297	information	291	none	impormasyon	
+298	please	178	none	palihug	
+299	exactly	302	3	sakto	
+300	ago	436	no word		

@@ -26,12 +26,13 @@ Free material for beginners. Everything for Cebuano is in [`cebuano/`](cebuano/)
 - pronunciation files for software and AI voices, in [`cebuano/pronunciation/`](cebuano/pronunciation/): paste `NNN.paste.txt` into a chat voice that reads aloud to hear a text
 - the listening side, the voices that could speak the texts and what has been tried: [audio.md](cebuano/audio.md)
 - the plan: [PLAN.md](cebuano/PLAN.md); the dated log of the work: [LOG.md](cebuano/LOG.md)
+- how the word list was made and how it was checked against real text: [`cebuano/docs/`](cebuano/docs/)
 
 To use it: skim Tier 1 of the word list once without memorising it, then read text 001, cold first, and follow the schedule above. The texts open in the browser on GitHub, so nothing needs to be installed. For paper, the PDFs in [`cebuano/pdf/`](cebuano/pdf/) are ready to print; `tools/print.py` makes them, and a one-page A4 version of any single text, Cebuano left and English right with a word-for-word footnote.
 
 ## Another language
 
-[METHOD.md](METHOD.md) gives the method in six steps, the reasons, and the files and tools involved, in a language-neutral way; [CREATING-TEXTS.md](CREATING-TEXTS.md) is the step-by-step for one text, with the rules it follows. An AI assistant pointed at this repository can follow it directly ("read METHOD.md and set this up for French"); a person can follow it by hand. Expect hand work for a new language, especially a small one.
+[METHOD.md](METHOD.md) gives the method in six steps, the reasons, and the files and tools involved, in a language-neutral way; [CREATING-TEXTS.md](CREATING-TEXTS.md) is the step-by-step for one text, with the rules it follows. An AI assistant pointed at this repository can follow it directly ("read METHOD.md and set this up for French"); a person can follow it by hand. Expect hand work for a new language, especially a small one. [`docs/`](docs/) takes single parts of the method and says how each is done and checked; so far, choosing the core words.
 
 ## Status
 

@@ -23,9 +23,15 @@ The NGSL is the list used here: see [`cebuano/weaving/WORD-ORDER.md`](../cebuano
 
 ## For the language being learned: Cebuano
 
-| List                                | Counted from                         | Licence |
-| ----------------------------------- | ------------------------------------ | ------------------------------------------------------------------- |
-| Leipzig Corpora Collection, Cebuano | 11.5 million words of web text, 2017 | the collection is CC BY 4.0; not confirmed for the Cebuano download |
-| cebTenTen (Sketch Engine)           | 4.5 million words of web text        | commercial, trial access |
+| List                                                       | Counted from                                              | Licence |
+| ---------------------------------------------------------- | --------------------------------------------------------- | ------------------------------------------------------------------- |
+| Leipzig Corpora Collection, Cebuano (`ceb_community_2017`) | 11.5 million words, 2017, nearly all of Cebuano Wikipedia | the collection is CC BY 4.0; not confirmed for the Cebuano download |
+| cebTenTen (Sketch Engine)                                  | 4.5 million words of web text                             | commercial, trial access |
 
-<https://curl.corpora.uni-leipzig.de/languages/ceb>. A Cebuano list answers a different question: whether the core words chosen for the course are the frequent ones. Both corpora are written text from the web, so the particles of speech (*na, pa, lang, gyud, ba*) will be counted too low in them. Not used yet.
+<https://curl.corpora.uni-leipzig.de/languages/ceb>. A Cebuano list answers a different question: whether the core words chosen for the course are the frequent ones.
+
+**The Leipzig word list is not a count of the language.** The file was opened on 2026-11-28. Of its 702,495 source pages, 701,547 are pages of the Cebuano Wikipedia, and nearly every sentence is of one pattern, a short article on a species: *kaliwatan* (species) and *gihulagway* (described) each occur about 690,000 times in 729,000 sentences. By recollection, most articles of the Cebuano Wikipedia were written by a program. So the commonest words of the file, after *ni*, *nga* and *sa*, are *maoy*, *kaliwatan*, *gihulagway*, *insekto*, and its word list should not be used as it stands.
+
+A small part of the file is usable: 478 pages of the SunStar newspaper, 8,752 sentences and about 180,000 words of news and readers' letters. The file names the source of each sentence, so they can be taken out. That part was used on 2026-11-28 to check the tiers.
+
+Whether cebTenTen has the same fault was not looked at. Both are written text, so the particles of speech (*na, pa, lang, gyud, ba*) will be counted too low in them.
