@@ -1,8 +1,8 @@
 # Version 2 of the word list: what changes and why
 
-A proposal of 2026-11-28, waiting for the learner's approval. The list in use is `cebuano/vocabulary.md`, version 1. The proposed list is [`vocabulary-v2.md`](vocabulary-v2.md) beside this file.
+Proposed and approved on 2026-11-28. Version 2 is the list in use, [`cebuano/vocabulary.md`](../../vocabulary.md); version 1 is kept under the git tag `vocabulary-v1`.
 
-**Status.** Written with AI assistance. The new entries and their examples are not checked by a native speaker. The figures are from [`../CHECK-2026-11-28.md`](../CHECK-2026-11-28.md).
+**Status.** Written with AI assistance. The new entries and their examples are not checked by a native speaker. The figures are from [`CHECK-2026-11-28.md`](CHECK-2026-11-28.md).
 
 ## In short
 
@@ -40,7 +40,7 @@ Occurrences per 10,000 words; the last column is the place of the English word i
 | bag-o       | Tier 3  | new                         | 18      | 9.0  | 177     | 2.7 |
 | lain        | Tier 3  | other, different            | 7.3     | 12   | 79      | 2.7 |
 
-For scale: the middle entry of Tier 2 has 7.3 and 2.7, so each of these is commoner than the usual Tier 2 word. Together the seventeen would raise what Tiers 1 and 2 cover from 60 to about 62 percent of the Tatoeba sentences, from 54 to about 58 of the news, and from 66 to about 70 of the Bible.
+For scale: the middle entry of Tier 2 has 7.3 and 2.7, so each of these is commoner than the usual Tier 2 word. Together the seventeen were expected to raise what Tiers 1 and 2 cover from 60 to about 62 percent of the Tatoeba sentences, from 54 to about 58 of the news, and from 66 to about 70 of the Bible. The count after the change gave 62.5, 57.7 and 70.3.
 
 ## The order inside Tier 2
 
@@ -58,7 +58,7 @@ In the plan as it stands (`cebuano/texts.md`), *man* comes in text 007, *tanan* 
 
 These do not hold up version 2. An answer changes a form inside an entry, or moves one word, and can be made as a small correction to version 2.
 
-| Question in [`../QUESTIONS.md`](../QUESTIONS.md)                            | What the answer decides |
+| Question in [`QUESTIONS.md`](QUESTIONS.md)                                  | What the answer decides |
 | --------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | A: naa · may · duna                                                         | Whether *may* stays an entry or becomes a note under *naa* |
 | A: o · or; mas · pa; kinahanglan · kailangan · need                         | The form given first in those entries |
@@ -67,11 +67,18 @@ These do not hold up version 2. An answer changes a form inside an entry, or mov
 | B: basin, sulay, gamit, klase, pasabot, medyo; A: siyempre, sigurado, kaysa | Whether these are said at all in everyday talk; they are common in spoken English and hardly occur in the Cebuano sources |
 | A: ganahan · gusto                                                          | Whether *ganahan* comes up from Tier 3 |
 
-## What follows if version 2 is approved
+## What followed, and what is still to do
 
-1. **The list.** Set the tag `vocabulary-v1` on the last commit before the change. Copy `vocabulary-v2.md` over `cebuano/vocabulary.md`, with its first paragraph changed to say "Version 2, 2026-11-28" and to point here.
-2. **The tools.** In `tools/wordfreq.py`, the seventeen words into the Tier 2 table and out of the table of words in no tier. `tools/wordcheck.py` has no Tier 2 yet; when it gets one (plan, step 5), it is this one.
-3. **The plan of the texts.** Stage B in `cebuano/texts.md` is laid out as eight texts for 57 entries. With 76 entries at six to eight a text it is ten to twelve texts, and their order changes so that the commonest words come first. To be proposed row by row, not done here.
-4. **The pronunciation lexicon.** Seventeen words to add to `cebuano/pronunciation/lexicon.tsv`, marked `check`.
-5. **The woven stories.** In `cebuano/weaving/WORD-ORDER.md`, rows of the commonest English words that now say "none" get a core word: or (*o*), with (*uban*), more (*mas*), other (*lain*), year (*tuig*), new (*bag-o*), thing (*butang*), need (*kinahanglan*), after (*human*), any (*bisan*), about (*bahin*). Each still has to be looked at where it stands, as that file says. No word already woven changes.
-6. **Count again** with `tools/wordfreq.py` on the same three sources, and put the new figures beside the old in the check.
+Done on 2026-11-28:
+
+1. **The list.** The tag `vocabulary-v1` was set on the last commit before the change, and version 2 put in place as `cebuano/vocabulary.md`.
+2. **The counting tool.** In `tools/wordfreq.py` the seventeen words are in the Tier 2 table. The table of words in no tier keeps the fourteen that are still in none.
+3. **Counted again** on the same three sources; the figures are at the end of the check, the tables in `data/version-2/`.
+
+Still to do, each on its own:
+
+4. **The plan of the texts.** Stage B in `cebuano/texts.md` is laid out as eight texts for 57 entries. With 76 entries at six to eight a text it is ten to twelve texts, and their order changes so that the commonest words come first. To be proposed row by row.
+5. **The pronunciation lexicon.** Seventeen words to add to `cebuano/pronunciation/lexicon.tsv`, marked `check`.
+6. **The woven stories.** In `cebuano/weaving/WORD-ORDER.md`, rows of the commonest English words that say "none" now have a core word: or (*o*), with (*uban*), more (*mas*), other (*lain*), year (*tuig*), new (*bag-o*), thing (*butang*), need (*kinahanglan*), after (*human*), any (*bisan*), about (*bahin*). Each still has to be looked at where it stands, as that file says. No word already woven changes.
+7. **The figures in other files.** "About 120 words" in `README.md`, `METHOD.md`, `cebuano/PLAN.md` and the booklet intro is now about 140.
+8. **`tools/wordcheck.py`** has no Tier 2 yet; when it gets one (plan, step 5), it is this one.

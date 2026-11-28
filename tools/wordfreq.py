@@ -19,7 +19,7 @@ and NAME-inv_so.txt); SITE is a piece of the source address, such as sunstar.com
 
 How it counts. Tier 1 is the table of wordcheck.py; Tier 2 is the table below; Tier 3 is read from the
 backlog in cebuano/vocabulary.md; NONE below holds words that are in no tier and that a check turned up,
-so that they are counted by name and not lost among the unmatched. A word is matched whole, then with the
+so that they are counted by name and not lost among the unmatched. The tables follow version 2 of the list. A word is matched whole, then with the
 linker (-ng, -g) or the short "ang" (-y) taken off, then, for content words only, with a light strip of
 affixes. The strip is rough: it misses some forms and now and then credits a wrong one, so read the
 figures to about a tenth of their size and look at the "commonest forms" column before trusting a row.
@@ -94,11 +94,20 @@ T2 = {
                      "nwebe", "dyes", "baynte", "singkwenta", "syento"},
     "mao": {"mao"}, "kuan": {"kuan", "kuwan"}, "kanang": {"kanang"}, "murag": {"murag", "mura"},
     "siguro": {"siguro"}, "basta": {"basta"}, "gani": {"gani"}, "sus": {"sus"},
+    # the seventeen entries that version 2 of the list added (2026-11-28)
+    "o (or)": set(), "ka (after a number)": set(),        # both decided by the neighbouring word, see count()
+    "kang": {"kang"}, "tungod": {"tungod", "tungud"}, "aron": {"aron"}, "bisan": {"bisan"},
+    "bahin": {"bahin", "kabahin"}, "kinahanglan": {"kinahanglan"}, "butang": {"butang"},
+    "tuig": {"tuig"}, "human": {"human"}, "bag-o": {"bag-o"}, "lain": {"lain"}, "uban": {"uban"},
+    "mas": {"mas"}, "may": {"may"},
+    "ana / ani": {"ana", "anang", "ani", "aning", "ingon-ana", "ingon-ani", "ingana", "ingani"},
 }
 
 # ---------------------------------------------------------------- Tier 3: read from the backlog
 T3_SPELLINGS = {"lalaki": {"lalake"}, "babaye": {"babae"}, "hangtod": {"hangtud"},
-                "syudad": {"siyudad", "ciudad", "dakbayan"}}
+                "syudad": {"siyudad", "ciudad", "dakbayan"},
+                "kadto": {"kato"}, "tibuok": {"tibook"}, "palihug": {"palihog"}, "sama": {"susama"},
+                "hitabo": {"panghitabo"}, "himo": {"himuon"}, "dala": {"dad-on", "dad-a", "dalha"}}
 
 
 def read_backlog(path=VOCABULARY):
@@ -118,7 +127,7 @@ def read_backlog(path=VOCABULARY):
                     forms.add(w.replace("'", "").strip("-"))
             if forms:
                 table[" / ".join(sorted(forms))] = forms
-    for listed_elsewhere in ("ra", "pud"):
+    for listed_elsewhere in ("ra", "pud", "pasabot"):       # pasabot is counted under its root, kasabot
         table.pop(listed_elsewhere, None)
     for entry, more in T3_SPELLINGS.items():
         if entry in table:
@@ -128,28 +137,15 @@ def read_backlog(path=VOCABULARY):
 
 T3 = read_backlog()
 
-# ---------------------------------------------------------------- in no tier: words the checks turned up
+# ---------------------------------------------------------------- in no tier: words the checks turned up.
+# Version 2 of the list took nine of the first forty into Tier 2 and eighteen into the backlog; these remain.
 NONE = {
-    "ka (after a number)": set(), "o (or)": set(),        # both decided by the neighbouring word, see count()
-    "may (there is)": {"may"}, "kang (to / of a person)": {"kang"}, "tungod (because of)": {"tungod", "tungud"},
-    "ngadto (to, toward)": {"ngadto"}, "diha (there; when)": {"diha", "dihang", "dihay"},
-    "kadto (that, far)": {"kadto", "kadtong", "kato", "katong"}, "niadtong (last ..., back when)": {"niadtong"},
-    "gihapon (still)": {"gihapon"}, "mas (more)": {"mas"}, "sama (like, same as)": {"sama", "susama"},
-    "ana / ani (like that / this)": {"ana", "anang", "ani", "aning", "ingon-ana", "ingon-ani", "ingana", "ingani"},
-    "tibuok (whole)": {"tibuok", "tibook"}, "kinabuhi (life)": {"kinabuhi"},
-    "palihug (please)": {"palihug", "palihog"}, "panahon (time, weather)": {"panahon"}, "ngalan (name)": {"ngalan"},
-    "bahin (about; part)": {"bahin", "kabahin", "mahitungod"}, "dapit / lugar (place)": {"dapit", "lugar"},
-    "pipila (some)": {"pipila"}, "hapit (almost)": {"hapit"}, "kaugalingon (self, own)": {"kaugalingon"},
-    "patay (dead, die)": {"patay", "namatay", "mamatay", "kamatayon"},
-    "himo (make, do)": {"himo", "gihimo", "naghimo", "himoon", "maghimo", "paghimo", "himuon", "mihimo", "mohimo"},
-    "dala (bring)": {"dala", "gidala", "nagdala", "dad-on", "magdala", "midala", "modala", "dad-a", "dalha"},
-    "hitabo (happen)": {"hitabo", "nahitabo", "mahitabo", "panghitabo"},
-    "butang (thing; put)": {"butang", "gibutang", "ibutang", "nagbutang", "butanga", "mobutang"},
-    "gud (particle)": {"gud"}, "ha (tag)": {"ha"}, "buot (want, formal)": {"buot"},
-    "busa (so, therefore)": {"busa"}, "pinaagi (by means of)": {"pinaagi"}, "batok (against)": {"batok"},
+    "ngadto (to, toward)": {"ngadto"}, "niadtong (last ..., back when)": {"niadtong"},
+    "mahitungod (concerning)": {"mahitungod"}, "patay (dead, die)": {"patay", "namatay", "mamatay", "kamatayon"},
+    "ha (tag)": {"ha"}, "buot (want, formal)": {"buot"}, "busa (so, therefore)": {"busa"},
+    "pinaagi (by means of)": {"pinaagi"}, "batok (against)": {"batok"},
     "labi / labing (most)": {"labi", "labing", "pinaka"}, "nasod / nasud (country)": {"nasod", "nasud"},
-    "libro (book)": {"libro"}, "iro (dog)": {"iro"}, "problema": {"problema"},
-    "hinuon (instead, however)": {"hinuon", "hinoon"},
+    "libro (book)": {"libro"}, "iro (dog)": {"iro"}, "hinuon (instead, however)": {"hinuon", "hinoon"},
 }
 
 TIERS = (("1", T1), ("2", T2), ("3", T3), ("none", NONE))
@@ -158,9 +154,12 @@ TIERS = (("1", T1), ("2", T2), ("3", T3), ("none", NONE))
 ROOTS_1 = {"maayo", "adto", "kaon", "inom", "tulog", "trabaho", "gusto", "kahibalo", "kasabot", "dali",
            "hulat", "balay", "tubig", "kwarta", "tawo", "buntag/hapon/gabii", "dako", "gamay", "daghan", "lami"}
 ROOTS_2 = {"palit", "bayad", "hatag", "kuha", "buhat", "ingon", "tan-aw", "paminaw", "lakaw", "balik", "anhi",
-           "anak", "bata", "isda", "adlaw", "oras", "mahal", "init", "tugnaw", "kapoy", "gutom", "sakit", "nindot"}
+           "anak", "bata", "isda", "adlaw", "oras", "mahal", "init", "tugnaw", "kapoy", "gutom", "sakit", "nindot",
+           "kinahanglan", "butang", "tuig", "human", "bag-o", "lain", "uban"}
 NOT_ROOTS_3 = {"diay", "kaha", "unta", "daw / kuno", "bitaw", "matag", "kada", "bisan", "aron", "samtang",
-               "sorry", "dayon", "hangtod", "usahay", "puhon", "driver", "jeep"}
+               "sorry", "dayon", "hangtod", "usahay", "puhon", "driver", "jeep",
+               "gud", "basin", "medyo", "kaysa", "hapit", "pipila", "gihapon", "diha", "kadto", "sama",
+               "siyempre", "sigurado", "palihug"}
 strippable = set()
 for _table, _keep in ((T1, ROOTS_1), (T2, ROOTS_2), (T3, set(T3) - NOT_ROOTS_3)):
     for _entry in _keep:
@@ -236,9 +235,9 @@ def count(path):
             r["words"] += 1
             prev = toks[i - 1][0] if i else ""
             if w == "ka" and (prev == "0" or prev in NUMBERISH):      # tulo ka bata: not "you"
-                hit = ("none", "ka (after a number)")
+                hit = ("2", "ka (after a number)")
             elif w == "o":
-                hit = ("none", "o (or)")
+                hit = ("2", "o (or)")
             else:
                 hit = lookup(w)
             if hit:
