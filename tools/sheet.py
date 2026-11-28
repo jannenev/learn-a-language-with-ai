@@ -41,11 +41,11 @@ FORM_CSS = """
 body { font-size: 10pt; line-height: 1.3; }
 section.sheet p.lead { font-size: 10pt; }
 section.sheet h2 { font-size: 11.5pt; margin: 11pt 0 3pt 0; }
-section.sheet li { line-height: 1.75; }
+section.sheet li { line-height: 1.6; }
 section.sheet table { break-inside: auto; margin: 2pt 0 8pt 0; }
 section.sheet thead { display: table-header-group; }
 section.sheet tr { break-inside: avoid; }
-section.sheet td { border-bottom: 0.4pt solid #000; padding: 3.2pt 6pt 3.2pt 0; height: 13pt; }
+section.sheet td { border-bottom: 0.4pt solid #000; padding: 2.7pt 6pt 2.7pt 0; height: 13pt; }
 section.sheet span.box { display: inline-block; width: 8.5pt; height: 8.5pt; border: 0.8pt solid #000; vertical-align: middle; }
 """
 

@@ -7,13 +7,13 @@ The list itself is [`cebuano/vocabulary.md`](../../vocabulary.md), and that is t
 ## What is in this folder
 
 | File or folder                                               | What it is |
-| ------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`CHECK-2026-11-28.md`](CHECK-2026-11-28.md)                 | The check: the tiers counted in three kinds of Cebuano text and matched against the 300 commonest words of spoken English, with the sources, the figures and the limits |
-| [`QUESTIONS.md`](QUESTIONS.md)                               | The questions for native speakers that the check leaves open, as lists to mark, with room for the answers |
+| [`QUESTIONS.md`](QUESTIONS.md) | The sheet to give to a native speaker: lists to mark, on what the check leaves open. It holds only what the speaker needs; how to ask is in the section below |
 | [`data/tier-counts.tsv`](data/tier-counts.tsv)               | Every entry of the three tiers, and 40 words that are in no tier, with occurrences per 10,000 words in each source |
 | [`data/no-tier-*.tsv`](data/)                                | For each source, the 300 commonest words that matched nothing: where to look for further candidates |
 | [`data/spoken-english-300.tsv`](data/spoken-english-300.tsv) | The 300 commonest words of spoken English, each with its Cebuano word and the tier it is in, or "none", or "no word" |
-| `draft/`                                                     | The second version of the list while it is a proposal. Not written yet |
+| [`draft/`](draft/)                                           | The second version of the list as a proposal: [`CHANGES.md`](draft/CHANGES.md), what changes and why, and [`vocabulary-v2.md`](draft/vocabulary-v2.md), the proposed list. Waiting for the learner's approval |
 
 ## How the list was made
 
@@ -56,16 +56,30 @@ In short; the figures are in [`CHECK-2026-11-28.md`](CHECK-2026-11-28.md).
 
 ## What is open
 
-- **Which words the second version moves or adds.** The candidates are in the last table of the check. None is decided.
+- **Which words the second version moves or adds.** Proposed in `draft/CHANGES.md`: seventeen words into Tier 2, nothing out. Not approved yet.
 - **Whether *may*, *kang* and *ka* become entries or forms** under entries that exist (*may* under *naa*).
 - **Whether Tier 1 should grow** by the few words that are commoner than most of it. It would mean one or two more texts in Stage A.
 - **The estimate in the plan and in the README** ("roughly two thirds of everyday conversation") is still the guess of 2026-10-06. The check measured written text, not conversation, so it does not simply replace it.
 - **Tier 3 has never been counted in the course's own texts,** and `wordcheck.py` knows only Tier 1.
 
+## Asking the questions
+
+[`QUESTIONS.md`](QUESTIONS.md) is the sheet for the speaker, and nothing else is on it. This section is for the one who hands it out.
+
+- **Why lists to mark.** The check counted written text, and written text does not show which words people say. The sheet puts to a speaker what the counting could not settle. Every part is a list to mark, because seeing what is odd in a list is easy, and thinking of what is missing from one is hard and gives an incomplete answer. (The learner's observation, 2026-11-28.) Only part D asks for words from memory.
+- **Where the words come from.** Part A: words on which the sources disagree, and pairs where the word list gives two forms. Part B: words that are common in written Cebuano or in spoken English and are in Tier 2, Tier 3 or no tier. Part C: Tier 1. The words and their English were written with AI assistance and are not checked.
+- **To print:** `python3 tools/sheet.py --form cebuano/docs/vocabulary/QUESTIONS.md` makes `cebuano/print/cebuano-questions.pdf`, two pages, for one sheet of paper printed on both sides.
+- **How to ask.** Hand over the paper, or show the file on a phone, or read the lists aloud. Say that it is about everyday talk, not about correct Cebuano.
+- **The answers.** One file per speaker in this folder, `answers-YYYY-MM-DD.md`, with the marks typed in, the place the speaker is from and roughly the age. No names in this repository. And a row here:
+
+| Date | Speaker (place, rough age) | Parts answered | File |
+| ---- | -------------------------- | -------------- | ---- |
+|      |                            |                | |
+
 ## Before changing the list
 
 1. Read `docs/vocabulary/README.md`, sections 5 and 6, and the check in this folder.
-2. Get the answers to [`QUESTIONS.md`](QUESTIONS.md), or say in the draft which changes wait for them.
+2. Get the answers to the questions (section above), or say in the draft which changes wait for them.
 3. Write the draft in `draft/`, with a table of what changes and why beside it.
 4. On approval: set the tag `vocabulary-v1`, replace the list, mark it as version 2 at its top, bring the tables of `tools/wordcheck.py` and `tools/wordfreq.py` and the planned rows of `../../texts.md` into line, and add a dated line to `../../LOG.md`.
 5. Run `tools/wordfreq.py` again on the same sources and put the new figures beside the old.

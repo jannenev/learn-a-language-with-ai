@@ -89,24 +89,9 @@ Do you ever say these yourself? Circle those you do: aduna (for *naa*) · usab (
 
 ## D. If a word came to mind
 
-If, while marking, an everyday word came to mind that is in none of the lists above, write it here. There is no need to think long.
+If an everyday word came to mind that is in none of the lists above, write it here. There is no need to think long.
 
 | Word | What it means |
 | ---- | ------------- |
 |      | |
 |      | |
-|      | |
-
-## For the one who asks
-
-**Why lists to mark.** The check of 2026-11-28 counted written text, and written text does not show which words people say. These questions put to a speaker what the counting could not settle. Every part is a list to mark, because seeing what is odd in a list is easy, and thinking of what is missing from one is hard and gives an incomplete answer. (The learner's observation, 2026-11-28.) Only part D asks for words from memory.
-
-**Where the words come from.** Part A: words on which the sources disagree, and pairs where the word list gives two forms. Part B: words that are common in written Cebuano or in spoken English and are in Tier 2, Tier 3 or no tier. Part C: Tier 1. The words and their English were written with AI assistance and are not checked.
-
-**How to ask.** Show the lists on paper or on a phone, or read them aloud. To print: `python3 tools/sheet.py --form cebuano/docs/vocabulary/QUESTIONS.md`. Note the date, the place the speaker is from and roughly the age. No names in this repository.
-
-**The answers.** One file per speaker in this folder, `answers-YYYY-MM-DD.md`, with the marks typed in, and a row here:
-
-| Date | Speaker (place, rough age) | Parts answered | File |
-| ---- | -------------------------- | -------------- | ---- |
-|      |                            |                | |
