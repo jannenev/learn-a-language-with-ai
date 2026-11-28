@@ -38,6 +38,8 @@ Renumbered on 2026-11-14: the first text, with 40 new words, was split into 001 
 
 ## Stage B: Tier 2 (57 entries, 6–8 new per text), texts 007–014
 
+**These rows were planned before version 2 of the word list (2026-11-28).** Tier 2 now has about 76 entries, not 57, and its commonest words come first: *kay, man, mao, kung, pero, usa* with *ka*, *para, tanan, o, may, kang*. Plan the rows again before writing 007; what changed is in `cebuano/docs/vocabulary/CHANGES-v2.md`.
+
 The grouping follows the themes and the storyline. *merkado* moved from Tier 3 to Tier 2 on 2026-11-11 and is used once in 003 to name Mama's place; before 007, extend `tools/wordcheck.py` and the pronunciation lexicon with Tier 2.
 
 | Text | Status | Scene | New entries | Patterns to exercise |
